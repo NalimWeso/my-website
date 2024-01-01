@@ -38,7 +38,7 @@ document.querySelector('header').addEventListener('click', (event) => {
 
     if (click.tagName === 'H1') {
         if (className === 'literally-me') {
-            window.location.href = 'index.html';
+            window.location.href = '/';
         }
         if (className === 'hobbies') {
             window.location.href = 'hobbies.html';
