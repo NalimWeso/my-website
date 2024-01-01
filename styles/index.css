@@ -69,6 +69,22 @@
     color: #7393B3;
 }
 
+@media screen and (max-width: 990px) {
+    .my-name h1 {
+        font-size: 0;
+    }
+
+    .my-name h1::before {
+        display: inline-block;
+        content: attr(data-text-one);
+        font-size: 100px;
+    }
+
+    .my-titles {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .my-name h1 {
         font-size: 0;
@@ -76,7 +92,7 @@
 
     .my-name h1::before {
         display: inline-block;
-        content: attr(data-text);
+        content: attr(data-text-two);
         font-size: 100px;
     }
 
