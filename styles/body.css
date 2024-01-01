@@ -1,0 +1,26 @@
+* {
+    box-sizing: box;
+}
+
+body {
+    background-color: #001428;
+    color: white;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8rem;
+    font-size: 24px;
+}
+
+a,
+a:visited,
+a:active {
+    color: white;
+}
+
+.disable-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,208 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 2% 0;
+    padding: 0;
+    user-select: none;
+}
+
+h1 {
+    font-size: 5vw;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 0.5rem 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #7393B3;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #7393B3;
+}
+
+h1:hover::after,
+h1:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+h1::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+h1:hover::after,
+h1:focus::after {
+    transform: scale(1);
+}
+
+.my-projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #001733;
+    border: 3px solid #7393B3;
+    border-radius: 10px;
+    font-size: 3vw;
+    width: 45%;
+    height: 15vw;
+    margin: 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.project p {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    color: #D2D2D2;
+    margin: 0;
+    padding: 0;
+}
+
+[data-name="LifeBlueSnake"] {
+    background-color: #005792;
+}
+
+[data-name="Geometric Sequence Checker"] {
+    background-color: #33006f;
+}
+
+[data-name="To-Do List"] {
+    background-color: #008000;
+}
+
+[data-name="Rock Paper Scissors"] {
+    background-color: #191919;
+}
+
+[data-name="YouTube"] {
+    background-color: #DC2F2F;
+}
+
+[data-name="Amazon"] {
+    background-color: #F96D00;
+}
+
+[data-name="Forms"] {
+    background-color: #D48D06;
+}
+
+[data-name="Calculator"] {
+    background-color: #D67E21;
+}
+
+[data-name="Dogs Gallery"] {
+    background-color: #402A23;
+}
+
+[data-name="Mole Game"] {
+    background-color: #2b705a;
+}
+
+.project p,
+.project h6 {
+    transition: opacity 1s ease;
+}
+
+.buttons {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 1s ease;
+}
+
+button {
+    color: white;
+    background-color: #001428;
+    border: 3px solid white;
+    font-size: 90%;
+    border-radius: 10px;
+    margin: -2% 0;
+    padding: 2% 10px;
+    flex-grow: 1;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0B4680;
+}
+
+button:active {
+    color: #C8C8C8;
+    background-color: #4f779f;
+    border: 3px solid #C8C8C8;
+}
+
+.project:hover {
+
+    p,
+    h6 {
+        opacity: 0;
+    }
+
+    .buttons {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .buttons {
+        opacity: 1;
+        margin-top: 0;
+        flex-direction: row;
+        bottom: 5%;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0 5px;
+        font-size: 1.5vw;
+        max-width: 100%;
+    }
+
+    h6 {
+        opacity: 0;
+    }
+
+    .project:hover {
+
+        p {
+            opacity: 1;
+        }
+    }
+}

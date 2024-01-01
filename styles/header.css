@@ -1,0 +1,97 @@
+header {
+    background-color: rgb(1, 10, 20);
+    border-bottom: 1px solid white;
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: height 0.3s;
+}
+
+header h1 {
+    font-family: "Space Mono", monospace;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: font-size 0.3s, color 0.3s, background-color 0.3s;
+}
+
+header h1:hover {
+    color: black;
+    background-color: white;
+}
+
+header img {
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    overflow: scroll;
+    opacity: 1;
+    transition: opacity 0.3s, outline 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+header img:hover {
+    outline: 3px solid transparent;
+    box-shadow: 0 0 0 3px black;
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 1200px) {
+    header img {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        margin-top: 6.5rem;
+    }
+
+    header {
+        height: 6rem;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        margin-top: 5.5rem;
+    }
+
+    header h1 {
+        font-size: 15px;
+    }
+
+    header {
+        height: 5rem;
+    }
+}

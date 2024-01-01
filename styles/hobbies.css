@@ -1,0 +1,344 @@
+.collapsible {
+    background-color: #001733;
+    color: white;
+    font-size: 26px;
+    text-align: left;
+    border: 2px solid #7393B3;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.collapsible:hover::before {
+    opacity: 1;
+}
+
+.collapsible::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
+    content: "";
+    border-radius: inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 500ms;
+}
+
+.hidden {
+    border: 2px solid #001428;
+    height: 2rem;
+}
+
+.collapsible:hover {
+    background-color: #002167;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #7393B3;
+    margin-left: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    background-color: #001733;
+    border: 2px solid #7393B3;
+    border-radius: 0 0 10px 10px;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+        margin-bottom: -20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: -20px;
+    }
+
+    .places {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h2 {
+        font-size: 15px;
+    }
+}
+
+.programming-skills {
+    display: grid;
+    align-self: center;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 20px;
+}
+
+.skill {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    width: 140px;
+    border: 3px solid white;
+    transition: all 0.5s ease;
+    margin: 20px 0;
+}
+
+.skill:hover {
+    border-radius: 25px;
+    filter: saturate(2);
+}
+
+@media screen and (max-width: 1200px) {
+    .programming-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .programming-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .programming-skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.html {
+    background-color: #ff6f3c;
+}
+
+.css {
+    background-color: #5585b5;
+}
+
+.javascript {
+    background-color: #ffc93c;
+}
+
+.react {
+    background-color: #53a8b6;
+}
+
+.electron {
+    background-color: #113f67;
+}
+
+
+.aws {
+    background-color: #f2910a;
+}
+
+.movies,
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 50px 0 60px 0;
+}
+
+.movie,
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.movie img,
+.game img {
+    width: 70%;
+    border: 3px solid #7393B3;
+    transition: all 0.5s ease;
+
+}
+
+.movie img:hover,
+.game img:hover {
+    transform: scale(1.2);
+}
+
+.places {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.place {
+    margin: 50px 20px;
+    padding: 0 0 -511px 0;
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #7393B3;
+    transition: all 0.5s ease;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+    display: block;
+}
+
+.city-name {
+    color: #f70776;
+    font-size: 66px;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .city-name {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .city-name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .city-name {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .city-name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .city-name {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .places {
+        flex-direction: column;
+    }
+
+    .place {
+        margin: 20px;
+    }
+
+    .city-name {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .city-name {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .city-name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .city-name {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .city-name {
+        font-size: 20px;
+    }
+}
+
+.place:hover .img-container {
+    border: 3px solid #f70776;
+    border-radius: 25px;
+}
+
+.place:hover .img-container img {
+    filter: grayscale(100%);
+}
+
+.place:hover .city-name {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.snake-container {
+    text-align: center;
+}
+
+.snake-container img {
+    max-width: 40%;
+    height: auto;
+    margin-top: 10px;
+    border: 3px solid #7393B3;
+    transition: all 0.5s ease;
+}
+
+.snake-container img:hover {
+    filter: contrast(130%);
+    border-radius: 70px;
+}
+
+.source {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.source a {
+    transition: all 0.5s ease;
+}
+
+.source a:hover {
+    color: #808080;
+}

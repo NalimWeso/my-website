@@ -1,0 +1,162 @@
+.main {
+    text-align: center;
+    width: 100%;
+}
+
+.toronto-cowboy {
+    width: 350px;
+    filter: grayscale(50%) sepia(70%) hue-rotate(120deg);
+    opacity: 0.5;
+    display: block;
+    position: relative;
+    clip-path: circle(42% at 50% 50%);
+    transition: all 0.5s ease;
+}
+
+.toronto-cowboy:hover {
+    clip-path: circle(50% at 50% 50%);
+    transform: rotateZ(360deg);
+    filter: sepia(50%) hue-rotate(50deg);
+    opacity: 0.7;
+}
+
+.my-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-titles {
+    margin: 0.5rem 0 -1.2rem 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.title {
+    color: rgb(128, 128, 128, 0.7);
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: color 0.5s ease-in-out;
+}
+
+.my-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: -30px;
+    padding-bottom: -30px;
+    word-spacing: -0.7rem;
+    white-space: nowrap;
+}
+
+.my-name h1 {
+    color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    -webkit-text-stroke: 0.2vw #404040;
+    transition: color 0.5s ease-in-out;
+}
+
+.logo:hover h1 {
+    color: white;
+}
+
+.logo:hover .title {
+    color: #7393B3;
+}
+
+@media screen and (max-width: 650px) {
+    .my-name h1 {
+        font-size: 0;
+    }
+
+    .my-name h1::before {
+        display: inline-block;
+        content: attr(data-text);
+        font-size: 100px;
+    }
+
+    .my-titles {
+        font-size: 16px;
+    }
+}
+
+.strong {
+    color: #808080;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.strong:hover {
+    color: white;
+}
+
+.window {
+    position: absolute;
+    background-color: #808080;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    top: -40px;
+    left: -66px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.strong:hover .window {
+    opacity: 1;
+}
+
+.emoji {
+    filter: hue-rotate(140deg);
+}
+
+fieldset {
+    background-color: #001733;
+    padding-bottom: 15px;
+    border: 2px solid #7393B3;
+    border-radius: 7px;
+    margin: 3rem 1rem;
+}
+
+fieldset p {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    color: #7393B3;
+    font-size: 26px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2;
+    margin-bottom: -10px;
+}
+
+li::before {
+    content: "▶️";
+    margin: 0 10px 0 -43px;
+}
+
+.prefix {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    .prefix {
+        color: #808080;
+    }
+}
