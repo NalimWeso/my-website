@@ -103,36 +103,20 @@
     background-color: #33006f;
 }
 
-[data-name="To-Do List"] {
-    background-color: #008000;
-}
-
 [data-name="Rock Paper Scissors"] {
     background-color: #191919;
 }
 
-[data-name="YouTube"] {
-    background-color: #DC2F2F;
-}
-
-[data-name="Amazon"] {
-    background-color: #F96D00;
+[data-name="To-Do List"] {
+    background-color: #008000;
 }
 
 [data-name="Forms"] {
     background-color: #D48D06;
 }
 
-[data-name="Calculator"] {
-    background-color: #D67E21;
-}
-
 [data-name="Dogs Gallery"] {
-    background-color: #402A23;
-}
-
-[data-name="Mole Game"] {
-    background-color: #2b705a;
+    background-color: #CB975B;
 }
 
 .project p,
@@ -152,7 +136,7 @@
 
 button {
     color: white;
-    background-color: #001428;
+    background-color: #001733;
     border: 3px solid white;
     font-size: 90%;
     border-radius: 10px;
