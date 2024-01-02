@@ -76,6 +76,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 800px) {
+    .project {
+        width: 90%;
+    }
+}
+
 .project p {
     color: white;
     font-weight: bold;
@@ -185,23 +191,26 @@ button:active {
         opacity: 1;
         margin-top: 0;
         flex-direction: row;
-        bottom: 5%;
+        bottom: 7%;
         justify-content: center;
     }
 
     button {
+        border: 1px solid white;
         margin: 0 5px;
         font-size: 1.5vw;
         max-width: 100%;
     }
 
-    h6 {
-        opacity: 0;
-    }
-
     .project:hover {
-        p {
+
+        p,
+        h6 {
             opacity: 1;
         }
+    }
+
+    .project:not(:has(h6)) p {
+        margin-top: -1.8vh;
     }
 }
