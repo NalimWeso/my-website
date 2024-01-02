@@ -317,7 +317,7 @@ h2 {
 }
 
 .snake-container img {
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin-top: 10px;
     border: 3px solid #7393B3;
@@ -331,7 +331,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
     .snake-container img {
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 
