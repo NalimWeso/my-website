@@ -2,23 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2% 0 2% 0;
+    margin: 0;
     padding: 0;
     user-select: none;
 }
 
-h1 {
-    font-size: 5vw;
+.underline {
+    font-size: 7vw;
     text-decoration: none;
     text-align: center;
-    margin: 0;
-    padding: 1rem 0 0.5rem 0;
+    margin: 0.1rem 0 0.5rem 0;
+    padding: 0.5rem 0;
     display: block;
     position: relative;
     transition: all 0.3s ease;
 }
 
-h1::after {
+.underline::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -30,24 +30,24 @@ h1::after {
     transition: all 0.3s ease;
 }
 
-h1:hover {
+.underline:hover {
     color: #7393B3;
 }
 
-h1:hover::after,
-h1:focus::after {
+.underline:hover::after,
+.underline:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
 
-h1::after {
+.underline::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
 }
 
-h1:hover::after,
-h1:focus::after {
+.underline:hover::after,
+.underline:focus::after {
     transform: scale(1);
 }
 
@@ -200,7 +200,6 @@ button:active {
     }
 
     .project:hover {
-
         p {
             opacity: 1;
         }
