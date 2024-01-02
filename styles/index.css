@@ -136,7 +136,6 @@
 
 fieldset {
     background-color: #001733;
-    font-size: 22px;
     padding-bottom: 15px;
     border: 2px solid #7393B3;
     border-radius: 7px;
@@ -148,10 +147,6 @@ fieldset p {
     padding: 0;
 }
 
-.contact-me {
-    font-size: 20px;
-}
-
 legend {
     color: #7393B3;
     font-size: 26px;
@@ -160,22 +155,14 @@ legend {
 }
 
 @media screen and (max-width: 400px) {
-    fieldset {
-        font-size: 12px;
+    legend {
+        font-size: 20px;
     }
 
     .window {
         font-size: 7px;
         padding: 5px 0;
         top: -25px;
-    }
-
-    .contact-me {
-        font-size: 12px;
-    }
-
-    legend {
-        font-size: 20px;
     }
 }
 
