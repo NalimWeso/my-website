@@ -7,7 +7,13 @@ body {
     color: white;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: calc(6vh + 5vw);
-    font-size: 24px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 a,
