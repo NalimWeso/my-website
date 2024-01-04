@@ -134,11 +134,10 @@ address h3 {
 }
 
 .about-fieldset {
-	color: #D3D3D3;
-	border: 3px solid #D3D3D3;
+	text-align: center;
 	font-size: 20px;
-	margin: 70px 5vh 0 5vh;
-	padding: 10px 20px 20px 20px;
+	margin: 2rem 0.6rem 0 0;
+	padding: 0 20px 25px 20px;
 }
 
 .about-legend {
@@ -148,11 +147,12 @@ address h3 {
 }
 
 .about-a {
+	font-weight: bold;
 	text-decoration: none;
-	color: #D3D3D3;
+	color: #585858;
 }
 
 .about-a:active,
 .about-a:visited {
-	color: #eed202;
+	color: #808080;
 }
