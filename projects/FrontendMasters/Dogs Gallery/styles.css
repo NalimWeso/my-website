@@ -1,0 +1,45 @@
+body {
+    background-color: #C7B198;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.spinner {
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+    animation: 3s spin linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    display: block;
+}
+
+.doggos img {
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.doggos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    color: #402A23;
+    background-color: #DFD3C3;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
