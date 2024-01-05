@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: -0.5vh 0 0 0;
     padding: 0;
     user-select: none;
 }
@@ -49,6 +49,20 @@
 .underline:hover::after,
 .underline:focus::after {
     transform: scale(1);
+}
+
+fieldset {
+    text-align: center;
+    background-color: #001733;
+    border: 2px solid #7393B3;
+    border-radius: 7px;
+    margin: 1rem 1rem;
+}
+
+fieldset p {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
 }
 
 .my-projects {
