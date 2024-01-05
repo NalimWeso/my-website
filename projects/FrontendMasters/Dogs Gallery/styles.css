@@ -8,6 +8,11 @@ body {
     }
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 .spinner {
     margin-top: 200px;
     font-size: 50px;
@@ -68,7 +73,7 @@ option {
     text-align: center;
     border: 3px solid #402A23;
     border-radius: 15px;
-    margin: -0.5rem 2rem 0.7rem 2rem;
+    margin: 0.5rem 2rem 1rem 2rem;
     padding: 10px 20px 20px 20px;
 }
 
