@@ -55,6 +55,7 @@ select {
     outline: 0;
     font: inherit;
     width: 20rem;
+    max-width: 95%;
     padding: 1rem 4rem 1rem 1rem;
     background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, #402A23 3em, saddlebrown 3em);
     color: white;
