@@ -7,32 +7,41 @@ body {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 5vh;
     font-weight: bold;
 }
 
 .move-icon {
-    height: 50px;
+    height: 5vh;
 }
 
 .move-button {
     background-color: transparent;
     border: 3px solid white;
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 60vh;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .result {
-    font-size: 25px;
+    font-size: 7vh;
     font-weight: bold;
     margin-top: 50px;
 }
 
+.moves {
+    font-size: 3vh;
+}
+
 .score {
-    margin-top: 60px;
+    font-size: 3vh;
+    margin-top: 5vh;
+}
+
+.are-you-sure {
+    font-size: 2.5vh;
 }
 
 .reset-score-button,
@@ -41,13 +50,14 @@ body {
 .no {
     background-color: white;
     border: none;
-    font-size: 15px;
-    padding: 8px 15px;
+    font-size: 1.5vh;
+    padding: 0.8vh 1.5vh;
     cursor: pointer;
 }
 
 .yes,
 .no {
+    margin-top: 1.5vh;
     margin-left: 4px;
     margin-right: 4px;
 }
@@ -57,7 +67,7 @@ fieldset {
     border: 3px solid #D3D3D3;
     border-radius: 15px;
     font-size: 20px;
-    margin: 70px 5vh 0 5vh;
+    margin: 4vh 5vh 0 5vh;
     padding: 10px 20px 20px 20px;
 }
 
