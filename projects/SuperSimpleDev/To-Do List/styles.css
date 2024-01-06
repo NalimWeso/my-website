@@ -11,14 +11,14 @@ body {
 
 p {
     color: #018748;
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: bold;
 }
 
 .todo-input-grid,
 .result {
     display: grid;
-    grid-template-columns: 200px 150px 100px;
+    grid-template-columns: 20vh 15vh 10vh;
     column-gap: 20px;
     row-gap: 10px;
     align-items: center;
@@ -31,7 +31,7 @@ p {
 
 .input,
 .input-due-date {
-    font-size: 15px;
+    font-size: 1.5vh;
     padding: 6px;
 }
 
@@ -39,18 +39,37 @@ p {
     background-color: green;
     color: white;
     border: none;
-    font-size: 15px;
+    font-size: 1.5vh;
+    width: 12vh;
+    height: 4.5vh;
     cursor: pointer;
+
 }
 
 .button-delete {
     background-color: darkred;
     color: white;
     border: none;
-    font-size: 15px;
+    font-size: 1.5vh;
+    width: 12vh;
+    height: 4.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 430px) {
+
+    .button-add,
+    .button-delete {
+        width: 7vh;
+    }
+
+    .todo-input-grid,
+    .result {
+        font-size: 12px;
+        grid-template-columns: 15vh 10vh 5vh;
+    }
 }
 
 fieldset {
