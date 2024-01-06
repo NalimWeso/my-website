@@ -99,21 +99,45 @@
 
 .strong {
     color: #808080;
-    cursor: pointer;
+    cursor: default;
     transition: color 0.5s ease;
-    position: relative;
 }
 
 .strong:hover {
     color: white;
 }
 
-.strong:hover .window {
-    opacity: 1;
-}
-
 .emoji {
     filter: hue-rotate(140deg);
+    cursor: default;
+    transition: filter 0.3s;
+}
+
+@keyframes rotating {
+
+    0%,
+    100% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.hand {
+    display: inline-block;
+    transform: rotate(20deg);
+}
+
+.emoji:hover {
+    filter: hue-rotate(180deg);
+}
+
+fieldset:not(.contact-me):hover {
+    .hand {
+        animation: rotating 0.7s ease-in-out infinite;
+    }
 }
 
 fieldset {
@@ -161,28 +185,5 @@ li::before {
 li:hover {
     .prefix {
         color: #0078d7;
-    }
-}
-
-@keyframes rotating {
-
-    0%,
-    100% {
-        transform: rotate(20deg);
-    }
-
-    50% {
-        transform: rotate(-10deg);
-    }
-}
-
-.hand {
-    display: inline-block;
-    transform: rotate(20deg);
-}
-
-fieldset:not(.contact-me):hover {
-    .hand {
-        animation: rotating 0.7s ease-in-out infinite;
     }
 }
