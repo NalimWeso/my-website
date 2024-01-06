@@ -56,7 +56,7 @@ fieldset {
     background-color: #001733;
     border: 2px solid #7393B3;
     border-radius: 7px;
-    margin: 1rem 2.3%;
+    margin: 1rem;
 }
 
 fieldset p {
@@ -213,6 +213,6 @@ button:active {
     }
 
     fieldset p {
-        font-size: 20px;
+        font-size: 12px;
     }
 }
