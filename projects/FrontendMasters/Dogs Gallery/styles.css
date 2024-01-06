@@ -67,7 +67,7 @@ option {
     background-color: #402A23;
 }
 
-.about-fieldset {
+fieldset {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     text-align: center;
@@ -77,19 +77,34 @@ option {
     padding: 10px 20px 20px 20px;
 }
 
-.about-legend {
+legend {
     font-size: 24px;
     font-weight: bold;
     padding: 0 5px;
 }
 
-.about-a {
+a {
     font-weight: bold;
     text-decoration: none;
     color: saddlebrown;
 }
 
-.about-a:active,
-.about-a:visited {
+a:active,
+a:visited {
     color: chocolate;
+}
+
+@media screen and (max-width: 725px) {
+    fieldset {
+        font-size: 12px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    .doggos img {
+        height: 300px;
+        max-width: 100%;
+    }
 }
