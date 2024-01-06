@@ -46,7 +46,7 @@ function autoPlay() {
 
 function resetScore() {
     document.querySelector('.are-you-sure')
-        .innerHTML = `Are you sure you want to reset the score?
+        .innerHTML = `Are you sure you want to reset the score?<br>
         <button class="yes">Yes</button>
         <button class="no">No</button>`;
 
