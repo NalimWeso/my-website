@@ -18,6 +18,12 @@
     transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 400px) {
+    .underline {
+        margin: 0 0 -10px 0;
+    }
+}
+
 .underline::after {
     content: '';
     position: absolute;
@@ -185,6 +191,7 @@ button:active {
 }
 
 @media screen and (max-width: 800px) {
+
     .buttons {
         opacity: 1;
         margin-top: 0;
