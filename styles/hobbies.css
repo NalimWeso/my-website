@@ -75,11 +75,6 @@ h2 {
         margin-bottom: -20px;
     }
 
-    h2 {
-        font-size: 20px;
-        margin-bottom: -20px;
-    }
-
     .places {
         margin-top: 10px;
     }
@@ -174,6 +169,10 @@ h2 {
     .movies,
     .games {
         margin-bottom: 3vh;
+    }
+
+    .h2-m-g {
+        margin-top: 5px;
     }
 }
 
