@@ -1,45 +1,21 @@
 # NalimWeso - My Official Website
 
-[SCREEN]
+<kbd>
+  <img src="images/Website.png" alt="Screenshot of My Website">
+</kbd>
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+## Introduction
 
-Witaj w repozytorium mojej strony internetowej! To miejsce, gdzie dzielę się informacjami o sobie, moim hobby i prezentuję moje portfolio programistyczne.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa sit eius, asperiores soluta ex ab blanditiis ad nihil quasi maiores veniam voluptatibus nobis perspiciatis velit possimus nostrum illum libero.
 
-## O mnie
+## Features
 
-Jestem pasjonatem programowania, zafascynowanym technologią i gotowym na podjęcie nowych wyzwań. Moje doświadczenie obejmuje szeroki zakres technologii i narzędzi, a moją misją jest tworzenie innowacyjnych rozwiązań.
+-
+-
+-
 
-## Hobby
+## Contact
 
-W wolnym czasie uwielbiam poznawać nowe technologie, pracować nad projektami open source i udzielać się społeczności programistycznej. Moje hobby obejmuje również eksplorację świata IT, czytanie książek branżowych i uczestnictwo w konferencjach.
-
-## Portfolio Programistyczne
-
-### Projekt 1: Nazwa Projektu
-
-Opis projektu i krótki opis użytych technologii. Link do kodu źródłowego i/lub działającej wersji projektu.
-
-### Projekt 2: Nazwa Projektu
-
-Opis projektu i krótki opis użytych technologii. Link do kodu źródłowego i/lub działającej wersji projektu.
-
-...
-
-## Jak Uruchomić Lokalnie
-
-Jeśli chcesz uruchomić moją stronę internetową lokalnie, postępuj zgodnie z poniższymi krokami:
-
-1. Sklonuj to repozytorium: `git clone https://github.com/twojanazwa/twoja-strona.git`
-2. Przejdź do folderu z projektem: `cd twoja-strona`
-3. Otwórz plik `index.html` w swojej przeglądarce.
-
-## Kontakt
-
-Jeśli masz pytania, sugestie lub po prostu chcesz się ze mną skontaktować, śmiało napisz do mnie na adres email@example.com.
-
-Dziękuję za odwiedzenie mojej strony internetowej!
-
+For any questions or collaboration, feel free to contact me:
+* E-mail: [milanweso@gmail.com](mailto:milanweso@gmail.com)
+* LinkedIn: [Milan Wesołowski](https://linkedin.com/in/yourprofile)
