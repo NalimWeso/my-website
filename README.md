@@ -5,6 +5,9 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 
+* ## Code Examples
+To generate lorem ipsum use special shortcode: `put-your-code-here`
+
 Witaj w repozytorium mojej strony internetowej! To miejsce, gdzie dzielę się informacjami o sobie, moim hobby i prezentuję moje portfolio programistyczne.
 
 ## O mnie
