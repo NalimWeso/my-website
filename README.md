@@ -1,16 +1,11 @@
 # NalimWeso - My Official Website
 
+[SCREEN]
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-
-* ## Code Examples
-To generate lorem ipsum use special shortcode: `put-your-code-here`
-
-## Sources
-This app is inspired by Rando Kim book „Time of Your Life”
-and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
 
 Witaj w repozytorium mojej strony internetowej! To miejsce, gdzie dzielę się informacjami o sobie, moim hobby i prezentuję moje portfolio programistyczne.
 
