@@ -18,5 +18,5 @@ Welcome to my website, where a retro hacker vibe meets a shades of blue aestheti
 
 For any questions or collaboration, feel free to contact me:
 * E-mail: [milanweso@gmail.com](mailto:milanweso@gmail.com)
-* LinkedIn: [Milan Wesołowski](https://linkedin.com/in/yourprofile)
 * Facebook: [Milan Wesołowski](https://www.facebook.com/Nalimos/)
+* LinkedIn: [Milan Wesołowski](https://linkedin.com/in/yourprofile)
