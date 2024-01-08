@@ -197,6 +197,14 @@ h2 {
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 400px) {
+
+    .movie img,
+    .game img {
+        border: 1.7px solid #7393B3;
+    }
+}
+
 .places {
     display: flex;
     flex-direction: row;
