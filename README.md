@@ -8,7 +8,7 @@
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa sit eius, asperiores soluta ex ab blanditiis ad nihil quasi maiores veniam voluptatibus nobis perspiciatis velit possimus nostrum illum libero.
 
-## Features
+## Content
 
 - [LITERALLY ME](https://nalimweso.com/)
 - [HOBBIES](https://nalimweso.com/hobbies.html)
