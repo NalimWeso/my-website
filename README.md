@@ -1,4 +1,9 @@
-# Moja Strona Internetowa
+# NalimWeso - My Official Website
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
 Witaj w repozytorium mojej strony internetowej! To miejsce, gdzie dzielę się informacjami o sobie, moim hobby i prezentuję moje portfolio programistyczne.
 
