@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa sit eius, asperiores soluta ex ab blanditiis ad nihil quasi maiores veniam voluptatibus nobis perspiciatis velit possimus nostrum illum libero.
+Welcome to my website, where a retro hacker vibe meets a shades of blue aesthetic. Explore my diverse hobbies and peruse my portfolio, showcasing of coding finesse. This digital space reflects the essence of my external soul, inviting you to discover the unique stories behind each passion and creation.
 
 ## Content
 
