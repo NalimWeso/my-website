@@ -10,9 +10,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa sit eius, asp
 
 ## Features
 
--
--
--
+- [LITERALLY ME](https://nalimweso.com/)
+- [HOBBIES](https://nalimweso.com/hobbies.html)
+- [PORTFOLIO](https://nalimweso.com/portfolio.html)
 
 ## Contact
 
