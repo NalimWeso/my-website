@@ -113,6 +113,10 @@
     transition: filter 0.3s;
 }
 
+.emoji:hover {
+    filter: hue-rotate(180deg);
+}
+
 @keyframes rotating {
 
     0%,
@@ -128,16 +132,7 @@
 .hand {
     display: inline-block;
     transform: rotate(20deg);
-}
-
-.emoji:hover {
-    filter: hue-rotate(180deg);
-}
-
-fieldset:not(.contact-me):hover {
-    .hand {
-        animation: rotating 0.7s ease-in-out infinite;
-    }
+    animation: rotating 0.7s ease-in-out infinite;
 }
 
 fieldset {
