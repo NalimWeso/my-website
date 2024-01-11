@@ -1,4 +1,4 @@
-# NalimWeso – My Official Websites
+# NalimWeso – My Official Website
 
 <kbd>
   <img src="images/Website.png" alt="Screenshot of My Website">
