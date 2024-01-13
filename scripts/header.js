@@ -30,21 +30,3 @@ function hackerHeader(event) {
         iterations += 1 / 3;
     }, 30);
 }
-
-document.querySelector('header').addEventListener('click', (event) => {
-
-    const click = event.target;
-    const className = event.target.classList.value;
-
-    if (click.tagName === 'H1') {
-        if (className === 'literally-me') {
-            window.location.href = '/';
-        }
-        if (className === 'hobbies') {
-            window.location.href = 'hobbies.html';
-        }
-        if (className === 'portfolio') {
-            window.location.href = 'portfolio.html';
-        }
-    }
-})
