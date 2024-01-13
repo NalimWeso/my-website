@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(1, 10, 20);
+    background-color: #010A14;
     border-bottom: 1px solid white;
     height: fit-content;
     display: flex;
@@ -12,22 +12,25 @@ header {
     z-index: 100;
 }
 
-header h1 {
+header a {
+    color: white;
+    background-color: #010A14;
     font-family: "Space Mono", monospace;
     font-size: min(5vw, 70px);
+    font-weight: bold;
+    text-decoration: none;
     text-align: center;
     border: 3px solid white;
     border-radius: 10px;
     margin: 0.55vh 0.5vh;
     padding: 10px;
     white-space: nowrap;
-    display: inline-block;
     cursor: pointer;
     text-wrap: nowrap;
     transition: font-size 0.3s, color 0.3s, background-color 0.3s;
 }
 
-header h1:hover {
+header a:hover {
     color: black;
     background-color: white;
 }
@@ -56,7 +59,7 @@ header img:hover {
 }
 
 @media screen and (max-width: 410px) {
-    header h1 {
+    header a {
         font-size: 4vw;
         margin: 1vh 0.1vh;
     }
