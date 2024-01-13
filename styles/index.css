@@ -153,6 +153,7 @@ legend {
     font-size: 26px;
     margin-left: 15px;
     padding: 5px;
+    cursor: default;
 }
 
 @media screen and (max-width: 400px) {
