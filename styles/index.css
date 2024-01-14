@@ -167,7 +167,7 @@ legend {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    gap: 10px
 }
 
 .channels a {
