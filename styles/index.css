@@ -173,13 +173,21 @@ li::before {
     margin: 0 10px 0 -43px;
 }
 
-.prefix {
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
 li:hover {
     .prefix {
         color: #0078d7;
     }
+}
+
+
+.contact-me ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid orange;
+    gap: 10px;
+}
+
+.contact-me li {
+    border: 1px solid red;
 }
