@@ -168,11 +168,6 @@ ul {
     margin-bottom: -10px;
 }
 
-li::before {
-    content: "▶️";
-    margin: 0 10px 0 -43px;
-}
-
 li:hover {
     .prefix {
         color: #0078d7;
@@ -180,14 +175,28 @@ li:hover {
 }
 
 
-.contact-me ul {
+.channels {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid orange;
-    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
-.contact-me li {
-    border: 1px solid red;
+.channels a {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 0 10px 0;
+    padding: 0.75rem;
+    box-shadow: inset 0 0 0 0 #7393B3;
+    transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    width: 220px;
+    border: 1px solid #7393B3;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #202020;
+    box-shadow: inset 250px 0 0 0 #7393B3;
 }
