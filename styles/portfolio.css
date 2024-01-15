@@ -174,12 +174,29 @@ fieldset p {
 
 .classic-button:active {
     color: #C8C8C8;
-    background-color: #4f779f;
+    background-color: #4F779F;
     border: 3px solid #C8C8C8;
 }
 
 .buttons-mobile {
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border: 3px solid #7393B3;
+    border-radius: 0 0 10px 10px;
+    margin: -1.3vw 0 3vw 0;
+    padding: 10px 0;
+    width: 90%;
     display: none;
+}
+
+.buttons-mobile a {
+    font-size: 5vw;
+    text-decoration: none;
+}
+
+hr {
+    border: 2px solid #7393B3;
 }
 
 .project:hover {
@@ -198,11 +215,6 @@ fieldset p {
 
     .buttons {
         display: none;
-        /* opacity: 1;
-        margin-top: 0;
-        flex-direction: row;
-        bottom: 7%;
-        justify-content: center; */
     }
 
     .classic-button {
@@ -225,27 +237,11 @@ fieldset p {
         }
     }
 
-    /* .project:not(:has(h6)) p {
-        margin-top: -1.8vh;
-    } */
-
     fieldset p {
         font-size: 12px;
     }
 
     .buttons-mobile {
-        text-align: center;
-        background-color: #001733;
-        border: 3px solid #7393B3;
-        border-radius: 0 0 10px 10px;
-        margin: -1.3vw 0 1vw 0;
-        padding: 10px 0;
-        width: 90%;
         display: block;
-    }
-
-    .buttons-mobile a {
-        font-size: 5vw;
-        text-decoration: none;
     }
 }
