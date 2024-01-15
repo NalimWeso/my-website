@@ -115,28 +115,45 @@ fieldset p {
     padding: 0;
 }
 
-[data-name="LifeBlueSnake"] {
+[data-name="LifeBlueSnake"],
+.lifebluesnake:hover {
     background-color: #005792;
+    transition: background-color 0.3s;
 }
 
-[data-name="Geometric Sequence Checker"] {
+[data-name="Geometric Sequence Checker"],
+.geometric-sequence-checker .files:hover,
+.geometric-sequence-checker .browser:hover {
     background-color: #33006F;
+    transition: background-color 0.3s;
 }
 
-[data-name="To-Do List"] {
+[data-name="To-Do List"],
+.to-do-list .files:hover,
+.to-do-list .browser:hover {
     background-color: #008000;
+    transition: background-color 0.3s;
 }
 
-[data-name="Rock Paper Scissors"] {
+[data-name="Rock Paper Scissors"],
+.rock-paper-scissors .files:hover,
+.rock-paper-scissors .browser:hover {
     background-color: #191919;
+    transition: background-color 0.3s;
 }
 
-[data-name="Forms"] {
+[data-name="Forms"],
+.forms .files:hover,
+.forms .browser:hover {
     background-color: #D48D06;
+    transition: background-color 0.3s;
 }
 
-[data-name="Dogs Gallery"] {
+[data-name="Dogs Gallery"],
+.dogs-gallery .files:hover,
+.dogs-gallery .browser:hover {
     background-color: #CB975B;
+    transition: background-color 0.3s;
 }
 
 .project p,
