@@ -75,8 +75,9 @@
     <fieldset class="contact-me">
         <legend>Contact Me</legend>
         <p class="p-channels">Feel free to reach out to me through the following channels:</p>
-        <div class="channels">
-            <a href="mailto:milanweso@gmail.com">milanweso@gmail.com</a>
+
+        <div class="channels disable-selection" unselectable="on" onselectstart="return false">
+            <a onclick="emailCopy()" class="email">milanweso@gmail.com</a>
 
             <a href="https://www.facebook.com/Nalimos/" target="_blank">Facebook</a>
 
@@ -86,6 +87,7 @@
         </div>
 
         <script src="scripts/header.js"></script>
+        <script src="scripts/index.js"></script>
 </body>
 
 </html>
