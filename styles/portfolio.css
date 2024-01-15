@@ -185,7 +185,6 @@ fieldset p {
     border: 3px solid #7393B3;
     border-radius: 0 0 10px 10px;
     margin: -1.3vw 0 3vw 0;
-    padding: 10px 0;
     width: 90%;
     display: none;
 }
@@ -193,10 +192,14 @@ fieldset p {
 .buttons-mobile a {
     font-size: 5vw;
     text-decoration: none;
+    display: block;
+    padding: 10px 0;
 }
 
 hr {
     border: 2px solid #7393B3;
+    margin: 0;
+    padding: 0;
 }
 
 .lifebluesnake {
