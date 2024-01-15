@@ -58,7 +58,7 @@ header img:hover {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 700px) {
     header a {
         font-size: 4vw;
         margin: 1vh 0.1vh;
