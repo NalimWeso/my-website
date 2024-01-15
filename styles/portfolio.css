@@ -154,7 +154,7 @@ fieldset p {
     transition: opacity 1s ease;
 }
 
-button {
+.classic-button {
     color: white;
     background-color: #001733;
     border: 3px solid white;
@@ -168,14 +168,18 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.classic-button:hover {
     background-color: #0B4680;
 }
 
-button:active {
+.classic-button:active {
     color: #C8C8C8;
     background-color: #4f779f;
     border: 3px solid #C8C8C8;
+}
+
+.buttons-mobile {
+    display: none;
 }
 
 .project:hover {
@@ -193,18 +197,24 @@ button:active {
 @media screen and (max-width: 800px) {
 
     .buttons {
-        opacity: 1;
+        display: none;
+        /* opacity: 1;
         margin-top: 0;
         flex-direction: row;
         bottom: 7%;
-        justify-content: center;
+        justify-content: center; */
     }
 
-    button {
+    .classic-button {
         border: 1px solid white;
         margin: 0 5px;
         font-size: 1.5vw;
         max-width: 100%;
+    }
+
+    .project {
+        font-size: 5.5vw;
+        border-radius: 10px 10px 0 0;
     }
 
     .project:hover {
@@ -215,11 +225,27 @@ button:active {
         }
     }
 
-    .project:not(:has(h6)) p {
+    /* .project:not(:has(h6)) p {
         margin-top: -1.8vh;
-    }
+    } */
 
     fieldset p {
         font-size: 12px;
+    }
+
+    .buttons-mobile {
+        text-align: center;
+        background-color: #001733;
+        border: 3px solid #7393B3;
+        border-radius: 0 0 10px 10px;
+        margin: -1.3vw 0 1vw 0;
+        padding: 10px 0;
+        width: 90%;
+        display: block;
+    }
+
+    .buttons-mobile a {
+        font-size: 5vw;
+        text-decoration: none;
     }
 }
