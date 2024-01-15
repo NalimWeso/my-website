@@ -140,7 +140,7 @@ fieldset {
     padding-bottom: 15px;
     border: 2px solid #7393B3;
     border-radius: 7px;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 1.7rem 1rem;
 }
 
 fieldset p {
@@ -189,7 +189,7 @@ legend {
     cursor: pointer;
     border: 3px solid #7393B3;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 3px 0 10px 0;
     padding: 0.75rem;
     width: 85%;
     box-shadow: inset 0 0 0 0 #1a8b9d;
@@ -206,8 +206,4 @@ legend {
     color: white;
     border: 3px solid white;
     box-shadow: inset 500px 0 0 0 #1a8b9d;
-}
-
-.p-channels {
-    margin-bottom: 10px;
 }
