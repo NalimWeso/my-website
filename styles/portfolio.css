@@ -120,15 +120,15 @@ fieldset p {
 }
 
 [data-name="Geometric Sequence Checker"] {
-    background-color: #33006f;
-}
-
-[data-name="Rock Paper Scissors"] {
-    background-color: #191919;
+    background-color: #33006F;
 }
 
 [data-name="To-Do List"] {
     background-color: #008000;
+}
+
+[data-name="Rock Paper Scissors"] {
+    background-color: #191919;
 }
 
 [data-name="Forms"] {
@@ -197,6 +197,30 @@ fieldset p {
 
 hr {
     border: 2px solid #7393B3;
+}
+
+.lifebluesnake {
+    background-color: #00233A;
+}
+
+.geometric-sequence-checker {
+    background-color: #190037;
+}
+
+.to-do-list {
+    background-color: #004000;
+}
+
+.rock-paper-scissors {
+    background-color: #303030;
+}
+
+.forms {
+    background-color: #7F5504;
+}
+
+.dogs-gallery {
+    background-color: #b37a39;
 }
 
 .project:hover {
