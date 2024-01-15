@@ -71,7 +71,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
     h2 {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: -20px;
     }
 
@@ -124,9 +124,25 @@ h2 {
     }
 }
 
-@media screen and (max-width: 450px) {
-    .programming-skills {
-        grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 500px) {
+    .skill {
+        font-size: 20px;
+        width: 100px;
+        margin: 1vh 0;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .skill {
+        font-size: 18px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .skill {
+        font-size: 12px;
+        width: 50px;
     }
 }
 
