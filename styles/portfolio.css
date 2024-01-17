@@ -2,9 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -0.2vh 0 0 0;
+    margin: -2vh 0 3vh 0;
     padding: 0;
     user-select: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .title {
+        margin: -0.5vh 0 1vh 0;
+    }
 }
 
 .underline {
@@ -62,7 +68,7 @@ fieldset {
     background-color: #001733;
     border: 2px solid #7393B3;
     border-radius: 7px;
-    margin: 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
     padding: 0.7rem;
 }
 
