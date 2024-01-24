@@ -68,7 +68,7 @@ fieldset {
     background-color: #001733;
     border: 2px solid #7393B3;
     border-radius: 7px;
-    margin: 0.5rem 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 2rem 1rem;
     padding: 0.7rem;
 }
 
@@ -88,25 +88,17 @@ fieldset p {
 .project {
     background-color: #001733;
     border: 3px solid #7393B3;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     font-size: 3vw;
-    width: 45%;
+    width: 45vw;
     height: 15vw;
-    margin: 1% 0;
+    margin: 2% 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     white-space: nowrap;
-    flex-shrink: 1;
-    position: relative;
-}
-
-@media screen and (max-width: 800px) {
-    .project {
-        width: 90%;
-    }
 }
 
 .project p {
@@ -122,98 +114,16 @@ fieldset p {
     padding: 0;
 }
 
-[data-name="LifeBlueSnake"],
-.lifebluesnake:hover {
-    background-color: #005792;
-    transition: background-color 0.3s;
-}
-
-[data-name="Geometric Sequence Checker"],
-.geometric-sequence-checker .files:hover,
-.geometric-sequence-checker .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s;
-}
-
-[data-name="To-Do List"],
-.to-do-list .files:hover,
-.to-do-list .browser:hover {
-    background-color: #008000;
-    transition: background-color 0.3s;
-}
-
-[data-name="Rock Paper Scissors"],
-.rock-paper-scissors .files:hover,
-.rock-paper-scissors .browser:hover {
-    background-color: #191919;
-    transition: background-color 0.3s;
-}
-
-[data-name="Forms"],
-.forms .files:hover,
-.forms .browser:hover {
-    background-color: #D48D06;
-    transition: background-color 0.3s;
-}
-
-[data-name="Dogs Gallery"],
-.dogs-gallery .files:hover,
-.dogs-gallery .browser:hover {
-    background-color: #CB975B;
-    transition: background-color 0.3s;
-}
-
-.project p,
-.project h6 {
-    transition: opacity 1s ease;
-}
-
-.buttons {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: opacity 1s ease;
-}
-
-.classic-button {
-    color: white;
-    border: 3px solid white;
-    font-size: 80%;
-    border-radius: 10px;
-    margin: -2% 0;
-    padding: 2% 10px;
-    flex-grow: 1;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
-
-.classic-button:hover {
-    background-color: #0B4680;
-}
-
-.classic-button:active {
-    color: #C8C8C8;
-    background-color: #4F779F;
-    border: 3px solid #C8C8C8;
-}
-
 .buttons-mobile {
     font-weight: bold;
     text-align: center;
-    background-color: black;
     border: 3px solid #7393B3;
     border-radius: 0 0 10px 10px;
     margin: -1.3vw 0 3vw 0;
-    width: 90%;
-    display: none;
 }
 
 .buttons-mobile a {
-    font-size: 5vw;
+    font-size: 3vw;
     text-decoration: none;
     display: block;
     padding: 10px 0;
@@ -225,73 +135,93 @@ hr {
     padding: 0;
 }
 
+@media screen and (max-width: 800px) {
+
+    fieldset {
+        margin-bottom: 1rem;
+    }
+
+    fieldset p {
+        font-size: 16px;
+    }
+
+    .project {
+        font-size: 5.5vw;
+        border-radius: 10px 10px 0 0;
+        width: 83vw;
+    }
+
+    .subtitle {
+        font-size: 3.5vw;
+    }
+
+    .buttons-mobile a {
+        font-size: 5vw;
+    }
+}
+
+[data-name="LifeBlueSnake"],
+.lifebluesnake .files:hover,
+.lifebluesnake .browser:hover {
+    background-color: #005792;
+    transition: background-color 0.3s;
+}
+
 .lifebluesnake {
     background-color: #00233A;
+}
+
+[data-name="Geometric Sequence Checker"],
+.geometric-sequence-checker .files:hover,
+.geometric-sequence-checker .browser:hover {
+    background-color: #33006F;
+    transition: background-color 0.3s;
 }
 
 .geometric-sequence-checker {
     background-color: #190037;
 }
 
+[data-name="To-Do List"],
+.to-do-list .files:hover,
+.to-do-list .browser:hover {
+    background-color: #008000;
+    transition: background-color 0.3s;
+}
+
 .to-do-list {
     background-color: #004000;
+}
+
+[data-name="Rock Paper Scissors"],
+.rock-paper-scissors .files:hover,
+.rock-paper-scissors .browser:hover {
+    background-color: #191919;
+    transition: background-color 0.3s;
 }
 
 .rock-paper-scissors {
     background-color: #303030;
 }
 
+[data-name="Forms"],
+.forms .files:hover,
+.forms .browser:hover {
+    background-color: #D48D06;
+    transition: background-color 0.3s;
+}
+
 .forms {
     background-color: #7F5504;
 }
 
+[data-name="Dogs Gallery"],
+.dogs-gallery .files:hover,
+.dogs-gallery .browser:hover {
+    background-color: #CB975B;
+    transition: background-color 0.3s;
+}
+
 .dogs-gallery {
     background-color: #b37a39;
-}
-
-.project:hover {
-
-    p,
-    h6 {
-        opacity: 0;
-    }
-
-    .buttons {
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    .buttons {
-        display: none;
-    }
-
-    .classic-button {
-        border: 1px solid white;
-        margin: 0 5px;
-        font-size: 1.5vw;
-        max-width: 100%;
-    }
-
-    .project {
-        font-size: 5.5vw;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .project:hover {
-
-        p,
-        h6 {
-            opacity: 1;
-        }
-    }
-
-    fieldset p {
-        font-size: 12px;
-    }
-
-    .buttons-mobile {
-        display: block;
-    }
 }
