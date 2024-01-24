@@ -253,23 +253,23 @@ hr {
 [data-name="Forms"],
 .forms .files:hover,
 .forms .browser:hover {
-    background-color: #D48D06;
+    background-color: #5E63B6;
     transition: background-color 0.3s;
 }
 
 .forms {
-    background-color: #7F5504;
+    background-color: #343772;
 }
 
 [data-name="Calculator"],
 .calculator .files:hover,
 .calculator .browser:hover {
-    background-color: #DF974C;
+    background-color: #FF5D9E;
     transition: background-color 0.3s;
 }
 
 .calculator {
-    background-color: #DFB07E;
+    background-color: #FF297F;
 }
 
 [data-name="Dogs Gallery"],
