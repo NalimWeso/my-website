@@ -228,6 +228,28 @@ hr {
     background-color: #303030;
 }
 
+[data-name="YouTube"],
+.youtube .files:hover,
+.youtube .browser:hover {
+    background-color: #E60000;
+    transition: background-color 0.3s;
+}
+
+.youtube {
+    background-color: #8A0000;
+}
+
+[data-name="Amazon"],
+.amazon .files:hover,
+.amazon .browser:hover {
+    background-color: #FF9900;
+    transition: background-color 0.3s;
+}
+
+.amazon {
+    background-color: #995C00;
+}
+
 [data-name="Forms"],
 .forms .files:hover,
 .forms .browser:hover {
@@ -239,6 +261,17 @@ hr {
     background-color: #7F5504;
 }
 
+[data-name="Calculator"],
+.calculator .files:hover,
+.calculator .browser:hover {
+    background-color: #DF974C;
+    transition: background-color 0.3s;
+}
+
+.calculator {
+    background-color: #DFB07E;
+}
+
 [data-name="Dogs Gallery"],
 .dogs-gallery .files:hover,
 .dogs-gallery .browser:hover {
@@ -247,5 +280,16 @@ hr {
 }
 
 .dogs-gallery {
-    background-color: #b37a39;
+    background-color: #B37A39;
+}
+
+[data-name="Mole Game"],
+.mole-game .files:hover,
+.mole-game .browser:hover {
+    background-color: #255347;
+    transition: background-color 0.3s;
+}
+
+.mole-game {
+    background-color: #16322B;
 }
