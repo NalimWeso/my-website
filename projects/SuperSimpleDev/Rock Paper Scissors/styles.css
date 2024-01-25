@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.move-icon {
+    height: 5vh;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 60vh;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 7vh;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.moves {
+    font-size: 3vh;
+}
+
+.score {
+    font-size: 3vh;
+    margin-top: 5vh;
+}
+
+.are-you-sure {
+    font-size: 2.5vh;
+}
+
+.reset-score-button,
+.auto-play-button,
+.yes,
+.no {
+    background-color: white;
+    border: none;
+    font-size: 1.5vh;
+    padding: 0.8vh 1.5vh;
+    cursor: pointer;
+}
+
+.yes,
+.no {
+    margin-top: 1.5vh;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+fieldset {
+    color: #D3D3D3;
+    border: 3px solid #D3D3D3;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 4vh 5vh 0 5vh;
+    padding: 10px 20px 20px 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+
+a:active,
+a:visited {
+    color: #eed202;
+}

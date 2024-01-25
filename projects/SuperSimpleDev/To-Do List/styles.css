@@ -1,0 +1,99 @@
+body {
+    background-color: #F0F0F0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+p {
+    color: #018748;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.todo-input-grid,
+.result {
+    display: grid;
+    grid-template-columns: 20vh 15vh 10vh;
+    column-gap: 20px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.todo-input-grid {
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.input,
+.input-due-date {
+    font-size: 1.5vh;
+    padding: 6px;
+}
+
+.button-add {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1.5vh;
+    width: 12vh;
+    height: 4.5vh;
+    cursor: pointer;
+
+}
+
+.button-delete {
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 1.5vh;
+    width: 12vh;
+    height: 4.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+
+    .button-add,
+    .button-delete {
+        width: 7vh;
+    }
+
+    .todo-input-grid,
+    .result {
+        font-size: 12px;
+        grid-template-columns: 15vh 10vh 5vh;
+    }
+}
+
+fieldset {
+    color: #018748;
+    text-align: center;
+    border: 3px solid #018749;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 20px 5vh 0 5vh;
+    padding: 10px 20px 20px 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #018748;
+}
+
+a:active,
+a:visited {
+    color: #006400;
+}
