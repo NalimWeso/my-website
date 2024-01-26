@@ -124,8 +124,7 @@ a:visited:not(.header-link) {
 @media screen and (max-width: 725px) {
   fieldset {
     font-size: 12px;
-    margin: 10px auto 20px auto;
-    padding: 5px 5px 10px 5px;
+    margin: 80px auto 10px auto;
   }
 
   legend {
