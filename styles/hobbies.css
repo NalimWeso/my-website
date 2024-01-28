@@ -197,13 +197,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
 }
 
 .movie img,
 .game img {
     width: 70%;
-    border: 3px solid #7393B3;
+    border: .2vw solid #7393B3;
     transition: all 0.5s ease;
 
 }
@@ -213,11 +212,27 @@ h2 {
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
 
     .movie img,
     .game img {
-        border: 1.7px solid #7393B3;
+        border: .3vw solid #7393B3;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    .movie img,
+    .game img {
+        border: .4vw solid #7393B3;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .movie img,
+    .game img {
+        border: .5vw solid #7393B3;
     }
 }
 
