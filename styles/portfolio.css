@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -2vh 0 3vh 0;
+    margin: -2vh 0 1vh 0;
     padding: 0;
     user-select: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1650px) {
     .title {
-        margin: -0.5vh 0 1vh 0;
+        margin: 0;
     }
 }
 
@@ -78,7 +78,7 @@ fieldset p {
     padding: 5px;
 }
 
-.my-projects {
+main {
     display: flex;
     justify-content: space-around;
     align-items: center;
