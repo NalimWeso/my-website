@@ -27,7 +27,7 @@ header a {
     white-space: nowrap;
     cursor: pointer;
     text-wrap: nowrap;
-    transition: font-size 0.3s, color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 header a:hover {
@@ -61,6 +61,6 @@ header img:hover {
 @media screen and (max-width: 700px) {
     header a {
         font-size: 4vw;
-        margin: 1vh 0.1vh;
+        margin: 1vh .5vh;
     }
 }
