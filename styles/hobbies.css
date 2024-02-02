@@ -32,11 +32,6 @@
     transition: opacity .5s;
 }
 
-.hidden {
-    border: 2px solid #001428;
-    height: 2rem;
-}
-
 .collapsible:hover {
     background-color: #002167;
 }
@@ -393,4 +388,9 @@ h2 {
 
 .source a:hover {
     color: #808080;
+}
+
+.hidden {
+    border: 2px solid #001428;
+    height: 2rem;
 }
