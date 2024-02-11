@@ -184,6 +184,17 @@ hr {
     }
 }
 
+[data-name="My Website"],
+.my-website .files:hover,
+.my-website .browser:hover {
+    background-color: #33006F;
+    transition: background-color 0.3s;
+}
+
+.my-website {
+    background-color: #190037;
+}
+
 [data-name="LifeBlueSnake"],
 .lifebluesnake .files:hover,
 .lifebluesnake .browser:hover {
@@ -203,6 +214,39 @@ hr {
 }
 
 .geometric-sequence-checker {
+    background-color: #190037;
+}
+
+[data-name="Moving Day Counter"],
+.moving-day-counter .files:hover,
+.moving-day-counter .browser:hover {
+    background-color: #33006F;
+    transition: background-color 0.3s;
+}
+
+.moving-day-counter {
+    background-color: #190037;
+}
+
+[data-name="Metal Gear Timeline"],
+.metal-gear-timeline .files:hover,
+.metal-gear-timeline .browser:hover {
+    background-color: #33006F;
+    transition: background-color 0.3s;
+}
+
+.metal-gear-timeline {
+    background-color: #190037;
+}
+
+[data-name="React Program"],
+.react-program .files:hover,
+.react-program .browser:hover {
+    background-color: #33006F;
+    transition: background-color 0.3s;
+}
+
+.react-program {
     background-color: #190037;
 }
 
