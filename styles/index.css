@@ -5,8 +5,8 @@ main {
 
 .toronto-cowboy {
     width: 350px;
-    filter: grayscale(50%) sepia(70%) hue-rotate(120deg);
-    opacity: 0.5;
+    filter: grayscale(20%) sepia(70%) hue-rotate(120deg);
+    opacity: 0.8;
     display: block;
     position: relative;
     clip-path: circle(42% at 50% 50%);
@@ -17,7 +17,7 @@ main {
     clip-path: circle(50% at 50% 50%);
     transform: rotateZ(360deg);
     filter: sepia(50%) hue-rotate(50deg);
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .my-picture {
