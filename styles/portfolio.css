@@ -187,19 +187,19 @@ hr {
 [data-name="My Website"],
 .my-website .files:hover,
 .my-website .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s;
+    background-color: #1A8B9D;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .my-website {
-    background-color: #190037;
+    background-color: #0D454E;
 }
 
 [data-name="LifeBlueSnake"],
 .lifebluesnake .files:hover,
 .lifebluesnake .browser:hover {
     background-color: #005792;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .lifebluesnake {
@@ -210,7 +210,7 @@ hr {
 .geometric-sequence-checker .files:hover,
 .geometric-sequence-checker .browser:hover {
     background-color: #33006F;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .geometric-sequence-checker {
@@ -220,41 +220,41 @@ hr {
 [data-name="Moving Day Counter"],
 .moving-day-counter .files:hover,
 .moving-day-counter .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s;
+    background-color: #975E23;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .moving-day-counter {
-    background-color: #190037;
+    background-color: #4b2f11;
 }
 
 [data-name="Metal Gear Timeline"],
 .metal-gear-timeline .files:hover,
 .metal-gear-timeline .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s;
+    background-color: #0e3658;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .metal-gear-timeline {
-    background-color: #190037;
+    background-color: #082035;
 }
 
 [data-name="React Program"],
 .react-program .files:hover,
 .react-program .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s;
+    background-color: #dc6a00;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .react-program {
-    background-color: #190037;
+    background-color: #844000;
 }
 
 [data-name="To-Do List"],
 .to-do-list .files:hover,
 .to-do-list .browser:hover {
     background-color: #008000;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .to-do-list {
@@ -265,7 +265,7 @@ hr {
 .rock-paper-scissors .files:hover,
 .rock-paper-scissors .browser:hover {
     background-color: #191919;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .rock-paper-scissors {
@@ -276,7 +276,7 @@ hr {
 .youtube .files:hover,
 .youtube .browser:hover {
     background-color: #E60000;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .youtube {
@@ -287,7 +287,7 @@ hr {
 .amazon .files:hover,
 .amazon .browser:hover {
     background-color: #FF9900;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .amazon {
@@ -298,7 +298,7 @@ hr {
 .forms .files:hover,
 .forms .browser:hover {
     background-color: #5E63B6;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .forms {
@@ -309,7 +309,7 @@ hr {
 .calculator .files:hover,
 .calculator .browser:hover {
     background-color: #FF5D9E;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .calculator {
@@ -320,7 +320,7 @@ hr {
 .dogs-gallery .files:hover,
 .dogs-gallery .browser:hover {
     background-color: #CB975B;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .dogs-gallery {
@@ -331,7 +331,7 @@ hr {
 .mole-game .files:hover,
 .mole-game .browser:hover {
     background-color: #255347;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .mole-game {
