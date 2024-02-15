@@ -61,6 +61,12 @@ main {
     transition: color 0.5s ease-in-out;
 }
 
+@media screen and (min-width: 2000px) {
+    .my-name h1 {
+        -webkit-text-stroke: 0.1vw #404040;
+    }
+}
+
 .logo:hover h1 {
     color: white;
 }
@@ -206,4 +212,10 @@ legend {
     color: white;
     border: 3px solid white;
     box-shadow: inset 500px 0 0 0 #1A8B9D;
+}
+
+@media screen and (min-width: 2400px) {
+    .channels a:hover {
+        box-shadow: inset 700px 0 0 0 #1A8B9D;
+    }
 }
