@@ -72,7 +72,7 @@ fieldset {
     padding: 0.7rem;
 }
 
-fieldset p {
+fieldset .text {
     font-size: 24px;
     margin: 0;
     padding: 5px;
@@ -114,6 +114,7 @@ main {
     border-radius: 10px 10px 0 0;
     font-size: 3vw;
     width: 45vw;
+    max-width: 850px;
     height: 15vw;
     margin: 0;
     display: flex;
@@ -141,6 +142,8 @@ main {
 .buttons-mobile {
     font-weight: bold;
     text-align: center;
+    width: 45vw;
+    max-width: 850px;
     border: 3px solid #7393B3;
     border-radius: 0 0 10px 10px;
     margin-top: -1.3vw;
@@ -159,19 +162,33 @@ hr {
     padding: 0;
 }
 
+@media screen and (min-width: 2000px) {
+    .project-name {
+        font-size: 60px;
+    }
+
+    a.files,
+    a.browser {
+        font-size: 60px;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     fieldset {
         margin-bottom: 1rem;
     }
 
-    fieldset p {
+    fieldset .text {
         font-size: 16px;
     }
 
-    .project-name {
+    .project-name p {
         font-size: 5.5vw;
-        border-radius: 10px 10px 0 0;
+        line-height: 1.2;
+    }
+
+    .project-name {
         width: 83vw;
     }
 
@@ -179,9 +196,14 @@ hr {
         font-size: 3.5vw;
     }
 
+    .buttons-mobile {
+        width: 100%;
+    }
+
     .buttons-mobile a {
         font-size: 5vw;
     }
+
 }
 
 [data-name="My Website"],
