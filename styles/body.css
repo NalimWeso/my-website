@@ -10,6 +10,18 @@ body {
     font-size: 20px;
 }
 
+@media screen and (min-width: 2000px) {
+    body {
+        margin-top: calc(3vh + 5vw);
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    body {
+        margin-top: calc(1vh + 5vw);
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     p {
