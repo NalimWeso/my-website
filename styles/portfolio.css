@@ -93,18 +93,12 @@ main {
 }
 
 .project-container:hover {
-    box-shadow: #819EBB 0px 0px 0px 5px;
+    box-shadow: white 0px 0px 0px 5px;
 
-    .project-name {
-        border: 3px solid #819EBB;
-    }
-
-    .buttons-mobile {
-        border: 3px solid #819EBB;
-    }
-
+    .project-name,
+    .buttons-mobile,
     hr {
-        border: 2px solid #819EBB;
+        border-color: white;
     }
 }
 
@@ -124,6 +118,7 @@ main {
     text-align: center;
     white-space: nowrap;
     cursor: default;
+    transition: border-color 0.3s ease;
 }
 
 .project-name p {
@@ -147,6 +142,7 @@ main {
     border: 3px solid #7393B3;
     border-radius: 0 0 10px 10px;
     margin-top: -1.3vw;
+    transition: border-color 0.3s ease;
 }
 
 .buttons-mobile a {
@@ -160,6 +156,7 @@ hr {
     border: 2px solid #7393B3;
     margin: 0;
     padding: 0;
+    transition: border-color 0.3s ease;
 }
 
 @media screen and (min-width: 2000px) {
