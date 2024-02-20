@@ -96,7 +96,7 @@ main {
     box-shadow: 0px 0px .3vw .3vw white;
 
     .project-name,
-    .buttons-mobile,
+    .buttons,
     hr {
         border-color: white;
     }
@@ -137,7 +137,7 @@ main {
     padding: 0;
 }
 
-.buttons-mobile {
+.buttons {
     font-weight: bold;
     text-align: center;
     width: 45vw;
@@ -147,7 +147,7 @@ main {
     margin-top: -1.3vw;
 }
 
-.buttons-mobile a {
+.buttons a {
     font-size: 3vw;
     text-decoration: none;
     display: block;
@@ -203,11 +203,11 @@ hr {
         font-size: 3.5vw;
     }
 
-    .buttons-mobile {
+    .buttons {
         width: 100%;
     }
 
-    .buttons-mobile a {
+    .buttons a {
         font-size: 5vw;
     }
 
