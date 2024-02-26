@@ -3,7 +3,7 @@ function adjustSlidesPerView() {
 
     const swiperSettings = {
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
