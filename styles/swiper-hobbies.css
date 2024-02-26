@@ -19,6 +19,14 @@
     .swiper-button-next,
     .swiper-button-prev {
         color: white;
+        border-radius: 10px;
+        padding: 25px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: darkgray;
     }
 }
 
