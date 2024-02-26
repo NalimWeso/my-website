@@ -1,3 +1,5 @@
+let swiper;
+
 function adjustSlidesPerView() {
     const screenWidth = window.innerWidth;
 
@@ -22,16 +24,6 @@ function adjustSlidesPerView() {
 
     swiper = new Swiper('.swiper', swiperSettings);
 }
-
-let swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 2,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
 
 adjustSlidesPerView();
 
