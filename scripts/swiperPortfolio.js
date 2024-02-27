@@ -1,7 +1,6 @@
 let swiper;
 
 function adjustSlidesPerView() {
-
     const swiperSettings = {
         direction: 'horizontal',
         loop: true,
@@ -31,7 +30,7 @@ function adjustSlidesPerView() {
                 slidesPerView: 2
             }
         },
-    };
+    }
 
     if (swiper) {
         swiper.destroy();
