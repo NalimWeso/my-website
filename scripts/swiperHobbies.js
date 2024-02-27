@@ -1,8 +1,6 @@
 let swiper;
 
 function adjustSlidesPerView() {
-    const screenWidth = window.innerWidth;
-
     const swiperSettings = {
         direction: 'horizontal',
         loop: false,
@@ -10,12 +8,14 @@ function adjustSlidesPerView() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    };
-
-    if (screenWidth <= 800) {
-        swiperSettings.slidesPerView = 1;
-    } else {
-        swiperSettings.slidesPerView = 2;
+        breakpoints: {
+            800: {
+                slidesPerView: 1,
+            },
+            801: {
+                slidesPerView: 2
+            }
+        },
     }
 
     if (swiper) {
