@@ -1,0 +1,12 @@
+.swiper {
+    background-color: #001733;
+    border: 3px solid #7393B3;
+    border-radius: 10px;
+    width: 90%;
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
