@@ -78,80 +78,65 @@ fieldset .text {
     padding: 5px;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.project-list {
+    text-align: center;
+    margin: 0.5rem 1rem 2rem 1rem;
+    padding: 20px 0;
+    border: 2px solid #7393B3;
+    border-radius: 7px;
+}
+
+.project-list h1 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.project-list .click {
+    color: #D2D2D2;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-list .click:hover {
+    color: white;
 }
 
 .project-container {
-    background-color: white;
-    margin-bottom: 3vw;
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.project-container:hover {
-    box-shadow: 0px 0px .3vw .3vw white;
-
-    .project-name,
-    .buttons,
-    hr {
-        border-color: white;
-    }
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 100%;
+    border: 3px solid #7393B3;
+    cursor: grab;
 }
 
 .project-name {
-    background-color: #001733;
-    border: 3px solid #7393B3;
-    border-radius: 10px 10px 0 0;
-    font-size: 3vw;
-    width: 45vw;
-    max-width: 850px;
-    height: 15vw;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    white-space: nowrap;
-    cursor: default;
+    padding: 30px 0;
 }
 
-.project-name:hover {
-    border-color: white;
+.project-name p,
+.project-name h6 {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
 }
 
 .project-name p {
-    color: white;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+    font-size: 35px;
 }
 
-.subtitle {
+.project-name h6 {
     color: #D2D2D2;
-    margin: 0;
-    padding: 0;
+    font-size: 25px;
 }
 
-.buttons {
-    font-weight: bold;
-    text-align: center;
-    width: 45vw;
-    max-width: 850px;
-    border: 3px solid #7393B3;
-    border-radius: 0 0 10px 10px;
-    margin-top: -1.3vw;
-}
-
-.buttons a {
-    font-size: 3vw;
+.links a {
+    font-size: 25px;
+    padding: 15px 0;
+    width: 100%;
     text-decoration: none;
-    display: block;
-    padding: 10px 0;
+    display: inline-block;
 }
 
 hr {
@@ -160,28 +145,35 @@ hr {
     padding: 0;
 }
 
-@media screen and (min-width: 2000px) {
-    .underline {
-        font-size: 140px;
+@media screen and (max-width: 1200px) {
+    .project-name p {
+        font-size: 30px;
     }
 
-    .project-container:hover {
-        box-shadow: 0px 0px 6px 6px white;
+    .project-name h6 {
+        font-size: 20px;
     }
 
-    .project-name {
-        font-size: 60px;
-        height: 300px;
+    .links a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .project-name p {
+        font-size: 23px;
     }
 
-    a.files,
-    a.browser {
-        font-size: 60px;
+    .project-name h6 {
+        font-size: 15px;
+    }
+
+    .links a {
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 800px) {
-
     fieldset {
         margin-bottom: 1rem;
     }
@@ -191,26 +183,36 @@ hr {
     }
 
     .project-name p {
-        font-size: 5.5vw;
-        line-height: 1.2;
+        font-size: 7.5vw;
     }
 
-    .project-name {
-        width: 83vw;
-    }
-
-    .subtitle {
-        font-size: 3.5vw;
-    }
-
-    .buttons {
-        width: 100%;
-    }
-
-    .buttons a {
+    .long .project-name p {
         font-size: 5vw;
     }
 
+    .long .project-name h6 {
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .project-name h6 {
+        font-size: 4vw;
+        margin: -1vw 0;
+    }
+
+    .links a {
+        font-size: 5vw;
+    }
+
+    .project-list h1 {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .underline {
+        font-size: 140px;
+    }
 }
 
 [data-name="My Website"],
@@ -220,7 +222,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.my-website {
+.my-website a {
     background-color: #0D454E;
 }
 
@@ -231,7 +233,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.lifebluesnake {
+.lifebluesnake a {
     background-color: #00233A;
 }
 
@@ -242,7 +244,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.geometric-sequence-checker {
+.geometric-sequence-checker a {
     background-color: #190037;
 }
 
@@ -253,29 +255,29 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.moving-day-counter {
-    background-color: #4b2f11;
+.moving-day-counter a {
+    background-color: #4B2F11;
 }
 
 [data-name="Metal Gear Timeline"],
 .metal-gear-timeline .files:hover,
 .metal-gear-timeline .browser:hover {
-    background-color: #0e3658;
+    background-color: #0E3658;
     transition: background-color 0.3s ease-in-out;
 }
 
-.metal-gear-timeline {
+.metal-gear-timeline a {
     background-color: #082035;
 }
 
 [data-name="React Program"],
 .react-program .files:hover,
 .react-program .browser:hover {
-    background-color: #dc6a00;
+    background-color: #DC6A00;
     transition: background-color 0.3s ease-in-out;
 }
 
-.react-program {
+.react-program a {
     background-color: #844000;
 }
 
@@ -286,7 +288,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.to-do-list {
+.to-do-list a {
     background-color: #004000;
 }
 
@@ -297,7 +299,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.rock-paper-scissors {
+.rock-paper-scissors a {
     background-color: #303030;
 }
 
@@ -308,7 +310,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.youtube {
+.youtube a {
     background-color: #8A0000;
 }
 
@@ -319,7 +321,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.amazon {
+.amazon a {
     background-color: #995C00;
 }
 
@@ -330,7 +332,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.forms {
+.forms a {
     background-color: #343772;
 }
 
@@ -341,7 +343,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.calculator {
+.calculator a {
     background-color: #FF297F;
 }
 
@@ -352,7 +354,7 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.dogs-gallery {
+.dogs-gallery a {
     background-color: #B37A39;
 }
 
@@ -363,6 +365,11 @@ hr {
     transition: background-color 0.3s ease-in-out;
 }
 
-.mole-game {
+.mole-game a {
     background-color: #16322B;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
