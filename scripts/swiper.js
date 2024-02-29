@@ -1,4 +1,4 @@
-let swiper;
+let swiper;1
 
 function adjustSlidesPerView() {
     const swiperSettings = {
