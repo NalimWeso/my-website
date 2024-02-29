@@ -1,11 +1,13 @@
 let swiper;
 
-function adjustSlidesPerView() {
+function adjustSwiperView() {
     const swiperSettings = {
         direction: 'horizontal',
         loop: true,
+        grabCursor: true,
         autoHeight: true,
         centeredSlides: true,
+        updateOnWindowResize: false,
         speed: 300,
         spaceBetween: 10,
         effect: 'coverflow',
@@ -17,14 +19,18 @@ function adjustSlidesPerView() {
             el: ".swiper-pagination",
             dynamicBullets: true,
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         autoplay: {
-            enabled: true,
+            enabled: window.innerWidth > 801,
             disableOnInteraction: false,
             delay: 3000
         },
         breakpoints: {
             800: {
-                slidesPerView: 1,
+                slidesPerView: 1
             },
             801: {
                 slidesPerView: 2
@@ -39,6 +45,20 @@ function adjustSlidesPerView() {
     swiper = new Swiper('.swiper', swiperSettings);
 }
 
-adjustSlidesPerView();
+function displayButtons() {
+    if (window.innerWidth > 801) {
+        document.querySelector('.swiper-buttons').style.display = 'none';
+    }
+    else {
+        document.querySelector('.swiper-buttons').style.display = '';
+    }
+}
 
-window.addEventListener('resize', adjustSlidesPerView);
+function checkWindowSize() {
+    adjustSwiperView();
+    displayButtons()
+}
+
+checkWindowSize();
+
+window.addEventListener('resize', checkWindowSize);
