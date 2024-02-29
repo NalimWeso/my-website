@@ -162,6 +162,10 @@ fieldset .text {
     display: inline-block;
 }
 
+.links .inactive {
+    color: darkgray;
+}
+
 hr {
     border: 2px solid #7393B3;
     margin: 0;
