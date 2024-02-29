@@ -124,6 +124,7 @@ fieldset .text {
     height: 100%;
     border: 5px solid #7393B3;
     border-radius: 5px;
+    cursor: default;
 }
 
 .project:nth-child(2n + 1) {
@@ -217,12 +218,12 @@ hr {
 [data-name="My Website"],
 .my-website .files:hover,
 .my-website .browser:hover {
-    background-color: #1A8B9D;
+    background-color: #004567;
     transition: background-color 0.3s ease-in-out;
 }
 
 .my-website a {
-    background-color: #0D454E;
+    background-color: #00273A;
 }
 
 [data-name="LifeBlueSnake"],
@@ -233,7 +234,7 @@ hr {
 }
 
 .lifebluesnake a {
-    background-color: #00233A;
+    background-color: #003458;
 }
 
 [data-name="Geometric Sequence Checker"],
