@@ -84,16 +84,6 @@ fieldset .text {
     padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
-    fieldset {
-        margin-bottom: 1rem;
-    }
-
-    fieldset .text {
-        font-size: 16px;
-    }
-}
-
 .projects-container {
     background-color: #001B36;
     text-align: center;
@@ -101,30 +91,6 @@ fieldset .text {
     padding: 20px 0;
     border: 2px solid #7393B3;
     border-radius: 7px;
-
-    @media screen and (max-width: 850px) {
-        .projects-list {
-            grid-template-columns: 1fr;
-            margin: 0 20px;
-        }
-
-        .project-container {
-            width: 100%;
-            max-width: none;
-        }
-
-        .project-name p {
-            font-size: 7.5vw;
-        }
-
-        .project-name h6 {
-            font-size: 4vw;
-        }
-
-        .links a {
-            font-size: 5vw;
-        }
-    }
 }
 
 .projects-container h1 {
@@ -142,15 +108,6 @@ fieldset .text {
     color: white;
 }
 
-.project {
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    width: 700px;
-    height: 100%;
-    border: 3px solid #7393B3;
-}
-
 .projects-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -158,11 +115,13 @@ fieldset .text {
     gap: 10px;
 }
 
-.projects-container .project {
-    width: 95%;
-    max-width: 700px;
+.project {
+    font-weight: bold;
     margin: 0;
     padding: 0;
+    width: 95%;
+    max-width: 700px;
+    height: 100%;
     border: 5px solid #7393B3;
     border-radius: 5px;
 }
@@ -207,6 +166,48 @@ hr {
     border: 2px solid #7393B3;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+    fieldset {
+        margin-bottom: 1rem;
+    }
+
+    fieldset .text {
+        font-size: 16px;
+    }
+
+    .projects-container h1 {
+        font-size: 6vw;
+    }
+
+    .projects-list {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: none;
+    }
+
+    .project-name p {
+        font-size: 7.5vw;
+    }
+
+    .project-name h6 {
+        font-size: 4vw;
+    }
+
+    .links a {
+        font-size: 5vw;
+    }
+
+    .project:nth-child(2n + 1),
+    .project:nth-child(2n) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 [data-name="My Website"],
