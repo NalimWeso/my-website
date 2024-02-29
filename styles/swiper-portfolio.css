@@ -14,5 +14,9 @@
 
 :root {
     --swiper-pagination-color: white;
-    --swiper-pagination-bullet-inactive-color: darkgray;
+    --swiper-pagination-bullet-inactive-color: gainsboro;
+
+    --swiper-navigation-color: white;
+    --swiper-navigation-top-offset: 51.5%;
+    --swiper-navigation-sides-offset: 14px;
 }
