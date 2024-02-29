@@ -78,7 +78,15 @@ fieldset .text {
     padding: 5px;
 }
 
-.project-list {
+.projects-swiper {
+    background-color: #001b36;
+}
+
+.projects-container {
+    background-color: #001b36;
+}
+
+.projects-container {
     text-align: center;
     margin: 0.5rem 1rem 2rem 1rem;
     padding: 20px 0;
@@ -86,28 +94,85 @@ fieldset .text {
     border-radius: 7px;
 }
 
-.project-list h1 {
+.projects-container h1 {
     margin: 0 0 20px 0;
     padding: 0;
 }
 
-.project-list .click {
+.projects-container .click {
     color: #D2D2D2;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-.project-list .click:hover {
+.projects-container .click:hover {
     color: white;
 }
 
-.project-container {
+.project {
     font-weight: bold;
     margin: 0;
     padding: 0;
     width: 700px;
     height: 100%;
     border: 3px solid #7393B3;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+
+.projects-container .project {
+    width: 95%;
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid #7393B3;
+    border-radius: 5px;
+}
+
+.project:nth-child(2n + 1) {
+    margin-left: auto;
+}
+
+.project:nth-child(2n) {
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+.projects-container {
+    @media screen and (max-width: 850px) {
+        .projects-list {
+            grid-template-columns: 1fr;
+            margin: 0 20px;
+        }
+
+        .project-container {
+            width: 100%;
+            max-width: none;
+        }
+
+        .project-name p {
+            font-size: 7.5vw;
+        }
+
+        .project-name h6 {
+            font-size: 4vw;
+        }
+
+        .links a {
+            font-size: 5vw;
+        }
+    }
 }
 
 .project-name {
@@ -144,34 +209,6 @@ hr {
     padding: 0;
 }
 
-@media screen and (max-width: 1200px) {
-    .project-name p {
-        font-size: 30px;
-    }
-
-    .project-name h6 {
-        font-size: 20px;
-    }
-
-    .links a {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .project-name p {
-        font-size: 23px;
-    }
-
-    .project-name h6 {
-        font-size: 15px;
-    }
-
-    .links a {
-        font-size: 15px;
-    }
-}
-
 @media screen and (max-width: 800px) {
     fieldset {
         margin-bottom: 1rem;
@@ -179,32 +216,6 @@ hr {
 
     fieldset .text {
         font-size: 16px;
-    }
-
-    .project-name p {
-        font-size: 7.5vw;
-    }
-
-    .long .project-name p {
-        font-size: 5vw;
-    }
-
-    .long .project-name h6 {
-        font-size: 4vw;
-        margin: 0;
-    }
-
-    .project-name h6 {
-        font-size: 4vw;
-        margin: -1vw 0;
-    }
-
-    .links a {
-        font-size: 5vw;
-    }
-
-    .project-list h1 {
-        font-size: 6vw;
     }
 }
 
@@ -366,9 +377,4 @@ hr {
 
 .mole-game a {
     background-color: #16322B;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
