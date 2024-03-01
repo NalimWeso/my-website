@@ -1,17 +1,5 @@
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-document.querySelector(".literally-me").onmouseover = event => {
-    hackerHeader(event);
-}
-
-document.querySelector(".hobbies").onmouseover = event => {
-    hackerHeader(event);
-}
-
-document.querySelector(".portfolio").onmouseover = event => {
-    hackerHeader(event);
-}
-
 function hackerHeader(event) {
     let iterations = 0;
 
@@ -29,4 +17,16 @@ function hackerHeader(event) {
 
         iterations += 1 / 3;
     }, 30);
+}
+
+document.querySelector(".literally-me").onmouseover = event => {
+    hackerHeader(event);
+}
+
+document.querySelector(".hobbies").onmouseover = event => {
+    hackerHeader(event);
+}
+
+document.querySelector(".portfolio").onmouseover = event => {
+    hackerHeader(event);
 }
