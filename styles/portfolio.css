@@ -96,6 +96,7 @@ fieldset .text {
 .projects-container h1 {
     margin: 0 0 20px 0;
     padding: 0;
+    cursor: default;
 }
 
 .projects-container .click {
