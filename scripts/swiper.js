@@ -26,4 +26,4 @@ function adjustSlidesPerView() {
 
 adjustSlidesPerView();
 
-window.addEventListener('resize', adjustSlidesPerView);
+window.addEventListener('resize', adjustSlidesPerView)
