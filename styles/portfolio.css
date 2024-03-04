@@ -271,15 +271,15 @@ hr {
     background-color: #082035;
 }
 
-[data-name="React Program"],
-.react-program .files:hover,
-.react-program .browser:hover {
-    background-color: #DC6A00;
+[data-name="Fake Netflix"],
+.fake-netflix .files:hover,
+.fake-netflix .browser:hover {
+    background-color: #E50914;
     transition: background-color 0.3s ease-in-out;
 }
 
-.react-program a {
-    background-color: #844000;
+.fake-netflix a {
+    background-color: #72050A;
 }
 
 [data-name="To-Do List"],
