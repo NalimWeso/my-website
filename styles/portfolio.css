@@ -271,14 +271,14 @@ hr {
     background-color: #082035;
 }
 
-[data-name="Netflix Replica"],
-.netflix-replica .files:hover,
-.netflix-replica .browser:hover {
+[data-name="Service Replica"],
+.service-replica .files:hover,
+.service-replica .browser:hover {
     background-color: #E50914;
     transition: background-color 0.3s ease-in-out;
 }
 
-.netflix-replica a {
+.service-replica a {
     background-color: #72050A;
 }
 
