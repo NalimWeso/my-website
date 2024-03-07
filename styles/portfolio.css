@@ -216,156 +216,212 @@ hr {
     }
 }
 
-[data-name="My Website"],
-.my-website .files:hover,
-.my-website .browser:hover {
-    background-color: #004567;
-    transition: background-color 0.3s ease-in-out;
+.my-website {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #004567;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #00273A;
+    }
 }
 
-.my-website a {
-    background-color: #00273A;
+.my-website {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #004567;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #00273A;
+    }
 }
 
-[data-name="LifeBlueSnake"],
-.lifebluesnake .files:hover,
-.lifebluesnake .browser:hover {
-    background-color: #005792;
-    transition: background-color 0.3s ease-in-out;
+.lifebluesnake {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #005792;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #003458;
+    }
 }
 
-.lifebluesnake a {
-    background-color: #003458;
+.geometric-sequence-checker {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #33006F;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #190037;
+    }
 }
 
-[data-name="Geometric Sequence Checker"],
-.geometric-sequence-checker .files:hover,
-.geometric-sequence-checker .browser:hover {
-    background-color: #33006F;
-    transition: background-color 0.3s ease-in-out;
+.moving-day-counter {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #975E23;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #4B2F11;
+    }
 }
 
-.geometric-sequence-checker a {
-    background-color: #190037;
+.metal-gear-timeline {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #0E3658;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #082035;
+    }
 }
 
-[data-name="Moving Day Counter"],
-.moving-day-counter .files:hover,
-.moving-day-counter .browser:hover {
-    background-color: #975E23;
-    transition: background-color 0.3s ease-in-out;
+.service-replica {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #E50914;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #72050A;
+    }
 }
 
-.moving-day-counter a {
-    background-color: #4B2F11;
+.youtube {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #E60000;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #8A0000;
+    }
 }
 
-[data-name="Metal Gear Timeline"],
-.metal-gear-timeline .files:hover,
-.metal-gear-timeline .browser:hover {
-    background-color: #0E3658;
-    transition: background-color 0.3s ease-in-out;
+.amazon {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #FF9900;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #995C00;
+    }
 }
 
-.metal-gear-timeline a {
-    background-color: #082035;
+.to-do-list {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #008000;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #004000;
+    }
 }
 
-[data-name="Service Replica"],
-.service-replica .files:hover,
-.service-replica .browser:hover {
-    background-color: #E50914;
-    transition: background-color 0.3s ease-in-out;
+.rock-paper-scissors {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #191919;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #303030;
+    }
 }
 
-.service-replica a {
-    background-color: #72050A;
+.forms {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #5E63B6;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #343772;
+    }
 }
 
-[data-name="To-Do List"],
-.to-do-list .files:hover,
-.to-do-list .browser:hover {
-    background-color: #008000;
-    transition: background-color 0.3s ease-in-out;
+.calculator {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #FF5D9E;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #FF297F;
+    }
 }
 
-.to-do-list a {
-    background-color: #004000;
+.dogs-gallery {
+
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #CB975B;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+        background-color: #B37A39;
+    }
 }
 
-[data-name="Rock Paper Scissors"],
-.rock-paper-scissors .files:hover,
-.rock-paper-scissors .browser:hover {
-    background-color: #191919;
-    transition: background-color 0.3s ease-in-out;
-}
+.mole-game {
 
-.rock-paper-scissors a {
-    background-color: #303030;
-}
+    .project-name,
+    .files:hover,
+    .browser:hover {
+        background-color: #255347;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-[data-name="YouTube"],
-.youtube .files:hover,
-.youtube .browser:hover {
-    background-color: #E60000;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.youtube a {
-    background-color: #8A0000;
-}
-
-[data-name="Amazon"],
-.amazon .files:hover,
-.amazon .browser:hover {
-    background-color: #FF9900;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.amazon a {
-    background-color: #995C00;
-}
-
-[data-name="Forms"],
-.forms .files:hover,
-.forms .browser:hover {
-    background-color: #5E63B6;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.forms a {
-    background-color: #343772;
-}
-
-[data-name="Calculator"],
-.calculator .files:hover,
-.calculator .browser:hover {
-    background-color: #FF5D9E;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.calculator a {
-    background-color: #FF297F;
-}
-
-[data-name="Dogs Gallery"],
-.dogs-gallery .files:hover,
-.dogs-gallery .browser:hover {
-    background-color: #CB975B;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.dogs-gallery a {
-    background-color: #B37A39;
-}
-
-[data-name="Mole Game"],
-.mole-game .files:hover,
-.mole-game .browser:hover {
-    background-color: #255347;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.mole-game a {
-    background-color: #16322B;
+    a {
+        background-color: #16322B;
+    }
 }
