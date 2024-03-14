@@ -85,70 +85,36 @@ h2 {
     display: grid;
     justify-items: center;
     align-self: center;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    max-width: 1000px;
 }
 
-.skill {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    padding: 15px;
-    width: 160px;
-    border: 3px solid white;
-    transition: all 0.5s ease;
-    margin: 20px 0;
+.programming-skills img {
+    height: 150px;
+    margin: 30px;
 }
 
-.skill:hover {
-    border-radius: 25px;
-    filter: saturate(2);
+@media screen and (max-width: 890px) {
+    .programming-skills img {
+        height: 100px;
+        margin: 20px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 670px) {
+
     .programming-skills {
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 20px 0;
     }
-}
 
-@media screen and (max-width: 650px) {
-    .programming-skills {
-        grid-template-columns: repeat(2, 1fr);
+    .programming-skills img {
+        height: 7.5vw;
+        margin: 7px;
     }
-}
-
-@media screen and (max-width: 500px) {
-    .skill {
-        font-size: 15px;
-        width: 100px;
-        margin: 1vh 0;
-    }
-}
-
-.html {
-    background-color: #FF6F3C;
-}
-
-.css {
-    background-color: #5585B5;
-}
-
-.javascript {
-    background-color: #FFC93C;
-}
-
-.electron {
-    background-color: #113F67;
-}
-
-.react {
-    background-color: #53A8B6;
-}
-
-.git {
-    background-color: #F05133;
 }
 
 .future {
