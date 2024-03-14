@@ -76,7 +76,7 @@ h2 {
 }
 
 @media screen and (max-width: 350px) {
-    h2 {
+    h2:not(.my-skills) {
         font-size: 15px;
     }
 }
@@ -126,6 +126,12 @@ h2 {
 @media screen and (max-width: 450px) {
     .programming-skills img {
         height: 7vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .programming-skills img {
+        height: 6vw;
     }
 }
 
