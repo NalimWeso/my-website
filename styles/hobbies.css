@@ -81,6 +81,10 @@ h2 {
     }
 }
 
+.my-skills {
+    margin-bottom: -25px;
+}
+
 .programming-skills {
     display: grid;
     justify-items: center;
