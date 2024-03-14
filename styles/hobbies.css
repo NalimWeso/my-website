@@ -88,13 +88,19 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     margin: 20px auto;
     max-width: 1000px;
-
-    border: 1px;
 }
 
 .programming-skills img {
     height: 150px;
     margin: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.programming-skills img:hover {
+    filter: brightness(110%) saturate(125%);
+    -webkit-filter: brightness(110%) saturate(125%);
+    -moz-filter: brightness(110%) saturate(125%);
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 890px) {
