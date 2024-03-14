@@ -67,7 +67,7 @@ h2 {
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 22px;
-        margin-bottom: -20px;
+        margin-bottom: -30px;
     }
 
     .places {
@@ -88,6 +88,8 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     margin: 20px auto;
     max-width: 1000px;
+
+    border: 1px;
 }
 
 .programming-skills img {
@@ -115,11 +117,29 @@ h2 {
         height: 7.5vw;
         margin: 7px;
     }
+
+    .my-skills {
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .programming-skills img {
+        height: 7vw;
+    }
 }
 
 .future {
-    text-align: center;
     font-weight: bold;
+    text-align: center;
+    margin-top: -15px;
+}
+
+@media screen and (max-width: 900px) {
+    .future {
+        font-size: 17px;
+        margin-top: -5px;
+    }
 }
 
 .movies,
