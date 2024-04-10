@@ -1,18 +1,3 @@
 # NalimWeso – My Official Website
 
-<kbd>
-  <img src="images/Website.png" alt="Screenshot of My Website">
-</kbd>
-
-## Introduction
-
-Welcome to my website, where a retro hacker vibe meets a shades of blue aesthetic. Explore my diverse hobbies and peruse my portfolio, showcasing of coding finesse. This digital space reflects the essence of my external soul, inviting you to discover the unique stories behind each passion and creation.
-
-➤ [Embark on a Journey Through my Digital Sanctuary...](https://nalimweso.com/)
-
-## Contact
-
-For any questions or collaboration, feel free to contact me:
-* E-mail: [milanweso@gmail.com](mailto:milanweso@gmail.com)
-* Facebook: [Milan Wesołowski](https://www.facebook.com/Nalimos/)
-* LinkedIn: [Milan Wesołowski](https://www.linkedin.com/in/milan-wesolowski/)
+I've been making numerous changes to the website. I essentially built it from scratch in just four days. While it's functional now, I still need to add responsiveness and a few other features. If you're in a hiring position, please keep this in mind (and perhaps even consider hiring me? 😊).
