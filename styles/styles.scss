@@ -440,12 +440,11 @@ nav {
     .projects-container {
         margin: 35px 0;
         padding: 20px 25px;
+        width: 1400px;
         border: 2px solid white;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-
-        width: 1400px;
 
         legend {
             font-size: 35px;
@@ -461,10 +460,8 @@ nav {
             border: .1px solid white;
             border-radius: 10px;
             cursor: default;
-            transition: .3s;
-
             position: relative;
-
+            transition: .3s;
 
             &:hover {
                 background-color: #46886A;
@@ -481,14 +478,14 @@ nav {
 
             .description {
                 font-size: 15px;
-                margin-top: 10px;
+                margin: 10px 0 30px 0;
                 display: block;
             }
 
             .github {
                 position: absolute;
-                top: 7px;
-                right: 50px;
+                top: 6px;
+                right: 47px;
 
                 path {
                     transition: fill .3s ease-in-out;
@@ -503,8 +500,8 @@ nav {
 
             .go {
                 position: absolute;
-                top: 7px;
-                right: 7px;
+                top: 6px;
+                right: 6px;
 
                 path {
                     transition: stroke .3s ease-in-out;
@@ -533,7 +530,8 @@ nav {
                 color: #D2D2D2;
                 font-weight: bold;
                 font-size: 15px;
-                margin-top: 10px;
+                position: absolute;
+                bottom: 10px;
             }
         }
     }
