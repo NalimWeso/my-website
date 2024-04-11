@@ -369,12 +369,12 @@ nav ul li a:hover:after {
 }
 #projects .projects-container {
   margin: 35px 0;
-  padding: 20px 25px;
+  padding: 10px 20px 20px 20px;
   width: 1400px;
   border: 2px solid white;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #projects .projects-container legend {
   font-size: 35px;
@@ -384,12 +384,13 @@ nav ul li a:hover:after {
 }
 #projects .projects-container .project {
   background-color: #4F9978;
-  margin: 0;
+  margin: 10px;
   padding: 10px;
   border: 0.1px solid white;
   border-radius: 10px;
   cursor: default;
   position: relative;
+  flex: 0 0 calc(33.33% - 20px);
   transition: 0.3s;
 }
 #projects .projects-container .project:hover {
