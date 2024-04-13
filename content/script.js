@@ -1,3 +1,8 @@
+function handleSidebar(display) {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = display;
+}
+
 const gridItem = document.querySelectorAll('.grid-item');
 const answer = document.querySelector('.skill');
 
@@ -24,7 +29,6 @@ gridItem.forEach(skill => {
                 break;
             }
         }
-
     });
 
     skill.addEventListener('mouseout', () => {
