@@ -346,8 +346,8 @@ nav ul li a:hover:after {
 }
 
 #projects {
-  background-color: #59a985;
-  padding: 70px 0;
+  background-color: #59A985;
+  padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,7 +365,7 @@ nav ul li a:hover:after {
   transition: color 0.3s ease-in-out;
 }
 #projects p a:hover {
-  color: #db490f;
+  color: #DB490F;
 }
 #projects .projects-container {
   margin: 35px 0;
@@ -439,4 +439,15 @@ nav ul li a:hover:after {
   font-size: 15px;
   position: absolute;
   bottom: 10px;
+}
+
+footer {
+  background-color: #59A985;
+  padding: 0 0 25px 0;
+}
+footer p {
+  color: #EEEEEE;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
