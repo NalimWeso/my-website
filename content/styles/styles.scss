@@ -40,15 +40,19 @@ nav {
         position: fixed;
         top: 3.4%;
         left: 50%;
+        width: 100%;
         z-index: 100;
         transform: translate(-50%, -50%);
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         li {
+
             list-style: none;
 
             a {
-                color: rgba(255, 255, 255, 0.85);
+                color: #FFFDFB;
                 font-family: sans-serif;
                 font-size: 18px;
                 font-weight: 600;
@@ -540,14 +544,79 @@ nav {
     }
 }
 
-footer {
+#contact {
     background-color: #59A985;
-    padding: 0 0 25px 0;
+    padding: 100px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+
+    fieldset {
+        background-color: #2B4353;
+        width: 1000px;
+        height: 300px;
+        border: 5px solid white;
+        border-radius: 15px;
+
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            border: 5px solid #F05D23;
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            font-family: "Mukta", sans-serif;
+            font-size: 80px;
+            font-weight: 300;
+            text-align: center;
+            margin: -35px 0 0 0;
+            padding: 0 0 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                margin: 0 20px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                path {
+                    transition: all .3s ease-in-out;
+                }
+
+                &:first-child:hover path {
+                    stroke: #F05D23;
+                }
+
+                &:not(:first-child):hover path {
+                    fill: #F05D23;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #2C5543;
+    padding: 25px 0 25px 0;
 
     p {
         color: #EEEEEE;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
 }
