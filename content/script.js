@@ -3,6 +3,16 @@ function handleSidebar(display) {
     sidebar.style.display = display;
 }
 
+const navLinks = document.querySelectorAll('.sidebar li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        setTimeout(() => {
+            handleSidebar('none');
+        }, 100);
+    });
+});
+
 const gridItem = document.querySelectorAll('.grid-item');
 const answer = document.querySelector('.skill');
 
