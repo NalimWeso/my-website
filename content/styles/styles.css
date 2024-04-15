@@ -556,7 +556,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #contact fieldset:hover {
   border: 5px solid #F05D23;
@@ -593,33 +593,80 @@ nav ul li a:hover {
   fill: #F05D23;
 }
 
+@media (max-width: 1100px) {
+  #contact {
+    padding: 9.09vw 9.09vw 0 9.09vw;
+  }
+  #contact fieldset {
+    width: 90.91vw;
+    height: 27.27vw;
+    border: 0.45vw solid white;
+    border-radius: 1.36vw;
+    box-shadow: 0px 0.45vw 0.91vw 0px rgba(0, 0, 0, 0.5);
+  }
+  #contact fieldset:hover {
+    border: 0.45vw solid #F05D23;
+    transform: translateY(-0.45vw);
+    box-shadow: 0px 0.91vw 1.82vw 0.18vw rgba(0, 0, 0, 0.25);
+  }
+  #contact fieldset h1 {
+    font-size: 7.27vw;
+    margin: 0.91vw 0 0 0;
+  }
+  #contact fieldset .contact-info a {
+    margin: 0 1.82vw;
+  }
+  #contact fieldset .contact-info a svg {
+    width: 8.636vw;
+    height: 8.636vw;
+  }
+}
 footer {
   background-color: #2C5543;
-  padding: 100px 0 30px 0;
-  margin: -100px 0 0 0;
+  padding: 0 0 20px 0;
+  margin: -165px 0 0 0;
+  height: 680px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 footer p {
-  color: rgba(255, 255, 255, 0.8);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
+  font-size: 150px;
   text-align: center;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
 }
 footer p:first-child {
-  margin-top: 90px;
+  margin-top: 290px;
 }
 footer p:last-child {
   color: #EEEEEE;
   font-size: 16px;
-  margin: 100px 0 0 0;
+  margin: auto 0 0 0;
 }
 footer p:not(:last-child) {
   cursor: default;
 }
 footer svg {
   margin-top: 15px;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    margin: -15vw 0 0 0;
+    height: 62.727vw;
+  }
+  footer p {
+    font-size: 13.636vw;
+  }
+  footer p:first-child {
+    margin-top: 26.364vw;
+  }
+}
+@media (max-width: 485px) {
+  footer p:last-child {
+    font-size: 3.299vw;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -683,14 +683,13 @@ nav {
         height: 300px;
         border: 5px solid white;
         border-radius: 15px;
-
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: all .3s ease-in-out;
+        transition: border .3s ease-in-out, transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
         &:hover {
             border: 5px solid #F05D23;
@@ -735,30 +734,67 @@ nav {
     }
 }
 
+@media (max-width: 1100px) {
+    #contact {
+        padding: 9.09vw 9.09vw 0 9.09vw;
+
+        fieldset {
+            width: 90.91vw;
+            height: 27.27vw;
+            border: 0.45vw solid white;
+            border-radius: 1.36vw;
+            box-shadow: 0px 0.45vw 0.91vw 0px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                border: 0.45vw solid #F05D23;
+                transform: translateY(-0.45vw);
+                box-shadow: 0px 0.91vw 1.82vw 0.18vw rgba(0, 0, 0, 0.25);
+            }
+
+            h1 {
+                font-size: 7.27vw;
+                margin: 0.91vw 0 0 0;
+            }
+
+            .contact-info {
+                a {
+                    margin: 0 1.82vw;
+
+                    svg {
+                        width: 8.636vw;
+                        height: 8.636vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     background-color: #2C5543;
-    padding: 100px 0 30px 0;
-    margin: -100px 0 0 0;
+    padding: 0 0 20px 0;
+    margin: -165px 0 0 0;
+    height: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     p {
-        color: #FFFFFFCC;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 50px;
+        font-size: 150px;
         text-align: center;
+        white-space: nowrap;
         margin: 0;
         padding: 0;
 
         &:first-child {
-            margin-top: 90px;
+            margin-top: 290px;
         }
 
         &:last-child {
             color: #EEEEEE;
             font-size: 16px;
-            margin: 100px 0 0 0;
+            margin: auto 0 0 0;
         }
 
         &:not(:last-child) {
@@ -768,5 +804,31 @@ footer {
 
     svg {
         margin-top: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    footer {
+        margin: -15vw 0 0 0;
+        height: 62.727vw;
+
+        p {
+            font-size: 13.636vw;
+
+            &:first-child {
+                margin-top: 26.364vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 485px) {
+    footer {
+
+        p {
+            &:last-child {
+                font-size: 3.299vw;
+            }
+        }
     }
 }
