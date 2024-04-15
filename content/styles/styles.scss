@@ -546,6 +546,29 @@ nav {
     justify-content: center;
     align-items: center;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     h1 {
         font-size: 50px;
         margin-bottom: 10px;
@@ -590,9 +613,9 @@ nav {
             cursor: default;
             position: relative;
             flex: 0 0 calc(33.33% - 20px);
-            transition: .3s;
-
-
+            display: flex;
+            flex-direction: column;
+            transition: background-color .3s ease-in-out, transform .3s ease-in-out;
 
             &:hover {
                 background-color: #46886A;
@@ -604,69 +627,93 @@ nav {
             }
 
             .name {
-                display: inline-block;
+                color: white;
+                font-weight: 600;
+                display: grid;
+                grid-template-columns: 1fr 42px 40px;
+                flex: 1;
+
+                .github {
+                    position: absolute;
+                    top: 6px;
+                    right: 47px;
+
+                    path {
+                        transition: fill .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        path {
+                            fill: #F05D23;
+                        }
+                    }
+                }
+
+                .go {
+                    position: absolute;
+                    top: 6px;
+                    right: 6px;
+
+                    path {
+                        transition: stroke .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        path {
+                            stroke: #F05D23;
+                        }
+                    }
+                }
+
+                .inactive {
+                    cursor: not-allowed;
+
+                    &:hover {
+                        .go {
+                            path {
+                                stroke: silver;
+                            }
+                        }
+                    }
+                }
             }
 
             .description {
                 font-size: 15px;
-                margin: 10px 0 30px 0;
-                display: block;
-            }
-
-            .github {
-                position: absolute;
-                top: 6px;
-                right: 47px;
-
-                path {
-                    transition: fill .3s ease-in-out;
-                }
-
-                &:hover {
-                    path {
-                        fill: #F05D23;
-                    }
-                }
-            }
-
-            .go {
-                position: absolute;
-                top: 6px;
-                right: 6px;
-
-                path {
-                    transition: stroke .3s ease-in-out;
-                }
-
-                &:hover {
-                    path {
-                        stroke: #F05D23;
-                    }
-                }
-            }
-
-            .unactive {
-                cursor: not-allowed;
-
-                &:hover {
-                    .go {
-                        path {
-                            stroke: silver;
-                        }
-                    }
-                }
+                margin: 7px 0 30px 0;
+                flex: 10;
             }
 
             .languages {
                 color: #D2D2D2;
                 font-weight: bold;
                 font-size: 15px;
-                position: absolute;
-                bottom: 10px;
+                margin-top: -15px;
+            }
+
+            .project-footer {
+                margin-top: auto;
             }
         }
     }
 }
+
+@media (max-width: 700px) {
+    #projects {
+        padding: 12.857vw 0 0 0;
+
+        h1 {
+            font-size: 7.143vw;
+            margin-bottom: 1.429vw;
+        }
+
+        p {
+            font-size: 3.571vw;
+        }
+    }
+}
+
+@media (max-width: 1450px) {}
 
 #contact {
     background-color: #59A985;

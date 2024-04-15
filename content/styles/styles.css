@@ -486,56 +486,76 @@ nav ul li a:hover {
   cursor: default;
   position: relative;
   flex: 0 0 calc(33.33% - 20px);
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 #projects .projects-container .project:hover {
   background-color: #46886A;
   transform: translate(0px, -3px);
 }
 #projects .projects-container .project .name {
-  display: inline-block;
+  color: white;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 1fr 42px 40px;
+  flex: 1;
 }
-#projects .projects-container .project .description {
-  font-size: 15px;
-  margin: 10px 0 30px 0;
-  display: block;
-}
-#projects .projects-container .project .github {
+#projects .projects-container .project .name .github {
   position: absolute;
   top: 6px;
   right: 47px;
 }
-#projects .projects-container .project .github path {
+#projects .projects-container .project .name .github path {
   transition: fill 0.3s ease-in-out;
 }
-#projects .projects-container .project .github:hover path {
+#projects .projects-container .project .name .github:hover path {
   fill: #F05D23;
 }
-#projects .projects-container .project .go {
+#projects .projects-container .project .name .go {
   position: absolute;
   top: 6px;
   right: 6px;
 }
-#projects .projects-container .project .go path {
+#projects .projects-container .project .name .go path {
   transition: stroke 0.3s ease-in-out;
 }
-#projects .projects-container .project .go:hover path {
+#projects .projects-container .project .name .go:hover path {
   stroke: #F05D23;
 }
-#projects .projects-container .project .unactive {
+#projects .projects-container .project .name .inactive {
   cursor: not-allowed;
 }
-#projects .projects-container .project .unactive:hover .go path {
+#projects .projects-container .project .name .inactive:hover .go path {
   stroke: silver;
+}
+#projects .projects-container .project .description {
+  font-size: 15px;
+  margin: 7px 0 30px 0;
+  flex: 10;
 }
 #projects .projects-container .project .languages {
   color: #D2D2D2;
   font-weight: bold;
   font-size: 15px;
-  position: absolute;
-  bottom: 10px;
+  margin-top: -15px;
+}
+#projects .projects-container .project .project-footer {
+  margin-top: auto;
 }
 
+@media (max-width: 700px) {
+  #projects {
+    padding: 12.857vw 0 0 0;
+  }
+  #projects h1 {
+    font-size: 7.143vw;
+    margin-bottom: 1.429vw;
+  }
+  #projects p {
+    font-size: 3.571vw;
+  }
+}
 #contact {
   background-color: #59A985;
   padding: 100px 100px 0 100px;
