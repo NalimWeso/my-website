@@ -140,7 +140,7 @@ nav ul li a:hover {
 #intro {
   color: rgba(255, 255, 255, 0.7);
   font-family: "Mukta", sans-serif;
-  margin: 250px 0 400px 0;
+  margin: 300px 0 400px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,11 +242,11 @@ nav ul li a:hover {
 }
 #literally-me blockquote {
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 2vw;
+  font-size: 40px;
   text-align: center;
   margin: 0 auto 40px auto;
-  padding: 10px 5px;
-  width: 70%;
+  padding: 20px 10px;
+  width: 1200px;
   border: 3px solid white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -280,7 +280,7 @@ nav ul li a:hover {
   border: 2px solid white;
   filter: grayscale(60%);
   box-shadow: inset 0px 0px 30px 0px rgb(0, 0, 0);
-  transition: all 0.5s ease-in-out;
+  transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #literally-me .flex-container img:hover {
   padding: 0;
@@ -333,6 +333,86 @@ nav ul li a:hover {
   color: #B2E035;
 }
 
+@media (max-width: 1400px) {
+  #literally-me blockquote {
+    width: 850px;
+  }
+}
+@media (max-width: 910px) {
+  #literally-me blockquote {
+    font-size: 4.396vw;
+    margin: 0 auto 4.396vw auto;
+    padding: 2.198vw 1.099vw;
+    width: 93.407vw;
+    border: 0.33vw solid white;
+    border-radius: 2.198vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.09) 0vw -0.83vw 1.39vw;
+  }
+  #literally-me blockquote p:first-child {
+    margin-bottom: 1.648vw;
+  }
+}
+@media (max-width: 850px) {
+  #literally-me hr {
+    border: 0.235vw solid white;
+    border-radius: 0.471vw;
+  }
+  #literally-me .flex-container {
+    grid-template-columns: 43.529vw auto;
+    grid-gap: 0.353vw;
+    margin: 7.059vw auto;
+    width: 94.118vw;
+  }
+  #literally-me .flex-container img {
+    height: 59.765vw;
+    padding: 1.176vw;
+    border: 0.235vw solid white;
+    box-shadow: inset 0px 0px 3.529vw 0px rgb(0, 0, 0);
+  }
+  #literally-me .flex-container img:hover {
+    transform: translateX(0.471vw);
+  }
+  #literally-me .flex-container fieldset {
+    font-size: 2.353vw;
+    border: 0.235vw solid white;
+  }
+  #literally-me .flex-container fieldset legend {
+    font-size: 4.118vw;
+    padding: 0 1.176vw;
+  }
+  #literally-me .flex-container fieldset p {
+    margin: 0 0.588vw;
+    padding: 0.588vw 1.176vw;
+  }
+}
+@media (max-width: 650px) {
+  #literally-me .flex-container {
+    grid-template-columns: 1fr;
+    grid-gap: 3.077vw;
+  }
+  #literally-me .flex-container img {
+    width: 100%;
+    height: 100%;
+    padding: 1.538vw;
+    border: 0.308vw solid white;
+    box-shadow: inset 0px 0px 4.615vw 0px rgb(0, 0, 0);
+  }
+  #literally-me .flex-container img:hover {
+    transform: translateX(0.115vw);
+  }
+  #literally-me .flex-container fieldset {
+    font-size: 4.308vw;
+    border: 0.308vw solid white;
+  }
+  #literally-me .flex-container fieldset legend {
+    font-size: 5.385vw;
+    padding: 0 1.538vw;
+  }
+  #literally-me .flex-container fieldset p {
+    margin: 0 1.846vw 1.846vw 1.846vw;
+    padding: 0.769vw 1.538vw;
+  }
+}
 #skills {
   background: rgb(165, 82, 51);
   background: linear-gradient(180deg, rgb(165, 82, 51) 1%, rgb(89, 169, 133) 75%);
