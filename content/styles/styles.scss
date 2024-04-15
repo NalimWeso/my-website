@@ -546,29 +546,6 @@ nav {
     justify-content: center;
     align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     h1 {
         font-size: 50px;
         margin-bottom: 10px;
@@ -596,6 +573,12 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
+
+        @media (max-width: 1450px) {
+            padding: 0.5rem 0 1rem 0;
+            width: 96.552vw;
+        }
 
         legend {
             font-size: 35px;
@@ -606,7 +589,6 @@ nav {
 
         .project {
             background-color: #4F9978;
-            margin: 10px;
             padding: 10px;
             border: .1px solid white;
             border-radius: 10px;
@@ -616,6 +598,14 @@ nav {
             display: flex;
             flex-direction: column;
             transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+
+            @media (max-width: 1000px) and (min-width: 720px) {
+                flex-basis: calc(50% - 20px);
+            }
+
+            @media (max-width: 720px) {
+                flex-basis: calc(100% - 20px);
+            }
 
             &:hover {
                 background-color: #46886A;
@@ -698,22 +688,67 @@ nav {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     #projects {
-        padding: 12.857vw 0 0 0;
-
         h1 {
-            font-size: 7.143vw;
-            margin-bottom: 1.429vw;
+            font-size: 7.692vw;
+            margin-bottom: 1.538vw;
         }
 
         p {
-            font-size: 3.571vw;
+            font-size: 3.846vw;
+        }
+
+        .projects-container {
+            legend {
+                font-size: 5.385vw;
+                padding: 0 1.538vw;
+            }
+
+            .project {
+                .name {
+                    .github {
+                        width: 6.154vw;
+                        top: 1.846vw;
+                        right: 7.231vw;
+                    }
+
+                    .go {
+                        width: 6.154vw;
+                        top: 1.846vw;
+                        right: 0.923vw;
+                    }
+                }
+            }
         }
     }
 }
 
-@media (max-width: 1450px) {}
+@media (max-width: 550px) {
+    #projects {
+        .projects-container {
+            margin-block: 15px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #projects {
+        .projects-container {
+            .project {
+                .description {
+                    font-size: 3vw;
+                    margin: 1.4vw 0 6vw 0;
+                }
+
+                .languages {
+                    font-size: 3vw;
+                    margin-top: -3vw;
+                }
+            }
+        }
+    }
+}
 
 #contact {
     background-color: #59A985;
@@ -836,6 +871,7 @@ footer {
 
         &:first-child {
             margin-top: 290px;
+            filter: hue-rotate(30deg);
         }
 
         &:last-child {

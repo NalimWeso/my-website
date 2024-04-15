@@ -470,6 +470,13 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 1450px) {
+  #projects .projects-container {
+    padding: 0.5rem 0 1rem 0;
+    width: 96.552vw;
+  }
 }
 #projects .projects-container legend {
   font-size: 35px;
@@ -479,7 +486,6 @@ nav ul li a:hover {
 }
 #projects .projects-container .project {
   background-color: #4F9978;
-  margin: 10px;
   padding: 10px;
   border: 0.1px solid white;
   border-radius: 10px;
@@ -489,6 +495,16 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+@media (max-width: 1000px) and (min-width: 720px) {
+  #projects .projects-container .project {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media (max-width: 720px) {
+  #projects .projects-container .project {
+    flex-basis: calc(100% - 20px);
+  }
 }
 #projects .projects-container .project:hover {
   background-color: #46886A;
@@ -544,16 +560,42 @@ nav ul li a:hover {
   margin-top: auto;
 }
 
-@media (max-width: 700px) {
-  #projects {
-    padding: 12.857vw 0 0 0;
-  }
+@media (max-width: 650px) {
   #projects h1 {
-    font-size: 7.143vw;
-    margin-bottom: 1.429vw;
+    font-size: 7.692vw;
+    margin-bottom: 1.538vw;
   }
   #projects p {
-    font-size: 3.571vw;
+    font-size: 3.846vw;
+  }
+  #projects .projects-container legend {
+    font-size: 5.385vw;
+    padding: 0 1.538vw;
+  }
+  #projects .projects-container .project .name .github {
+    width: 6.154vw;
+    top: 1.846vw;
+    right: 7.231vw;
+  }
+  #projects .projects-container .project .name .go {
+    width: 6.154vw;
+    top: 1.846vw;
+    right: 0.923vw;
+  }
+}
+@media (max-width: 550px) {
+  #projects .projects-container {
+    margin-block: 15px;
+  }
+}
+@media (max-width: 500px) {
+  #projects .projects-container .project .description {
+    font-size: 3vw;
+    margin: 1.4vw 0 6vw 0;
+  }
+  #projects .projects-container .project .languages {
+    font-size: 3vw;
+    margin-top: -3vw;
   }
 }
 #contact {
@@ -660,6 +702,7 @@ footer p {
 }
 footer p:first-child {
   margin-top: 290px;
+  filter: hue-rotate(30deg);
 }
 footer p:last-child {
   color: #EEEEEE;
