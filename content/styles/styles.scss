@@ -537,7 +537,6 @@ nav {
         font-size: 27px;
         margin: 12px 0;
         padding: 15px 0;
-        width: 1200px;
         text-align: center;
 
         &:first-child {
@@ -548,7 +547,6 @@ nav {
     fieldset {
         margin: 25px 0;
         padding: 15px;
-        width: 1000px;
         border: 2px solid white;
 
         legend {
@@ -561,6 +559,7 @@ nav {
         .grid-container {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
+            gap: 5px;
 
             div {
                 display: flex;
@@ -570,7 +569,6 @@ nav {
                 width: 115px;
                 height: 115px;
                 padding: 0;
-                margin: 2.5px;
                 border: 2px solid white;
                 display: inline-block;
                 text-align: center;
@@ -639,6 +637,101 @@ nav {
                     transition: all .3s ease-in-out;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    #skills {
+        fieldset {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    #skills {
+        p {
+            font-size: 5vw;
+            margin: 2.222vw 0;
+            padding: 2.778vw 0;
+            width: 222.222vw;
+        }
+
+        fieldset {
+            margin: 4.63vw 0;
+            padding: 2.778vw;
+            width: 18.519vw;
+            border: 0.37vw solid white;
+
+            legend {
+                font-size: 6.481vw;
+                padding: 0 1.852vw;
+            }
+
+            .grid-container {
+                div {
+                    font-size: 13.889vw;
+                    width: 21.296vw;
+                    height: 21.296vw;
+                    border: 0.37vw solid white;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.556vw 1.111vw, rgba(0, 0, 0, 0.23) 0px 0.556vw 1.111vw;
+
+                    &:hover {
+                        border-radius: 4.63vw;
+                    }
+                }
+            }
+
+            p {
+                margin: 3.704vw auto 1.296vw auto;
+                border: 0.926vw solid black;
+                border-radius: 1.852vw;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 0.556vw 1.481vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #skills {
+        .blackboard {
+            dotlottie-player {
+                width: 800px;
+                height: 266.67px;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    #skills {
+        .blackboard {
+            margin-top: 6.25vw;
+            width: 93.75vw;
+            border: 0.208vw solid white;
+            border-radius: 2.604vw;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 0.313vw 0.625vw, rgba(0, 0, 0, 0.23) 0px 0.313vw 0.625vw;
+
+            p {
+                font-size: 2.813vw;
+                margin: 1.25vw 0;
+                padding: 0.417vw 0 1.563vw 0;
+            }
+
+            span {
+                &:after {
+                    --deco-height: 0.3125em;
+                    background-position: 0em;
+                }
+            }
+        }
+
+        dotlottie-player {
+            width: 83.333vw;
+            height: 27.778vw;
         }
     }
 }
