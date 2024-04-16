@@ -22,14 +22,14 @@ gridItem.forEach(skill => {
 
     skill.addEventListener('mouseover', () => {
         const skills = {
-            "html": "HTML",
-            "css": "CSS",
+            "html5": "HTML",
+            "css3": "CSS",
+            "postcss": "PostCSS",
             "sass": "Sass",
             "javascript": "JavaScript",
             "react": "React",
             "electron": "Electron",
-            "git": "Git",
-            "npm": "npm"
+            "git": "Git"
         };
 
         for (const [skillKey, text] of Object.entries(skills)) {

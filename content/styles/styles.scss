@@ -594,6 +594,15 @@ nav {
                     filter: saturate(200%);
                     -webkit-filter: saturate(200%);
                     -moz-filter: saturate(200%);
+
+                    &.devicon-html5-plain,
+                    &.devicon-css3-plain {
+                        filter: saturate(150%);
+                    }
+
+                    &.devicon-electron-original {
+                        filter: saturate(400%);
+                    }
                 }
             }
         }

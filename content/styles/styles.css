@@ -480,6 +480,12 @@ nav ul li a:hover {
   -webkit-filter: saturate(200%);
   -moz-filter: saturate(200%);
 }
+#skills fieldset .grid-container div i.devicon-html5-plain, #skills fieldset .grid-container div i.devicon-css3-plain {
+  filter: saturate(150%);
+}
+#skills fieldset .grid-container div i.devicon-electron-original {
+  filter: saturate(400%);
+}
 #skills fieldset p {
   background-color: white;
   color: black;
