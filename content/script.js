@@ -1,9 +1,11 @@
+const navLinks = document.querySelectorAll('.sidebar li a');
+const gridItem = document.querySelectorAll('.grid-container div');
+const skillBoard = document.querySelector('.skill');
+
 function handleSidebar(display) {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = display;
 }
-
-const navLinks = document.querySelectorAll('.sidebar li a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', event => {
@@ -12,9 +14,6 @@ navLinks.forEach(link => {
         }, 100);
     });
 });
-
-const gridItem = document.querySelectorAll('.grid-container div');
-const answer = document.querySelector('.skill');
 
 gridItem.forEach(skill => {
     const skillIcon = skill.querySelector('i');
@@ -34,7 +33,7 @@ gridItem.forEach(skill => {
 
         for (const [skillKey, text] of Object.entries(skills)) {
             if (skillName.includes(skillKey)) {
-                answer.innerText = text;
+                skillBoard.innerText = text;
                 skillIcon.classList.add('colored');
                 break;
             }
@@ -49,6 +48,6 @@ gridItem.forEach(skill => {
 
 document.addEventListener('mouseover', (event) => {
     if (!event.target.closest('.grid-container div')) {
-        answer.innerHTML = '&#12288;';
+        skillBoard.innerHTML = '&#12288;';
     }
 });
