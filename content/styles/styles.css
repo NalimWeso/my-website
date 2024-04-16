@@ -130,7 +130,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 800px) {
-  .hideOnMobile {
+  .mobile-hide {
     display: none;
   }
   .menu-button {
