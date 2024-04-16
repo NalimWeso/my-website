@@ -13,7 +13,7 @@ navLinks.forEach(link => {
     });
 });
 
-const gridItem = document.querySelectorAll('.grid-item');
+const gridItem = document.querySelectorAll('.grid-container div');
 const answer = document.querySelector('.skill');
 
 gridItem.forEach(skill => {
@@ -48,7 +48,7 @@ gridItem.forEach(skill => {
 });
 
 document.addEventListener('mouseover', (event) => {
-    if (!event.target.closest('.grid-item')) {
+    if (!event.target.closest('.grid-container div')) {
         answer.innerHTML = '&#12288;';
     }
 });
