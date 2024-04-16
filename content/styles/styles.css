@@ -238,7 +238,7 @@ nav ul li a:hover {
   background: linear-gradient(180deg, rgb(64, 42, 35) 17%, rgb(165, 82, 51) 75%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#402a23", endColorstr="#a55233", GradientType=1);
   margin: 0;
-  padding: 80px 0;
+  padding: 100px 0 80px 0;
 }
 #literally-me blockquote {
   background-color: rgba(0, 0, 0, 0.2);
@@ -333,6 +333,11 @@ nav ul li a:hover {
   color: #B2E035;
 }
 
+@media (max-width: 1100px) {
+  #literally-me {
+    padding: max(75px, 9.091vw) 0 7.273vw 0;
+  }
+}
 @media (max-width: 1400px) {
   #literally-me blockquote {
     width: 850px;
@@ -427,6 +432,7 @@ nav ul li a:hover {
   font-size: 27px;
   margin: 12px 0;
   padding: 15px 0;
+  width: 100%;
   text-align: center;
 }
 #skills p:first-child {
@@ -470,6 +476,9 @@ nav ul li a:hover {
 #skills fieldset .grid-container div i {
   display: inline-block;
   vertical-align: middle;
+  filter: saturate(200%);
+  -webkit-filter: saturate(200%);
+  -moz-filter: saturate(200%);
 }
 #skills fieldset p {
   background-color: white;
@@ -518,6 +527,11 @@ nav ul li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 1100px) {
+  #skills {
+    padding: max(60px, 6.364vw) 0 11.818vw 0;
+  }
+}
 @media (max-width: 1060px) {
   #skills fieldset .grid-container {
     grid-template-columns: repeat(4, 1fr);
@@ -528,7 +542,7 @@ nav ul li a:hover {
     font-size: 5vw;
     margin: 2.222vw 0;
     padding: 2.778vw 0;
-    width: 222.222vw;
+    width: 100%;
   }
   #skills fieldset {
     margin: 4.63vw 0;
@@ -705,6 +719,11 @@ nav ul li a:hover {
   margin-top: auto;
 }
 
+@media (max-width: 1100px) {
+  #projects {
+    padding: max(75px, 8.182vw) 0 0 0;
+  }
+}
 @media (max-width: 650px) {
   #projects h1 {
     font-size: 7.692vw;

@@ -296,7 +296,7 @@ nav {
     background: linear-gradient(180deg, rgba(64, 42, 35, 1) 17%, rgba(165, 82, 51, 1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#402a23", endColorstr="#a55233", GradientType=1);
     margin: 0;
-    padding: 80px 0;
+    padding: 100px 0 80px 0;
 
     blockquote {
         background-color: rgba(0, 0, 0, 0.2);
@@ -409,6 +409,12 @@ nav {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1100px) {
+    #literally-me {
+        padding: max(75px, 9.091vw) 0 7.273vw 0;
     }
 }
 
@@ -537,6 +543,7 @@ nav {
         font-size: 27px;
         margin: 12px 0;
         padding: 15px 0;
+        width: 100%;
         text-align: center;
 
         &:first-child {
@@ -584,6 +591,9 @@ nav {
                 i {
                     display: inline-block;
                     vertical-align: middle;
+                    filter: saturate(200%);
+                    -webkit-filter: saturate(200%);
+                    -moz-filter: saturate(200%);
                 }
             }
         }
@@ -641,6 +651,12 @@ nav {
     }
 }
 
+@media (max-width: 1100px) {
+    #skills {
+        padding: max(60px, 6.364vw) 0 11.818vw 0;
+    }
+}
+
 @media (max-width: 1060px) {
     #skills {
         fieldset {
@@ -657,7 +673,7 @@ nav {
             font-size: 5vw;
             margin: 2.222vw 0;
             padding: 2.778vw 0;
-            width: 222.222vw;
+            width: 100%;
         }
 
         fieldset {
@@ -883,6 +899,12 @@ nav {
                 margin-top: auto;
             }
         }
+    }
+}
+
+@media (max-width: 1100px) {
+    #projects {
+        padding: max(75px, 8.182vw) 0 0 0;
     }
 }
 
