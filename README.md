@@ -1,7 +1,7 @@
-# ⚡ Milan Wesołowski
+# ⚡ NalimWeso
 
 <kbd>
-  <img src="images/Screenshot.png" alt="Screenshot of My Website">
+  <img src="content/images/Screenshot.png" alt="Screenshot of My Website">
 </kbd>
 
 ## 👋 Introduction
