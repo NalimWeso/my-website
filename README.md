@@ -6,7 +6,7 @@
 
 ## 👋 Introduction
 
-<p>Yup that's me. You're probably wondering how i ended up in this situation?</p>
+<p>Yup, that's me. You're probably wondering how i ended up in this situation?</p>
 
 <p>Well, it all started a two days ago when my mom woke me up for school.</p>
 
