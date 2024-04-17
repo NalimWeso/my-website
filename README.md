@@ -12,4 +12,4 @@
 
 ## ⚜️ My Website
 
-[![Static Badge](https://img.shields.io/badge/click%20here!-%23A55233?style=for-the-badge&logo=google%20chrome&logoColor=white)](https://nalimweso.com/)
+[![Static Badge](https://img.shields.io/badge/click%20here-%23A55233?style=for-the-badge&logo=google%20chrome&logoColor=white)](https://nalimweso.com/)
