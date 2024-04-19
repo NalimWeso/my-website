@@ -1,6 +1,6 @@
 # ⚡ NalimWeso
 
-### 👇 *Simple yet precise, just like I like it*.
+### 👇 *Simple yet precise, just like I like it.*
 
 <kbd>
   <img src="content/images/Screenshot.png" alt="Screenshot of My Website">
