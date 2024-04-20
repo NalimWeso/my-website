@@ -1,0 +1,237 @@
+#literally-me {
+    background: $bodyBackground;
+    background: -moz-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    background: -webkit-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    background: linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
+    margin: 0;
+    padding: 100px 0 80px 0;
+
+    blockquote {
+        background-color: $literallyMeBlockquoteBackground;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 40px auto;
+        padding: 20px 10px;
+        width: 1200px;
+        border: 3px solid $literallyMeBlockquoteBorder;
+        border-radius: 20px;
+        box-shadow: $literallyMeShadowFirst 0px 54px 55px, $literallyMeShadowSecond 0px -12px 30px, $literallyMeShadowThird 0px 4px 6px, $literallyMeShadowFourth 0px 12px 13px, $literallyMeShadowFifth 0px -3px 5px;
+        cursor: default;
+        display: block;
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    hr {
+        width: 95%;
+        margin: 2rem auto 0 auto;
+        border: 2px solid $literallyMeLine;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-columns: 370px auto;
+        grid-gap: 3px;
+        margin: 60px auto;
+        width: 800px;
+
+        img {
+            height: 508px;
+            padding: 10px;
+            border: 2px solid $literallyMeImageBorder;
+            filter: grayscale(60%);
+            -webkit-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
+            -moz-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
+            box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
+            transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+            &:hover {
+                padding: 0;
+                filter: grayscale(0%);
+                transform: translateX(4px);
+            }
+        }
+
+        fieldset {
+            font-size: 20px;
+            margin: 0;
+            border: 2px solid $literallyMeFieldsetBorder;
+            display: inline-block;
+
+            legend {
+                font-size: 35px;
+                margin: auto;
+                padding: 0 10px;
+                cursor: default;
+            }
+
+            p {
+                margin: 0 5px;
+                padding: 5px 10px;
+
+                span {
+                    @keyframes rotating {
+
+                        0%,
+                        100% {
+                            transform: rotate(20deg);
+                        }
+
+                        50% {
+                            transform: rotate(-10deg);
+                        }
+                    }
+
+                    display: inline-block;
+                    filter: hue-rotate(85deg);
+                    cursor: default;
+                    transition: filter 0.3s ease-in-out;
+
+                    &:hover {
+                        filter: hue-rotate(30deg);
+                    }
+
+                    &:first-child {
+                        transform: rotate(20deg);
+                        animation: rotating 0.7s ease-in-out infinite;
+                    }
+                }
+
+                strong {
+                    color: $literallyMeSpecial;
+                    cursor: default;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $literallyMeSpecialHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #literally-me {
+        padding: max(75px, 9.091vw) 0 7.273vw 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    #literally-me {
+        blockquote {
+            width: 850px;
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    #literally-me {
+        blockquote {
+            font-size: 4.396vw;
+            margin: 0 auto 4.396vw auto;
+            padding: 2.198vw 1.099vw;
+            width: 93.407vw;
+            border: 0.33vw solid $literallyMeBlockquoteBorder;
+            border-radius: 2.198vw;
+            box-shadow: $literallyMeShadowFirst 0vw 18.77vw 19.23vw, $literallyMeShadowSecond 0vw -4.13vw 9.89vw, $literallyMeShadowThird 0vw 1.11vw 1.67vw, $literallyMeShadowFourth 0vw 3.32vw 3.47vw, $literallyMeShadowFifth 0vw -0.83vw 1.39vw;
+
+            p:first-child {
+                margin-bottom: 1.648vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    #literally-me {
+
+        hr {
+            border: 0.235vw solid $literallyMeLine;
+            border-radius: 0.471vw;
+        }
+
+        .flex-container {
+            grid-template-columns: 43.529vw auto;
+            grid-gap: 0.353vw;
+            margin: 7.059vw auto;
+            width: 94.118vw;
+
+            img {
+                height: 59.765vw;
+                padding: 1.176vw;
+                border: 0.235vw solid $literallyMeImageBorder;
+                -webkit-box-shadow: inset 0px 0px 33.529vw 0px $literallyMeImageShadow;
+                -moz-box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
+                box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
+
+                &:hover {
+                    transform: translateX(0.471vw);
+                }
+            }
+
+            fieldset {
+                font-size: 2.353vw;
+                border: 0.235vw solid $literallyMeFieldsetBorder;
+
+                legend {
+                    font-size: 4.118vw;
+                    padding: 0 1.176vw;
+                }
+
+                p {
+                    margin: 0 0.588vw;
+                    padding: 0.588vw 1.176vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #literally-me {
+        .flex-container {
+            grid-template-columns: 1fr;
+            grid-gap: 3.077vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+                padding: 1.538vw;
+                border: 0.308vw solid $literallyMeImageBorder;
+                -webkit-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+                -moz-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+                box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+
+                &:hover {
+                    transform: translateX(0.115vw);
+                }
+            }
+
+            fieldset {
+                font-size: 4.308vw;
+                border: 0.308vw solid $literallyMeFieldsetBorder;
+
+                legend {
+                    font-size: 5.385vw;
+                    padding: 0 1.538vw;
+                }
+
+                p {
+                    margin: 0 1.846vw 1.846vw 1.846vw;
+                    padding: 0.769vw 1.538vw;
+                }
+            }
+        }
+    }
+}

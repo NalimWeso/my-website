@@ -1,0 +1,44 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bodyBackground;
+    color: $bodyColor;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    &::-webkit-scrollbar {
+        background-color: $scrollbarBackground;
+        width: .5em;
+
+        &-track {
+            box-shadow: inset 0 0 6px $scrollbarShadow;
+        }
+
+        &-thumb {
+            background-color: $scrollbarThumbBackground;
+            outline: 1px solid $scrollbarThumb;
+        }
+    }
+}
+
+.disable-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

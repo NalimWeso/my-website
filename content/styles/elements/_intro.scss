@@ -1,0 +1,129 @@
+#intro {
+    color: $introColor;
+    font-family: "Mukta", sans-serif;
+    margin: 300px 0 400px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $introColorHover;
+    }
+
+    p {
+        font-size: 40px;
+        margin: 0 0 -3rem 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 100px;
+        margin: 0 0 -1rem 0;
+        padding: 0;
+        white-space: nowrap;
+        letter-spacing: .5rem;
+        text-shadow: 2px 7px 5px $introShadowFirst, 0px -4px 10px $introShadowSecond;
+    }
+
+    a {
+        background-color: $introLinkBackground;
+        color: $introLinkColor;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 45px;
+        border: 2px solid $introLinkBorder;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $introLinkHoverBackground;
+            border-radius: 25px;
+            -webkit-transform: translate(0px, 5px);
+            -moz-transform: translate(0px, 5px);
+            -ms-transform: translate(0px, 5px);
+            -o-transform: translate(0px, 5px);
+            transform: translate(0px, 5px);
+        }
+    }
+
+    hr {
+        width: 60%;
+        margin: 2rem auto 0 auto;
+        border: 2px solid $introLine;
+        border-radius: 4px;
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    #intro {
+
+        p {
+            font-size: 3.64vw;
+            margin: 0 0 -4.36vw 0;
+        }
+
+        h1 {
+            font-size: 9.09vw;
+            margin: 0 0 -1.45vw 0;
+            letter-spacing: 0.73vw;
+            text-shadow: 0.18vw 0.64vw 0.45vw $introShadowFirst,
+                0vw -0.36vw 0.91vw $introShadowSecond;
+        }
+
+        a {
+            padding: 0.91vw 1.82vw;
+            font-size: 4.09vw;
+            border: 0.18vw solid $introLinkBorder;
+            border-radius: 0.64vw;
+
+            &:hover {
+                border-radius: 2.25vw;
+                -webkit-transform: translate(0px, 0.45vw);
+                -moz-transform: translate(0px, 0.45vw);
+                -ms-transform: translate(0px, 0.45vw);
+                -o-transform: translate(0px, 0.45vw);
+                transform: translate(0px, 0.45vw);
+            }
+        }
+
+        hr {
+            width: 90%;
+            margin: 2.91vw auto 0 auto;
+            border: 0.18 solid $introLine;
+            border-radius: 0.36vw;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #intro {
+        a {
+            padding: 1.365vw 2.73vw;
+            font-size: 6.135vw;
+            border: 0.27vw solid $introLinkBorder;
+            border-radius: 0.96vw;
+
+            &:hover {
+                border-radius: 3.375vw;
+                -webkit-transform: translate(0px, 0.675vw);
+                -moz-transform: translate(0px, 0.675vw);
+                -ms-transform: translate(0px, 0.675vw);
+                -o-transform: translate(0px, 0.675vw);
+                transform: translate(0px, 0.675vw);
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    #intro {
+        p {
+            font-size: 3.64vw;
+            margin: 0 0 -3.5vw 0;
+        }
+    }
+}
