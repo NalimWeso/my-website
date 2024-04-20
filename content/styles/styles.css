@@ -708,7 +708,7 @@ nav ul li a:hover {
   cursor: not-allowed;
 }
 #projects .projects-container .project .name .inactive:hover .go path {
-  stroke: silver;
+  stroke: #C0C0C0;
 }
 #projects .projects-container .project .description {
   font-size: 15px;
