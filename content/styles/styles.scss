@@ -1,3 +1,5 @@
+@import 'colors';
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,8 +13,8 @@ html {
 }
 
 body {
-    background-color: #402A23;
-    color: white;
+    background-color: $bodyBackground;
+    color: $bodyColor;
     font-family: "Outfit", sans-serif;
     font-size: 25px;
     min-height: 100vh;
@@ -20,16 +22,16 @@ body {
     padding: 0;
 
     &::-webkit-scrollbar {
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: $scrollbarBackground;
         width: .5em;
 
         &-track {
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px $scrollbarTrack;
         }
 
         &-thumb {
-            background-color: #201511;
-            outline: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: $scrollbarThumbBackground;
+            outline: 1px solid $scrollbarThumb;
         }
     }
 }
@@ -44,8 +46,8 @@ body {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    background-color: $navigation;
+    box-shadow: 0 2px 4px -1px $navigation;
     padding: 10px 0;
     position: fixed;
     top: 0;
@@ -69,7 +71,7 @@ nav {
             height: 50px;
 
             a {
-                color: #FFFDFB;
+                color: $navigationColor;
                 font-family: sans-serif;
                 font-size: 18px;
                 font-weight: 600;
@@ -86,8 +88,8 @@ nav {
                 transition: color .3s ease-in-out, background-color .3s ease-in-out;
 
                 &:hover {
-                    color: black;
-                    background-color: white;
+                    color: $navigationHoverColor;
+                    background-color: $navigationHoverBackground;
                 }
             }
         }
@@ -98,7 +100,7 @@ nav {
     background-color: transparent;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 4px -1px $sidebarShadow;
     padding: 10px 0 0 0;
     list-style: none;
     position: fixed;
@@ -115,16 +117,16 @@ nav {
         display: flex;
 
         &:not(:first-child) {
-            background-color: rgba(0, 0, 0, 0.25);
+            background-color: $sidebarShadow;
         }
 
         &:first-child {
             width: max-content;
-            fill: white;
+            fill: $sidebarFill;
             transition: fill .3s ease-in-out, background-color .3s ease-in-out;
 
             &:hover {
-                fill: black;
+                fill: $sidebarFillHover;
             }
         }
 
@@ -140,11 +142,11 @@ nav {
 
 .menu-button {
     display: none;
-    fill: white;
+    fill: $menuButton;
     transition: fill .3s ease-in-out, background-color .3s ease-in-out;
 
     &:hover {
-        fill: black;
+        fill: $menuHoverButton;
     }
 }
 
@@ -159,7 +161,7 @@ nav {
 }
 
 #intro {
-    color: rgba(255, 255, 255, 0.7);
+    color: $introColor;
     font-family: "Mukta", sans-serif;
     margin: 300px 0 400px 0;
     display: flex;
@@ -169,7 +171,7 @@ nav {
     transition: color 0.3s ease-in-out;
 
     &:hover {
-        color: white;
+        color: $introColorHover;
     }
 
     p {
@@ -184,23 +186,22 @@ nav {
         padding: 0;
         white-space: nowrap;
         letter-spacing: .5rem;
-        text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-            0px -4px 10px rgba(255, 255, 255, 0.3);
+        text-shadow: 2px 7px 5px $introShadowFirst, 0px -4px 10px $introShadowSecond;
     }
 
     a {
-        background-color: #1D1716;
-        color: white;
+        background-color: $introLinkBackground;
+        color: $introLinkColor;
         text-decoration: none;
         padding: 10px 20px;
         font-size: 45px;
-        border: 2px solid white;
+        border: 2px solid $introLinkBorder;
         border-radius: 7px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
 
         &:hover {
-            background-color: #443634;
+            background-color: $introLinkHoverBackground;
             border-radius: 25px;
             -webkit-transform: translate(0px, 5px);
             -moz-transform: translate(0px, 5px);
@@ -213,7 +214,7 @@ nav {
     hr {
         width: 60%;
         margin: 2rem auto 0 auto;
-        border: 2px solid white;
+        border: 2px solid $introLine;
         border-radius: 4px;
         display: block;
     }
@@ -231,14 +232,14 @@ nav {
             font-size: 9.09vw;
             margin: 0 0 -1.45vw 0;
             letter-spacing: 0.73vw;
-            text-shadow: 0.18vw 0.64vw 0.45vw rgba(0, 0, 0, 0.3),
-                0vw -0.36vw 0.91vw rgba(255, 255, 255, 0.3);
+            text-shadow: 0.18vw 0.64vw 0.45vw $introShadowFirst,
+                0vw -0.36vw 0.91vw $introShadowSecond;
         }
 
         a {
             padding: 0.91vw 1.82vw;
             font-size: 4.09vw;
-            border: 0.18vw solid white;
+            border: 0.18vw solid $introLinkBorder;
             border-radius: 0.64vw;
 
             &:hover {
@@ -254,7 +255,7 @@ nav {
         hr {
             width: 90%;
             margin: 2.91vw auto 0 auto;
-            border: 0.18 solid white;
+            border: 0.18 solid $introLine;
             border-radius: 0.36vw;
         }
     }
@@ -265,7 +266,7 @@ nav {
         a {
             padding: 1.365vw 2.73vw;
             font-size: 6.135vw;
-            border: 0.27vw solid white;
+            border: 0.27vw solid $introLinkBorder;
             border-radius: 0.96vw;
 
             &:hover {
@@ -290,24 +291,24 @@ nav {
 }
 
 #literally-me {
-    background: rgb(64, 42, 35);
-    background: -moz-linear-gradient(180deg, rgba(64, 42, 35, 1) 17%, rgba(165, 82, 51, 1) 75%);
-    background: -webkit-linear-gradient(180deg, rgba(64, 42, 35, 1) 17%, rgba(165, 82, 51, 1) 75%);
-    background: linear-gradient(180deg, rgba(64, 42, 35, 1) 17%, rgba(165, 82, 51, 1) 75%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#402a23", endColorstr="#a55233", GradientType=1);
+    background: $bodyBackground;
+    background: -moz-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    background: -webkit-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    background: linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
     margin: 0;
     padding: 100px 0 80px 0;
 
     blockquote {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: $literallyMeBlockquoteBackground;
         font-size: 40px;
         text-align: center;
         margin: 0 auto 40px auto;
         padding: 20px 10px;
         width: 1200px;
-        border: 3px solid white;
+        border: 3px solid $literallyMeBlockquoteBorder;
         border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        box-shadow: $literallyMeShadowFirst 0px 54px 55px, $literallyMeShadowSecond 0px -12px 30px, $literallyMeShadowThird 0px 4px 6px, $literallyMeShadowFourth 0px 12px 13px, $literallyMeShadowFifth 0px -3px 5px;
         cursor: default;
         display: block;
 
@@ -324,7 +325,7 @@ nav {
     hr {
         width: 95%;
         margin: 2rem auto 0 auto;
-        border: 2px solid white;
+        border: 2px solid $literallyMeLine;
         border-radius: 4px;
         display: block;
     }
@@ -339,11 +340,11 @@ nav {
         img {
             height: 508px;
             padding: 10px;
-            border: 2px solid white;
+            border: 2px solid $literallyMeImageBorder;
             filter: grayscale(60%);
-            -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-            -moz-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-            box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
+            -moz-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
+            box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
             transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 
             &:hover {
@@ -356,7 +357,7 @@ nav {
         fieldset {
             font-size: 20px;
             margin: 0;
-            border: 2px solid white;
+            border: 2px solid $literallyMeFieldsetBorder;
             display: inline-block;
 
             legend {
@@ -399,12 +400,12 @@ nav {
                 }
 
                 strong {
-                    color: #3BF280;
+                    color: $literallyMeSpecial;
                     cursor: default;
                     transition: color 0.3s ease-in-out;
 
                     &:hover {
-                        color: #B2E035;
+                        color: $literallyMeSpecialHover;
                     }
                 }
             }
@@ -433,9 +434,9 @@ nav {
             margin: 0 auto 4.396vw auto;
             padding: 2.198vw 1.099vw;
             width: 93.407vw;
-            border: 0.33vw solid white;
+            border: 0.33vw solid $literallyMeBlockquoteBorder;
             border-radius: 2.198vw;
-            box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.09) 0vw -0.83vw 1.39vw;
+            box-shadow: $literallyMeShadowFirst 0vw 18.77vw 19.23vw, $literallyMeShadowSecond 0vw -4.13vw 9.89vw, $literallyMeShadowThird 0vw 1.11vw 1.67vw, $literallyMeShadowFourth 0vw 3.32vw 3.47vw, $literallyMeShadowFifth 0vw -0.83vw 1.39vw;
 
             p:first-child {
                 margin-bottom: 1.648vw;
@@ -448,7 +449,7 @@ nav {
     #literally-me {
 
         hr {
-            border: 0.235vw solid white;
+            border: 0.235vw solid $literallyMeLine;
             border-radius: 0.471vw;
         }
 
@@ -461,10 +462,10 @@ nav {
             img {
                 height: 59.765vw;
                 padding: 1.176vw;
-                border: 0.235vw solid white;
-                -webkit-box-shadow: inset 0px 0px 33.529vw 0px rgba(0, 0, 0, 1);
-                -moz-box-shadow: inset 0px 0px 3.529vw 0px rgba(0, 0, 0, 1);
-                box-shadow: inset 0px 0px 3.529vw 0px rgba(0, 0, 0, 1);
+                border: 0.235vw solid $literallyMeImageBorder;
+                -webkit-box-shadow: inset 0px 0px 33.529vw 0px $literallyMeImageShadow;
+                -moz-box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
+                box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
 
                 &:hover {
                     transform: translateX(0.471vw);
@@ -473,7 +474,7 @@ nav {
 
             fieldset {
                 font-size: 2.353vw;
-                border: 0.235vw solid white;
+                border: 0.235vw solid $literallyMeFieldsetBorder;
 
                 legend {
                     font-size: 4.118vw;
@@ -499,10 +500,10 @@ nav {
                 width: 100%;
                 height: 100%;
                 padding: 1.538vw;
-                border: 0.308vw solid white;
-                -webkit-box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
-                -moz-box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
-                box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
+                border: 0.308vw solid $literallyMeImageBorder;
+                -webkit-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+                -moz-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+                box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
 
                 &:hover {
                     transform: translateX(0.115vw);
@@ -511,7 +512,7 @@ nav {
 
             fieldset {
                 font-size: 4.308vw;
-                border: 0.308vw solid white;
+                border: 0.308vw solid $literallyMeFieldsetBorder;
 
                 legend {
                     font-size: 5.385vw;
@@ -528,11 +529,11 @@ nav {
 }
 
 #skills {
-    background: rgb(165, 82, 51);
-    background: -moz-linear-gradient(180deg, rgba(165, 82, 51, 1) 1%, rgba(89, 169, 133, 1) 75%);
-    background: -webkit-linear-gradient(180deg, rgba(165, 82, 51, 1) 1%, rgba(89, 169, 133, 1) 75%);
-    background: linear-gradient(180deg, rgba(165, 82, 51, 1) 1%, rgba(89, 169, 133, 1) 75%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a55233", endColorstr="#59a985", GradientType=1);
+    background: $skillsBackground;
+    background: -moz-linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
+    background: -webkit-linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
+    background: linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
     padding: 70px 0 130px 0;
     display: flex;
     flex-direction: column;
@@ -554,7 +555,7 @@ nav {
     fieldset {
         margin: 25px 0;
         padding: 15px;
-        border: 2px solid white;
+        border: 2px solid $skillsBorder;
 
         legend {
             font-size: 35px;
@@ -576,15 +577,15 @@ nav {
                 width: 115px;
                 height: 115px;
                 padding: 0;
-                border: 2px solid white;
+                border: 2px solid $skillsBorder;
                 display: inline-block;
                 text-align: center;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                box-shadow: $skillsShadowFirst 0px 3px 6px, $skillsShadowSecond 0px 3px 6px;
                 cursor: default;
-                transition: all 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: #323A47;
+                    background-color: $skillsDivHover;
                     border-radius: 25px;
                 }
 
@@ -608,28 +609,28 @@ nav {
         }
 
         p {
-            background-color: white;
-            color: black;
+            background-color: $skillsShowBackground;
+            color: $skillsShowColor;
             font-family: "Mukta", sans-serif;
             font-weight: bold;
             text-align: center;
             margin: 20px auto 7px auto;
             padding: 0;
             width: 50%;
-            border: 5px solid black;
+            border: 5px solid $skillsShowBorder;
             border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: $skillsShowShadow 0px 3px 8px;
             cursor: default;
         }
     }
 
     .blackboard {
-        background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+        background: radial-gradient(circle at -4% -12.9%, $skillsBlackboardBackgroundFirst 0.3%, $skillsBlackboardBackgroundSecond 90.2%);
         margin-top: 60px;
         width: 900px;
-        border: 2px solid white;
+        border: 2px solid $skillsBlackboardBorder;
         border-radius: 25px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: $skillsBlackboardShadowFirst 0px 3px 6px, $skillsBlackboardShadowSecond 0px 3px 6px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -689,7 +690,7 @@ nav {
             margin: 4.63vw 0;
             padding: 2.778vw;
             width: 18.519vw;
-            border: 0.37vw solid white;
+            border: 0.37vw solid $skillsBorder;
 
             legend {
                 font-size: 6.481vw;
@@ -701,8 +702,8 @@ nav {
                     font-size: 13.889vw;
                     width: 21.296vw;
                     height: 21.296vw;
-                    border: 0.37vw solid white;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.556vw 1.111vw, rgba(0, 0, 0, 0.23) 0px 0.556vw 1.111vw;
+                    border: 0.37vw solid $skillsBorder;
+                    box-shadow: $skillsShadowFirst 0px 0.556vw 1.111vw, $skillsShadowSecond 0px 0.556vw 1.111vw;
 
                     &:hover {
                         border-radius: 4.63vw;
@@ -712,9 +713,9 @@ nav {
 
             p {
                 margin: 3.704vw auto 1.296vw auto;
-                border: 0.926vw solid black;
+                border: 0.926vw solid $skillsShowBorder;
                 border-radius: 1.852vw;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 0.556vw 1.481vw;
+                box-shadow: $skillsShowShadow 0px 0.556vw 1.481vw;
             }
         }
     }
@@ -736,9 +737,9 @@ nav {
         .blackboard {
             margin-top: 6.25vw;
             width: 93.75vw;
-            border: 0.208vw solid white;
+            border: 0.208vw solid $skillsBlackboardBorder;
             border-radius: 2.604vw;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 0.313vw 0.625vw, rgba(0, 0, 0, 0.23) 0px 0.313vw 0.625vw;
+            box-shadow: $skillsBlackboardShadowFirst 0px 0.313vw 0.625vw, $skillsBlackboardShadowSecond 0px 0.313vw 0.625vw;
 
             p {
                 font-size: 2.813vw;
@@ -762,7 +763,7 @@ nav {
 }
 
 #projects {
-    background-color: #59A985;
+    background-color: $projectsAndContactBackground;
     padding: 90px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -777,13 +778,13 @@ nav {
 
     p {
         a {
-            color: #F05D23;
+            color: $projectsLink;
             font-weight: bold;
             text-decoration: none;
             transition: color .3s ease-in-out;
 
             &:hover {
-                color: #DB490F;
+                color: $projectsLinkDarker;
             }
         }
     }
@@ -792,7 +793,7 @@ nav {
         margin: 35px 0;
         padding: 10px 20px 20px 20px;
         width: 1400px;
-        border: 2px solid white;
+        border: 2px solid $projectsContainer;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -811,9 +812,9 @@ nav {
         }
 
         .project {
-            background-color: #4F9978;
+            background-color: $projectsProjectBackground;
             padding: 10px;
-            border: .1px solid white;
+            border: .1px solid $projectsProjectBorder;
             border-radius: 10px;
             cursor: default;
             position: relative;
@@ -831,7 +832,7 @@ nav {
             }
 
             &:hover {
-                background-color: #46886A;
+                background-color: $projectsProjectHoverBackground;
                 -webkit-transform: translate(0px, -3px);
                 -moz-transform: translate(0px, -3px);
                 -ms-transform: translate(0px, -3px);
@@ -840,7 +841,7 @@ nav {
             }
 
             .name {
-                color: white;
+                color: $projectsProjectColor;
                 font-weight: 600;
                 display: grid;
                 grid-template-columns: 1fr 42px 40px;
@@ -857,7 +858,7 @@ nav {
 
                     &:hover {
                         path {
-                            fill: #F05D23;
+                            fill: $projectsLink;
                         }
                     }
                 }
@@ -873,7 +874,7 @@ nav {
 
                     &:hover {
                         path {
-                            stroke: #F05D23;
+                            stroke: $projectsLink;
                         }
                     }
                 }
@@ -884,7 +885,7 @@ nav {
                     &:hover {
                         .go {
                             path {
-                                stroke: silver;
+                                stroke: $projectsProjectInactive;
                             }
                         }
                     }
@@ -898,7 +899,7 @@ nav {
             }
 
             .languages {
-                color: #D2D2D2;
+                color: $projectsProjectLanguages;
                 font-weight: bold;
                 font-size: 15px;
                 margin-top: -15px;
@@ -980,7 +981,7 @@ nav {
 }
 
 #contact {
-    background-color: #59A985;
+    background-color: $projectsAndContactBackground;
     padding: 100px 100px 0 100px;
     cursor: default;
     display: flex;
@@ -989,12 +990,12 @@ nav {
     justify-content: center;
 
     fieldset {
-        background-color: #2B4353;
+        background-color: $contactFieldsetBackground;
         width: 1000px;
         height: 300px;
-        border: 5px solid white;
+        border: 5px solid $contactFieldsetBorder;
         border-radius: 15px;
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 5px 10px 0px $contactFieldsetShadow;
 
         display: flex;
         flex-direction: column;
@@ -1003,9 +1004,9 @@ nav {
         transition: border .3s ease-in-out, transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
         &:hover {
-            border: 5px solid #F05D23;
+            border: 5px solid $contactFieldsetHover;
             transform: translateY(-5px);
-            box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 10px 20px 2px $contactFieldsetHoverShadow;
         }
 
         h1 {
@@ -1034,11 +1035,11 @@ nav {
                 }
 
                 &:first-child:hover path {
-                    stroke: #F05D23;
+                    stroke: $contactFieldsetHover;
                 }
 
                 &:not(:first-child):hover path {
-                    fill: #F05D23;
+                    fill: $contactFieldsetHover;
                 }
             }
         }
@@ -1052,14 +1053,14 @@ nav {
         fieldset {
             width: 90.91vw;
             height: 27.27vw;
-            border: 0.45vw solid white;
+            border: 0.45vw solid $contactFieldsetBorder;
             border-radius: 1.36vw;
-            box-shadow: 0px 0.45vw 0.91vw 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0.45vw 0.91vw 0px $contactFieldsetShadow;
 
             &:hover {
-                border: 0.45vw solid #F05D23;
+                border: 0.45vw solid $contactFieldsetHover;
                 transform: translateY(-0.45vw);
-                box-shadow: 0px 0.91vw 1.82vw 0.18vw rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0.91vw 1.82vw 0.18vw $contactFieldsetHoverShadow;
             }
 
             h1 {
@@ -1082,7 +1083,7 @@ nav {
 }
 
 footer {
-    background-color: #2C5543;
+    background-color: $footer;
     padding: 0 0 20px 0;
     margin: -165px 0 0 0;
     height: 680px;
@@ -1104,7 +1105,7 @@ footer {
         }
 
         &:last-child {
-            color: #EEEEEE;
+            color: $footerLastChild;
             font-size: 16px;
             margin: auto 0 0 0;
         }

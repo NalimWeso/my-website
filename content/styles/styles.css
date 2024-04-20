@@ -234,9 +234,9 @@ nav ul li a:hover {
   }
 }
 #literally-me {
-  background: rgb(64, 42, 35);
-  background: linear-gradient(180deg, rgb(64, 42, 35) 17%, rgb(165, 82, 51) 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#402a23", endColorstr="#a55233", GradientType=1);
+  background: #402A23;
+  background: linear-gradient(180deg, #402A23 17%, #A55233 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
   margin: 0;
   padding: 100px 0 80px 0;
 }
@@ -419,9 +419,9 @@ nav ul li a:hover {
   }
 }
 #skills {
-  background: rgb(165, 82, 51);
-  background: linear-gradient(180deg, rgb(165, 82, 51) 1%, rgb(89, 169, 133) 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a55233", endColorstr="#59a985", GradientType=1);
+  background: #A55233;
+  background: linear-gradient(180deg, #A55233 1%, #59A985 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
   padding: 70px 0 130px 0;
   display: flex;
   flex-direction: column;
@@ -467,7 +467,7 @@ nav ul li a:hover {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: default;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 #skills fieldset .grid-container div:hover {
   background-color: #323A47;
