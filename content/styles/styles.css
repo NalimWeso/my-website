@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 body::-webkit-scrollbar {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.8549019608);
   width: 0.5em;
 }
 body::-webkit-scrollbar-track {
@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #201511;
-  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 
 .disable-selection {
@@ -37,8 +37,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2509803922);
   padding: 10px 0;
   position: fixed;
   top: 0;
@@ -138,7 +138,7 @@ nav ul li a:hover {
   }
 }
 #intro {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7019607843);
   font-family: "Mukta", sans-serif;
   margin: 300px 0 400px 0;
   display: flex;
@@ -501,7 +501,7 @@ nav ul li a:hover {
   cursor: default;
 }
 #skills .blackboard {
-  background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+  background: radial-gradient(circle at -4% -12.9%, #4A626E 0.3%, #1E2130 90.2%);
   margin-top: 60px;
   width: 900px;
   border: 2px solid white;

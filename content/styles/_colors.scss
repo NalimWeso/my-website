@@ -1,12 +1,11 @@
 $bodyBackground: #402A23;
 $bodyColor: white;
 
-$scrollbarBackground: rgba(0, 0, 0, 0.85);
-$scrollbarTrack: rgba(0, 0, 0, 0.3);
-$scrollbarThumb: rgba(255, 255, 255, 0.1);
+$scrollbarBackground: #000000DA;
+$scrollbarThumb: #FFFFFF1A;
 $scrollbarThumbBackground: #201511;
 
-$navigation: rgba(0, 0, 0, 0.25);
+$navigation: #00000040;
 $navigationColor: #FFFDFB;
 $navigationHoverColor: black;
 $navigationHoverBackground: white;
@@ -17,7 +16,7 @@ $sidebarFillHover: black;
 $menuButton: white;
 $menuHoverButton: black;
 
-$introColor: rgba(255, 255, 255, 0.7);
+$introColor: #FFFFFFB3;
 $introColorHover: white;
 $introLinkBackground: #1D1716;
 $introLinkHoverBackground: #443634;
@@ -25,7 +24,7 @@ $introLinkColor: white;
 $introLinkBorder: white;
 $introLine: white;
 
-$literallyMeBlockquoteBackground: rgba(0, 0, 0, 0.2);
+$literallyMeBlockquoteBackground: #00000033;
 $literallyMeBlockquoteBorder: white;
 $literallyMeLine: white;
 $literallyMeImageBorder: white;
@@ -39,8 +38,8 @@ $skillsDivHover: #323A47;
 $skillsShowBackground: white;
 $skillsShowColor: black;
 $skillsShowBorder: black;
-$skillsBlackboardBackgroundFirst: rgb(74, 98, 110);
-$skillsBlackboardBackgroundSecond: rgb(30, 33, 48);
+$skillsBlackboardBackgroundFirst: #4A626E;
+$skillsBlackboardBackgroundSecond: #1E2130;
 $skillsBlackboardBorder: white;
 
 $projectsAndContactBackground: #59A985;
