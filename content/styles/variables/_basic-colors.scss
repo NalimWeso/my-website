@@ -1,32 +1,35 @@
-$bodyColor: white;
+$first: white;
+$second: black;
 
-$navigationHoverColor: black;
-$navigationHoverBackground: white;
+$bodyColor: $first;
 
-$sidebarFill: white;
-$sidebarFillHover: black;
+$navigationHoverColor: $second;
+$navigationHoverBackground: $first;
 
-$menuButton: white;
-$menuHoverButton: black;
+$sidebarFill: $first;
+$sidebarFillHover: $second;
 
-$introColorHover: white;
-$introLinkColor: white;
-$introLinkBorder: white;
-$introLine: white;
+$menuButton: $first;
+$menuHoverButton: $second;
 
-$literallyMeBlockquoteBorder: white;
-$literallyMeLine: white;
-$literallyMeImageBorder: white;
-$literallyMeFieldsetBorder: white;
+$introColorHover: $first;
+$introLinkColor: $first;
+$introLinkBorder: $first;
+$introLine: $first;
 
-$skillsBorder: white;
-$skillsShowBackground: white;
-$skillsShowColor: black;
-$skillsShowBorder: black;
-$skillsBlackboardBorder: white;
+$literallyMeBlockquoteBorder: $first;
+$literallyMeLine: $first;
+$literallyMeImageBorder: $first;
+$literallyMeFieldsetBorder: $first;
 
-$projectsContainer: white;
-$projectsProjectColor: white;
-$projectsProjectBorder: white;
+$skillsBorder: $first;
+$skillsShowBackground: $first;
+$skillsShowColor: $second;
+$skillsShowBorder: $second;
+$skillsBlackboardBorder: $first;
 
-$contactFieldsetBorder: white;
+$projectsContainer: $first;
+$projectsProjectColor: $first;
+$projectsProjectBorder: $first;
+
+$contactFieldsetBorder: $first;
