@@ -420,7 +420,7 @@ nav ul li a:hover {
 }
 #skills {
   background: #A55233;
-  background: linear-gradient(180deg, #A55233 1%, #59A985 75%);
+  background: linear-gradient(180deg, #A55233 1%, #419971 75%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
   padding: 70px 0 130px 0;
   display: flex;
@@ -606,7 +606,7 @@ nav ul li a:hover {
   }
 }
 #projects {
-  background-color: #59A985;
+  background-color: #419971;
   padding: 90px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -769,7 +769,7 @@ nav ul li a:hover {
   }
 }
 #contact {
-  background-color: #59A985;
+  background-color: #419971;
   padding: 100px 100px 0 100px;
   cursor: default;
   display: flex;
