@@ -715,7 +715,7 @@ nav ul li a:hover {
   margin: 7px 0 30px 0;
   flex: 10;
 }
-#projects .projects-container .project .languages {
+#projects .projects-container .project .technologies {
   color: #D2D2D2;
   font-weight: bold;
   font-size: 15px;
@@ -763,7 +763,7 @@ nav ul li a:hover {
     font-size: 3vw;
     margin: 1.4vw 0 6vw 0;
   }
-  #projects .projects-container .project .languages {
+  #projects .projects-container .project .technologies {
     font-size: 3vw;
     margin-top: -3vw;
   }
