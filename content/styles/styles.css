@@ -455,13 +455,8 @@ nav ul li a:hover {
   gap: 5px;
 }
 #skills fieldset .grid-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 75px;
   width: 115px;
   height: 115px;
-  padding: 0;
   border: 2px solid white;
   display: inline-block;
   text-align: center;
@@ -474,8 +469,10 @@ nav ul li a:hover {
   border-radius: 25px;
 }
 #skills fieldset .grid-container div i {
-  display: inline-block;
-  vertical-align: middle;
+  font-size: 75px;
+  margin: auto;
+  position: absolute;
+  transform: translate(-50%, 25%);
   filter: saturate(200%);
   -webkit-filter: saturate(200%);
   -moz-filter: saturate(200%);

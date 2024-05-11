@@ -40,13 +40,8 @@
             gap: 5px;
 
             div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 75px;
                 width: 115px;
                 height: 115px;
-                padding: 0;
                 border: 2px solid $skillsBorder;
                 display: inline-block;
                 text-align: center;
@@ -60,8 +55,10 @@
                 }
 
                 i {
-                    display: inline-block;
-                    vertical-align: middle;
+                    font-size: 75px;
+                    margin: auto;
+                    position: absolute;
+                    transform: translate(-50%, 25%);
                     filter: saturate(200%);
                     -webkit-filter: saturate(200%);
                     -moz-filter: saturate(200%);
