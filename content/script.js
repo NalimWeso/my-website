@@ -25,7 +25,9 @@ gridItem.forEach(skill => {
             "css3": "CSS",
             "postcss": "PostCSS",
             "sass": "Sass",
+            "tailwind": "Tailwind",
             "javascript": "JavaScript",
+            "typescript": "TypeScript",
             "react": "React",
             "electron": "Electron",
             "git": "Git"

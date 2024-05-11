@@ -451,7 +451,7 @@ nav ul li a:hover {
 }
 #skills fieldset .grid-container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 5px;
 }
 #skills fieldset .grid-container div {
@@ -538,9 +538,9 @@ nav ul li a:hover {
     padding: max(60px, 6.364vw) 0 11.818vw 0;
   }
 }
-@media (max-width: 1060px) {
+@media (max-width: 1300px) {
   #skills fieldset .grid-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media (max-width: 540px) {
