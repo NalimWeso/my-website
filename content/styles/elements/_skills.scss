@@ -144,45 +144,48 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 675px) {
     #skills {
         p {
-            font-size: 5vw;
-            margin: 2.222vw 0;
-            padding: 2.778vw 0;
-            width: 100%;
+            font-size: 4vw;
+            margin: 1.778vw 0;
+            padding: 2.222vw 0;
         }
 
         fieldset {
-            margin: 4.63vw 0;
-            padding: 2.778vw;
-            width: 18.519vw;
-            border: 0.37vw solid $skillsBorder;
+            margin: 3.704vw 0;
+            padding: 2.222vw;
+            border: 0.296vw solid $skillsBorder;
 
             legend {
-                font-size: 6.481vw;
-                padding: 0 1.852vw;
+                font-size: 5.185vw;
+                padding: 0 1.481vw;
             }
 
             .grid-container {
+                gap: 0.741vw;
+
                 div {
-                    font-size: 13.889vw;
-                    width: 21.296vw;
-                    height: 21.296vw;
-                    border: 0.37vw solid $skillsBorder;
-                    box-shadow: $skillsShadowFirst 0px 0.556vw 1.111vw, $skillsShadowSecond 0px 0.556vw 1.111vw;
+                    width: 17.037vw;
+                    height: 17.037vw;
+                    border: 0.296vw solid $skillsBorder;
+                    box-shadow: $skillsShadowFirst 0vw 0.444vw 0.889vw, $skillsShadowSecond 0vw 0.444vw 0.889vw;
 
                     &:hover {
-                        border-radius: 4.63vw;
+                        border-radius: 3.704vw;
+                    }
+
+                    i {
+                        font-size: 11.111vw;
                     }
                 }
             }
 
             p {
-                margin: 3.704vw auto 1.296vw auto;
-                border: 0.926vw solid $skillsShowBorder;
-                border-radius: 1.852vw;
-                box-shadow: $skillsShowShadow 0px 0.556vw 1.481vw;
+                margin: 2.963vw auto 1.037vw auto;
+                border: 0.741vw solid $skillsShowBorder;
+                border-radius: 1.481vw;
+                box-shadow: $skillsShowShadow 0px 0.444vw 1.185vw;
             }
         }
     }
