@@ -11,14 +11,13 @@
         cursor: default;
     }
 
-    .work {
+    .job {
         background-color: $projectsProjectBackground;
         margin: 30px 0 0 0;
         padding: 10px;
         border: .1px solid $projectsProjectBorder;
         border-radius: 10px;
-        min-width: 500px;
-        min-height: 50px;
+        width: 520px;
         box-shadow: $skillsShadowFirst 0px 3px 6px, $skillsShadowSecond 0px 3px 6px;
         cursor: default;
         display: flex;
@@ -40,20 +39,66 @@
         }
 
         .info {
-            display: flex;
-            flex-direction: column;
+
+            h3 {
+                font-size: 30px;
+            }
 
             p {
+                font-size: 20px;
+
                 &:nth-child(2) {
-                    font-size: 20px;
                     margin-top: 5px;
                 }
 
                 &:nth-child(3) {
                     color: $projectsProjectTechnologies;
                     font-weight: bold;
-                    font-size: 20px;
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #experience {
+        padding: 4.615vw 0;
+
+        h1 {
+            font-size: 7.692vw;
+        }
+
+        .job {
+            margin: 4.615vw 0 0 0;
+            padding: 1.538vw;
+            border: 0.015vw solid $projectsProjectBorder;
+            border-radius: 1.538vw;
+            width: 80vw;
+            box-shadow: $skillsShadowFirst 0vw 0.462vw 0.923vw, $skillsShadowSecond 0vw 0.462vw 0.923vw;
+
+            .dot {
+                margin: 1.538vw 1.538vw 1.538vw 0;
+                height: 2.308vw;
+                width: 2.308vw;
+                transform: translateY(-0.308vw);
+            }
+
+            .info {
+                h3 {
+                    font-size: 4.615vw;
+                }
+
+                p {
+                    font-size: 3.077vw;
+
+                    &:nth-child(2) {
+                        margin-top: 0.769vw;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 1.538vw;
+                    }
                 }
             }
         }
