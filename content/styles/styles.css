@@ -445,6 +445,59 @@ body::-webkit-scrollbar-thumb {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0.444vw 1.185vw;
   }
 }
+#experience {
+  background-color: #419971;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#experience h1 {
+  font-size: 50px;
+  cursor: default;
+}
+#experience .work {
+  background-color: #4F9978;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  border: 0.1px solid white;
+  border-radius: 10px;
+  min-width: 500px;
+  min-height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: default;
+  display: flex;
+  align-items: first baseline;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#experience .work:hover {
+  background-color: #46886A;
+}
+#experience .work .dot {
+  margin: 10px 10px 10px 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+#experience .work .info {
+  display: flex;
+  flex-direction: column;
+}
+#experience .work .info p:nth-child(2) {
+  font-size: 20px;
+  margin-top: 5px;
+}
+#experience .work .info p:nth-child(3) {
+  color: #D2D2D2;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 #projects {
   background-color: #419971;
   padding: 30px 0 10px 0;
@@ -468,7 +521,7 @@ body::-webkit-scrollbar-thumb {
   color: #DB490F;
 }
 #projects .projects-container {
-  margin: 35px 0 10px 0;
+  margin: 30px 0 10px 0;
   padding: 10px 20px 20px 20px;
   width: 1400px;
   border: 2px solid white;
