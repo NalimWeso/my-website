@@ -4,11 +4,16 @@
     background: -webkit-linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
     background: linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
-    padding: 70px 0 130px 0;
+    padding: 20px 0 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1 {
+        font-size: 50px;
+        cursor: default;
+    }
 
     p {
         font-size: 27px;
@@ -16,10 +21,6 @@
         padding: 15px 0;
         width: 100%;
         text-align: center;
-
-        &:first-child {
-            padding-top: 0;
-        }
     }
 
     fieldset {
@@ -91,46 +92,12 @@
         }
     }
 
-    .blackboard {
-        background: radial-gradient(circle at -4% -12.9%, $skillsBlackboardBackgroundFirst 0.3%, $skillsBlackboardBackgroundSecond 90.2%);
-        margin-top: 60px;
-        width: 900px;
-        border: 2px solid $skillsBlackboardBorder;
-        border-radius: 25px;
-        box-shadow: $skillsBlackboardShadowFirst 0px 3px 6px, $skillsBlackboardShadowSecond 0px 3px 6px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        p {
-            cursor: default;
-
-            span {
-                position: relative;
-                white-space: nowrap;
-
-                &:after {
-                    --deco-height: 0.3125em;
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: calc(var(--deco-height) * -0.625);
-                    height: var(--deco-height);
-                    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300BBF0' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-                    background-size: auto 100%;
-                    background-repeat: round;
-                    background-position: 0em;
-                    transition: all .3s ease-in-out;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 1100px) {
     #skills {
-        padding: max(60px, 6.364vw) 0 11.818vw 0;
+        padding: 1.818vw 0 2.727vw 0;
     }
 }
 
@@ -187,47 +154,6 @@
                 border-radius: 1.481vw;
                 box-shadow: $skillsShowShadow 0px 0.444vw 1.185vw;
             }
-        }
-    }
-}
-
-@media (min-width: 960px) {
-    #skills {
-        .blackboard {
-            dotlottie-player {
-                width: 800px;
-                height: 266.67px;
-            }
-        }
-    }
-}
-
-@media (max-width: 960px) {
-    #skills {
-        .blackboard {
-            margin-top: 6.25vw;
-            width: 93.75vw;
-            border: 0.208vw solid $skillsBlackboardBorder;
-            border-radius: 2.604vw;
-            box-shadow: $skillsBlackboardShadowFirst 0px 0.313vw 0.625vw, $skillsBlackboardShadowSecond 0px 0.313vw 0.625vw;
-
-            p {
-                font-size: 2.813vw;
-                margin: 1.25vw 0;
-                padding: 0.417vw 0 1.563vw 0;
-            }
-
-            span {
-                &:after {
-                    --deco-height: 0.3125em;
-                    background-position: 0em;
-                }
-            }
-        }
-
-        dotlottie-player {
-            width: 83.333vw;
-            height: 27.778vw;
         }
     }
 }

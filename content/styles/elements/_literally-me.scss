@@ -5,7 +5,7 @@
     background: linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
     margin: 0;
-    padding: 100px 0 80px 0;
+    padding: 20px 0 30px 0;
 
     blockquote {
         background-color: $literallyMeBlockquoteBackground;
@@ -123,7 +123,7 @@
 
 @media (max-width: 1100px) {
     #literally-me {
-        padding: max(75px, 9.091vw) 0 7.273vw 0;
+        padding: max(20px, 1.818vw) 0 2.727vw 0;
     }
 }
 
@@ -155,7 +155,6 @@
 
 @media (max-width: 850px) {
     #literally-me {
-
         hr {
             border: 0.235vw solid $literallyMeLine;
             border-radius: 0.471vw;
