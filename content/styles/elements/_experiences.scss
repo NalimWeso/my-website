@@ -8,7 +8,6 @@
 
     h1 {
         font-size: 50px;
-        cursor: default;
     }
 
     .job {
@@ -19,7 +18,6 @@
         border-radius: 10px;
         width: 520px;
         box-shadow: $skillsShadowFirst 0px 3px 6px, $skillsShadowSecond 0px 3px 6px;
-        cursor: default;
         display: flex;
         align-items: first baseline;
         transition: background-color .3s ease-in-out, transform .3s ease-in-out;
@@ -32,7 +30,7 @@
             margin: 10px 10px 10px 0;
             height: 15px;
             width: 15px;
-            background-color: white;
+            background-color: $experienceDot;
             border-radius: 50%;
             display: inline-block;
             transform: translateY(-2px);

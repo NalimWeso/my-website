@@ -9,7 +9,6 @@
     h1 {
         font-size: 50px;
         margin-bottom: 10px;
-        cursor: default;
     }
 
     p {
@@ -44,7 +43,6 @@
             font-size: 35px;
             margin: auto;
             padding: 0 10px;
-            cursor: default;
         }
 
         .project {
@@ -52,7 +50,6 @@
             padding: 10px;
             border: .1px solid $projectsProjectBorder;
             border-radius: 10px;
-            cursor: default;
             position: relative;
             flex: 0 0 calc(33.33% - 20px);
             display: flex;

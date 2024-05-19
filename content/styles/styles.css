@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.8549019608);
@@ -43,7 +44,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: default;
   transition: color 0.3s ease-in-out;
 }
 #intro:hover {
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 #intro a:hover {
-  background-color: #271F1E;
+  background-color: #171212;
   transform: translate(0px, 5px);
 }
 #intro hr {
@@ -133,10 +133,10 @@ body::-webkit-scrollbar-thumb {
 }
 #literally-me {
   background: #402A23;
-  background: linear-gradient(180deg, #402A23 17%, #522e24 75%);
+  background: linear-gradient(180deg, #402A23 17%, #A55233 75%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
   margin: 0;
-  padding: 20px 0 30px 0;
+  padding: 40px 0 30px 0;
 }
 #literally-me blockquote {
   background-color: rgba(0, 0, 0, 0.2);
@@ -148,7 +148,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid white;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  cursor: default;
   display: block;
 }
 #literally-me blockquote p {
@@ -195,7 +194,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   margin: auto;
   padding: 0 10px;
-  cursor: default;
 }
 #literally-me .flex-container fieldset p {
   margin: 0 5px;
@@ -204,7 +202,6 @@ body::-webkit-scrollbar-thumb {
 #literally-me .flex-container fieldset p span {
   display: inline-block;
   filter: hue-rotate(85deg);
-  cursor: default;
   transition: filter 0.3s ease-in-out;
 }
 @keyframes rotating {
@@ -215,25 +212,17 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(-10deg);
   }
 }
-#literally-me .flex-container fieldset p span:hover {
-  filter: hue-rotate(30deg);
-}
 #literally-me .flex-container fieldset p span:first-child {
-  transform: rotate(20deg);
   animation: rotating 0.7s ease-in-out infinite;
 }
 #literally-me .flex-container fieldset p strong {
   color: #3BF280;
-  cursor: default;
   transition: color 0.3s ease-in-out;
-}
-#literally-me .flex-container fieldset p strong:hover {
-  color: #B2E035;
 }
 
 @media (max-width: 1100px) {
   #literally-me {
-    padding: max(20px, 1.818vw) 0 2.727vw 0;
+    padding: max(40px, 3.636vw) 0 2.727vw 0;
   }
 }
 @media (max-width: 1400px) {
@@ -317,8 +306,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #skills {
-  background: #522e24;
-  background: linear-gradient(180deg, #522e24 1%, #522e24 75%);
+  background: #A55233;
+  background: linear-gradient(180deg, #A55233 1%, #419971 75%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
   padding: 20px 0 30px 0;
   display: flex;
@@ -328,7 +317,6 @@ body::-webkit-scrollbar-thumb {
 }
 #skills h1 {
   font-size: 50px;
-  cursor: default;
 }
 #skills p {
   font-size: 27px;
@@ -346,7 +334,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   margin: auto;
   padding: 0 10px;
-  cursor: default;
 }
 #skills fieldset .grid-container {
   display: grid;
@@ -360,7 +347,6 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  cursor: default;
   transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 #skills fieldset .grid-container div:hover {
@@ -394,7 +380,6 @@ body::-webkit-scrollbar-thumb {
   border: 5px solid black;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  cursor: default;
 }
 
 @media (max-width: 1100px) {
@@ -445,7 +430,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #experiences {
-  background-color: #522e24;
+  background-color: #419971;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
@@ -454,7 +439,6 @@ body::-webkit-scrollbar-thumb {
 }
 #experiences h1 {
   font-size: 50px;
-  cursor: default;
 }
 #experiences .job {
   background-color: #4F9978;
@@ -464,7 +448,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   width: 520px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  cursor: default;
   display: flex;
   align-items: first baseline;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -531,7 +514,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #projects {
-  background-color: #522e24;
+  background-color: #419971;
   padding: 30px 0 10px 0;
   display: flex;
   flex-direction: column;
@@ -541,7 +524,6 @@ body::-webkit-scrollbar-thumb {
 #projects h1 {
   font-size: 50px;
   margin-bottom: 10px;
-  cursor: default;
 }
 #projects p a {
   color: #F05D23;
@@ -572,14 +554,12 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   margin: auto;
   padding: 0 10px;
-  cursor: default;
 }
 #projects .projects-container .project {
   background-color: #4F9978;
   padding: 10px;
   border: 0.1px solid white;
   border-radius: 10px;
-  cursor: default;
   position: relative;
   flex: 0 0 calc(33.33% - 20px);
   display: flex;
@@ -694,16 +674,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #contact {
-  background-color: #522e24;
+  background-color: #419971;
   padding: 100px 100px 0 100px;
-  cursor: default;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 #contact fieldset {
-  background-color: #323A47;
+  background-color: #2B4353;
   width: 1000px;
   height: 300px;
   border: 5px solid white;
@@ -803,9 +782,7 @@ footer p:last-child {
   color: #EEEEEE;
   font-size: 16px;
   margin: auto 0 0 0;
-}
-footer p:not(:last-child) {
-  cursor: default;
+  cursor: text;
 }
 footer svg {
   margin-top: 15px;
