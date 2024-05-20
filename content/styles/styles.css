@@ -532,7 +532,7 @@ body::-webkit-scrollbar-thumb {
   transition: color 0.3s ease-in-out;
 }
 #projects p a:hover {
-  color: #DB490F;
+  color: #E84D10;
 }
 #projects .projects-container {
   margin: 30px 0 10px 0;
