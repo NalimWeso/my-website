@@ -3,7 +3,7 @@
 ### 👇 *Simple yet precise, just like I like it.*
 
 <kbd>
-  <img src="content/images/Screenshot.png" alt="Screenshot of My Website">
+  <img src="content/images/Web.png" alt="Screenshot of My Website">
 </kbd>
 
 ## 👋 Introduction
