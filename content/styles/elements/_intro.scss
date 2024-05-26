@@ -35,10 +35,14 @@
         border: 2px solid $introLinkBorder;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 
         &:hover {
             background-color: $introLinkHoverBackground;
+            border-radius: 15px;
+        }
+
+        &:active {
             -webkit-transform: translate(0px, 5px);
             -moz-transform: translate(0px, 5px);
             -ms-transform: translate(0px, 5px);

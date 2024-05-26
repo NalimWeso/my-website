@@ -71,10 +71,13 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 #intro a:hover {
   background-color: #171212;
+  border-radius: 15px;
+}
+#intro a:active {
   transform: translate(0px, 5px);
 }
 #intro hr {
