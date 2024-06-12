@@ -35,6 +35,11 @@ body {
     }
 }
 
+::selection {
+    background-color: $bodySelection;
+    color: $first;
+}
+
 .disable-selection {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
