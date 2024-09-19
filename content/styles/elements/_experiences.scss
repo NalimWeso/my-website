@@ -8,11 +8,25 @@
 
     h1 {
         font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        a {
+            color: $projectsLink;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $projectsLinkDarker;
+            }
+        }
     }
 
     .job {
         background-color: $projectsProjectBackground;
-        margin: 30px 0 0 0;
+        margin: 40px 0 0 0;
         padding: 10px;
         border: .1px solid $projectsProjectBorder;
         border-radius: 10px;
@@ -65,10 +79,15 @@
 
         h1 {
             font-size: 7.692vw;
+            margin-bottom: 1.538vw;
+        }
+
+        p {
+            font-size: 3.846vw;
         }
 
         .job {
-            margin: 4.615vw 0 0 0;
+            margin: 6.154vw 0 0 0;
             padding: 1.538vw;
             border: 0.015vw solid $projectsProjectBorder;
             border-radius: 1.538vw;

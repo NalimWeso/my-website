@@ -452,10 +452,20 @@ body::-webkit-scrollbar-thumb {
 }
 #experiences h1 {
   font-size: 50px;
+  margin-bottom: 10px;
+}
+#experiences p a {
+  color: #F05D23;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+#experiences p a:hover {
+  color: #E84D10;
 }
 #experiences .job {
   background-color: #4F9978;
-  margin: 30px 0 0 0;
+  margin: 40px 0 0 0;
   padding: 10px;
   border: 0.1px solid white;
   border-radius: 10px;
@@ -498,9 +508,13 @@ body::-webkit-scrollbar-thumb {
   }
   #experiences h1 {
     font-size: 7.692vw;
+    margin-bottom: 1.538vw;
+  }
+  #experiences p {
+    font-size: 3.846vw;
   }
   #experiences .job {
-    margin: 4.615vw 0 0 0;
+    margin: 6.154vw 0 0 0;
     padding: 1.538vw;
     border: 0.015vw solid white;
     border-radius: 1.538vw;
