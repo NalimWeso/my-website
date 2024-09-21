@@ -540,6 +540,24 @@ body::-webkit-scrollbar-thumb {
     margin-top: 1.538vw;
   }
 }
+#cv {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: auto;
+}
+#cv ::-moz-selection {
+  background-color: black;
+  color: white;
+}
+#cv ::selection {
+  background-color: black;
+  color: white;
+}
+
 #projects {
   background-color: #419971;
   padding: 30px 0 10px 0;

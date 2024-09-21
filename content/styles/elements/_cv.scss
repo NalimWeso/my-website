@@ -1,0 +1,14 @@
+#cv {
+    background-color: $first;
+    color: $second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: auto;
+
+    ::selection {
+        background-color: $second;
+        color: $first;
+    }
+}
