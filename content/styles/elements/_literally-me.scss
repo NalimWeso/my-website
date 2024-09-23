@@ -1,22 +1,17 @@
 #literally-me {
-    background: $bodyBackground;
-    background: -moz-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
-    background: -webkit-linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
-    background: linear-gradient(180deg, $bodyBackground 17%, $skillsBackground 75%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
     margin: 0;
     padding: 40px 0 30px 0;
 
     blockquote {
-        background-color: $literallyMeBlockquoteBackground;
+        background-color: $brownest;
         font-size: 40px;
         text-align: center;
         margin: 0 auto 40px auto;
         padding: 20px 10px;
         width: 1200px;
-        border: 3px solid $literallyMeBlockquoteBorder;
+        border: 3px solid $light;
         border-radius: 5px;
-        box-shadow: $literallyMeShadowFirst 0px 54px 55px, $literallyMeShadowSecond 0px -12px 30px, $literallyMeShadowThird 0px 4px 6px, $literallyMeShadowFourth 0px 12px 13px, $literallyMeShadowFifth 0px -3px 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.08) 0px -3px 5px;
         display: block;
 
         p {
@@ -32,7 +27,7 @@
     hr {
         width: 95%;
         margin: 2rem auto 0 auto;
-        border: 2px solid $literallyMeLine;
+        border: 2px solid $light;
         border-radius: 4px;
         display: block;
     }
@@ -47,12 +42,12 @@
         img {
             height: 508px;
             padding: 10px;
-            border: 2px solid $literallyMeImageBorder;
-            filter: grayscale(60%);
-            -webkit-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
-            -moz-box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
-            box-shadow: inset 0px 0px 30px 0px $literallyMeImageShadow;
-            transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+            border: 2px solid $light;
+            filter: grayscale(70%);
+            -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+            box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+            transition: all 0.5s, padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 
             &:hover {
                 padding: 0;
@@ -64,7 +59,7 @@
         fieldset {
             font-size: 20px;
             margin: 0;
-            border: 2px solid $literallyMeFieldsetBorder;
+            border: 2px solid $light;
             display: inline-block;
 
             legend {
@@ -91,7 +86,6 @@
                     }
 
                     display: inline-block;
-                    filter: hue-rotate(85deg);
                     transition: filter 0.3s ease-in-out;
 
                     &:first-child {
@@ -100,7 +94,7 @@
                 }
 
                 strong {
-                    color: $literallyMeSpecial;
+                    color: $primary;
                     transition: color 0.3s ease-in-out;
                 }
             }
@@ -129,9 +123,9 @@
             margin: 0 auto 4.396vw auto;
             padding: 2.198vw 1.099vw;
             width: 93.407vw;
-            border: 0.33vw solid $literallyMeBlockquoteBorder;
+            border: 0.33vw solid $light;
             border-radius: 2.198vw;
-            box-shadow: $literallyMeShadowFirst 0vw 18.77vw 19.23vw, $literallyMeShadowSecond 0vw -4.13vw 9.89vw, $literallyMeShadowThird 0vw 1.11vw 1.67vw, $literallyMeShadowFourth 0vw 3.32vw 3.47vw, $literallyMeShadowFifth 0vw -0.83vw 1.39vw;
+            box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.08) 0vw -0.83vw 1.39vw;
 
             p:first-child {
                 margin-bottom: 1.648vw;
@@ -143,7 +137,7 @@
 @media (max-width: 850px) {
     #literally-me {
         hr {
-            border: 0.235vw solid $literallyMeLine;
+            border: 0.235vw solid $light;
             border-radius: 0.471vw;
         }
 
@@ -156,10 +150,10 @@
             img {
                 height: 59.765vw;
                 padding: 1.176vw;
-                border: 0.235vw solid $literallyMeImageBorder;
-                -webkit-box-shadow: inset 0px 0px 33.529vw 0px $literallyMeImageShadow;
-                -moz-box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
-                box-shadow: inset 0px 0px 3.529vw 0px $literallyMeImageShadow;
+                border: 0.235vw solid $light;
+                -webkit-box-shadow: inset 0px 0px 33.529vw 0px rgba(0, 0, 0, 1);
+                -moz-box-shadow: inset 0px 0px 3.529vw 0px rgba(0, 0, 0, 1);
+                box-shadow: inset 0px 0px 3.529vw 0px rgba(0, 0, 0, 1);
 
                 &:hover {
                     transform: translateX(0.471vw);
@@ -168,7 +162,7 @@
 
             fieldset {
                 font-size: 2.353vw;
-                border: 0.235vw solid $literallyMeFieldsetBorder;
+                border: 0.235vw solid $light;
 
                 legend {
                     font-size: 4.118vw;
@@ -194,10 +188,10 @@
                 width: 100%;
                 height: 100%;
                 padding: 1.538vw;
-                border: 0.308vw solid $literallyMeImageBorder;
-                -webkit-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
-                -moz-box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
-                box-shadow: inset 0px 0px 4.615vw 0px $literallyMeImageShadow;
+                border: 0.308vw solid $light;
+                -webkit-box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
+                -moz-box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
+                box-shadow: inset 0px 0px 4.615vw 0px rgba(0, 0, 0, 1);
 
                 &:hover {
                     transform: translateX(0.115vw);
@@ -206,7 +200,7 @@
 
             fieldset {
                 font-size: 4.308vw;
-                border: 0.308vw solid $literallyMeFieldsetBorder;
+                border: 0.308vw solid $light;
 
                 legend {
                     font-size: 5.385vw;

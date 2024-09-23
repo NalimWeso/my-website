@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    background-color: $bodyBackground;
-    color: $bodyColor;
+    background-color: $background;
+    color: $light;
     font-family: "Outfit", sans-serif;
     font-size: 25px;
     min-height: 100vh;
@@ -21,23 +21,23 @@ body {
     cursor: default;
 
     &::-webkit-scrollbar {
-        background-color: $scrollbarBackground;
+        background-color: $scrollbar;
         width: .5em;
 
         &-track {
-            box-shadow: inset 0 0 6px $scrollbarShadow;
+            box-shadow: inset 0 0 6px $scrollbar;
         }
 
         &-thumb {
-            background-color: $scrollbarThumbBackground;
-            outline: 1px solid $scrollbarThumb;
+            background-color: $browner;
+            outline: 1px solid $brown;
         }
     }
 }
 
 ::selection {
-    background-color: $bodySelection;
-    color: $first;
+    background-color: $primary;
+    color: $light;
 }
 
 .disable-selection {

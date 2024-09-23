@@ -1,5 +1,4 @@
 #projects {
-    background-color: $projectsAndContactBackground;
     padding: 30px 0 10px 0;
     display: flex;
     flex-direction: column;
@@ -13,14 +12,10 @@
 
     p {
         a {
-            color: $projectsLink;
+            color: $primary;
             font-weight: bold;
             text-decoration: none;
             transition: color .3s ease-in-out;
-
-            &:hover {
-                color: $projectsLinkDarker;
-            }
         }
     }
 
@@ -28,7 +23,7 @@
         margin: 30px 0 10px 0;
         padding: 10px 20px 20px 20px;
         width: 1400px;
-        border: 2px solid $projectsContainer;
+        border: 2px solid $light;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -46,9 +41,9 @@
         }
 
         .project {
-            background-color: $projectsProjectBackground;
+            background-color: $brown;
             padding: 10px;
-            border: .1px solid $projectsProjectBorder;
+            border: .1px solid $light;
             border-radius: 10px;
             position: relative;
             flex: 0 0 calc(33.33% - 20px);
@@ -65,7 +60,7 @@
             }
 
             &:hover {
-                background-color: $projectsProjectHoverBackground;
+                background-color: $browner;
                 -webkit-transform: translate(0px, -3px);
                 -moz-transform: translate(0px, -3px);
                 -ms-transform: translate(0px, -3px);
@@ -74,7 +69,6 @@
             }
 
             .name {
-                color: $projectsProjectColor;
                 font-weight: 600;
                 display: grid;
                 grid-template-columns: 1fr 42px 40px;
@@ -91,7 +85,7 @@
 
                     &:hover {
                         path {
-                            fill: $projectsLink;
+                            fill: $primary;
                         }
                     }
                 }
@@ -102,12 +96,12 @@
                     right: 6px;
 
                     path {
-                        transition: stroke .3s ease-in-out;
+                        transition: all .3s ease-in-out;
                     }
 
                     &:hover {
                         path {
-                            stroke: $projectsLink;
+                            stroke: $primary;
                         }
                     }
                 }
@@ -118,7 +112,8 @@
                     &:hover {
                         .go {
                             path {
-                                stroke: $projectsProjectInactive;
+                                stroke: $light;
+                                filter: brightness(70%);
                             }
                         }
                     }
@@ -132,8 +127,8 @@
             }
 
             .technologies {
-                color: $projectsProjectTechnologies;
-                font-weight: bold;
+                filter: brightness(80%);
+                font-weight: 600;
                 font-size: 15px;
                 margin-top: -15px;
             }

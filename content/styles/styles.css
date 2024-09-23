@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-color: #402A23;
-  color: white;
+  background-color: #4E3524;
+  color: #F8F8FF;
   font-family: "Outfit", sans-serif;
   font-size: 25px;
   min-height: 100vh;
@@ -23,21 +23,21 @@ body::-webkit-scrollbar {
   width: 0.5em;
 }
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8549019608);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #201511;
-  outline: 1px solid rgba(255, 255, 255, 0.1019607843);
+  background-color: #3E2A1D;
+  outline: 1px solid #463020;
 }
 
 ::-moz-selection {
-  background-color: #007300;
-  color: white;
+  background-color: #E19464;
+  color: #F8F8FF;
 }
 
 ::selection {
-  background-color: #007300;
-  color: white;
+  background-color: #E19464;
+  color: #F8F8FF;
 }
 
 .disable-selection {
@@ -48,16 +48,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #intro {
-  color: rgba(255, 255, 255, 0.7019607843);
   font-family: "Mukta", sans-serif;
   margin: 300px 0 400px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: color 0.3s ease-in-out;
-}
-#intro:hover {
-  color: white;
 }
 #intro p {
   font-size: 40px;
@@ -73,19 +69,19 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 #intro a {
-  background-color: #1D1716;
-  color: white;
+  background-color: #3A281B;
+  color: #F8F8FF;
   text-decoration: none;
   padding: 10px 20px;
   font-size: 45px;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out;
 }
 #intro a:hover {
-  background-color: #171212;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 #intro a:active {
   transform: translate(0px, 5px);
@@ -93,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 #intro hr {
   width: 60%;
   margin: 2rem auto 0 auto;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   border-radius: 4px;
   display: block;
 }
@@ -112,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   #intro a {
     padding: 0.91vw 1.82vw;
     font-size: 4.09vw;
-    border: 0.18vw solid white;
+    border: 0.18vw solid #F8F8FF;
     border-radius: 0.64vw;
   }
   #intro a:hover {
@@ -122,7 +118,7 @@ body::-webkit-scrollbar-thumb {
   #intro hr {
     width: 90%;
     margin: 2.91vw auto 0 auto;
-    border: 0.18 solid white;
+    border: 0.18 solid #F8F8FF;
     border-radius: 0.36vw;
   }
 }
@@ -130,7 +126,7 @@ body::-webkit-scrollbar-thumb {
   #intro a {
     padding: 1.365vw 2.73vw;
     font-size: 6.135vw;
-    border: 0.27vw solid white;
+    border: 0.27vw solid #F8F8FF;
     border-radius: 0.96vw;
   }
   #intro a:hover {
@@ -145,22 +141,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #literally-me {
-  background: #402A23;
-  background: linear-gradient(180deg, #402A23 17%, #A55233 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$bodyBackground, endColorstr=$skillsBackground, GradientType=1);
   margin: 0;
   padding: 40px 0 30px 0;
 }
 #literally-me blockquote {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #3A281B;
   font-size: 40px;
   text-align: center;
   margin: 0 auto 40px auto;
   padding: 20px 10px;
   width: 1200px;
-  border: 3px solid white;
+  border: 3px solid #F8F8FF;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.08) 0px -3px 5px;
   display: block;
 }
 #literally-me blockquote p {
@@ -173,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 #literally-me hr {
   width: 95%;
   margin: 2rem auto 0 auto;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   border-radius: 4px;
   display: block;
 }
@@ -187,10 +180,10 @@ body::-webkit-scrollbar-thumb {
 #literally-me .flex-container img {
   height: 508px;
   padding: 10px;
-  border: 2px solid white;
-  filter: grayscale(60%);
+  border: 2px solid #F8F8FF;
+  filter: grayscale(70%);
   box-shadow: inset 0px 0px 30px 0px rgb(0, 0, 0);
-  transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: all 0.5s, padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #literally-me .flex-container img:hover {
   padding: 0;
@@ -200,7 +193,7 @@ body::-webkit-scrollbar-thumb {
 #literally-me .flex-container fieldset {
   font-size: 20px;
   margin: 0;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   display: inline-block;
 }
 #literally-me .flex-container fieldset legend {
@@ -214,7 +207,6 @@ body::-webkit-scrollbar-thumb {
 }
 #literally-me .flex-container fieldset p span {
   display: inline-block;
-  filter: hue-rotate(85deg);
   transition: filter 0.3s ease-in-out;
 }
 @keyframes rotating {
@@ -229,7 +221,7 @@ body::-webkit-scrollbar-thumb {
   animation: rotating 0.7s ease-in-out infinite;
 }
 #literally-me .flex-container fieldset p strong {
-  color: #3BF280;
+  color: #E19464;
   transition: color 0.3s ease-in-out;
 }
 
@@ -249,9 +241,9 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto 4.396vw auto;
     padding: 2.198vw 1.099vw;
     width: 93.407vw;
-    border: 0.33vw solid white;
+    border: 0.33vw solid #F8F8FF;
     border-radius: 2.198vw;
-    box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.09) 0vw -0.83vw 1.39vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.08) 0vw -0.83vw 1.39vw;
   }
   #literally-me blockquote p:first-child {
     margin-bottom: 1.648vw;
@@ -259,7 +251,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 850px) {
   #literally-me hr {
-    border: 0.235vw solid white;
+    border: 0.235vw solid #F8F8FF;
     border-radius: 0.471vw;
   }
   #literally-me .flex-container {
@@ -271,7 +263,7 @@ body::-webkit-scrollbar-thumb {
   #literally-me .flex-container img {
     height: 59.765vw;
     padding: 1.176vw;
-    border: 0.235vw solid white;
+    border: 0.235vw solid #F8F8FF;
     box-shadow: inset 0px 0px 3.529vw 0px rgb(0, 0, 0);
   }
   #literally-me .flex-container img:hover {
@@ -279,7 +271,7 @@ body::-webkit-scrollbar-thumb {
   }
   #literally-me .flex-container fieldset {
     font-size: 2.353vw;
-    border: 0.235vw solid white;
+    border: 0.235vw solid #F8F8FF;
   }
   #literally-me .flex-container fieldset legend {
     font-size: 4.118vw;
@@ -299,7 +291,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     padding: 1.538vw;
-    border: 0.308vw solid white;
+    border: 0.308vw solid #F8F8FF;
     box-shadow: inset 0px 0px 4.615vw 0px rgb(0, 0, 0);
   }
   #literally-me .flex-container img:hover {
@@ -307,7 +299,7 @@ body::-webkit-scrollbar-thumb {
   }
   #literally-me .flex-container fieldset {
     font-size: 4.308vw;
-    border: 0.308vw solid white;
+    border: 0.308vw solid #F8F8FF;
   }
   #literally-me .flex-container fieldset legend {
     font-size: 5.385vw;
@@ -319,9 +311,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #skills {
-  background: #A55233;
-  background: linear-gradient(180deg, #A55233 1%, #419971 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
   padding: 20px 0 30px 0;
   display: flex;
   flex-direction: column;
@@ -341,7 +330,7 @@ body::-webkit-scrollbar-thumb {
 #skills fieldset {
   margin: 25px 0;
   padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
 }
 #skills fieldset legend {
   font-size: 35px;
@@ -356,14 +345,14 @@ body::-webkit-scrollbar-thumb {
 #skills fieldset .grid-container div {
   width: 115px;
   height: 115px;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   display: inline-block;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 #skills fieldset .grid-container div:hover {
-  background-color: #323A47;
+  background-color: #2B4353;
   border-radius: 25px;
 }
 #skills fieldset .grid-container div i {
@@ -375,22 +364,28 @@ body::-webkit-scrollbar-thumb {
   -webkit-filter: saturate(200%);
   -moz-filter: saturate(200%);
 }
-#skills fieldset .grid-container div i.devicon-html5-plain, #skills fieldset .grid-container div i.devicon-css3-plain {
+#skills fieldset .grid-container div i.devicon-html5-plain {
   filter: saturate(150%);
 }
-#skills fieldset .grid-container div i.devicon-electron-original {
+#skills fieldset .grid-container div i.devicon-css3-plain {
   filter: saturate(400%);
 }
+#skills fieldset .grid-container div i.devicon-typescript-plain {
+  filter: saturate(400%);
+}
+#skills fieldset .grid-container div i.devicon-electron-original {
+  filter: saturate(500%);
+}
 #skills fieldset p {
-  background-color: white;
-  color: black;
+  background-color: #F8F8FF;
+  color: #000000;
   font-family: "Mukta", sans-serif;
   font-weight: bold;
   text-align: center;
   margin: 20px auto 7px auto;
   padding: 0;
   width: 50%;
-  border: 5px solid black;
+  border: 4px solid #000000;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -414,7 +409,7 @@ body::-webkit-scrollbar-thumb {
   #skills fieldset {
     margin: 3.704vw 0;
     padding: 2.222vw;
-    border: 0.296vw solid white;
+    border: 0.296vw solid #F8F8FF;
   }
   #skills fieldset legend {
     font-size: 5.185vw;
@@ -426,7 +421,7 @@ body::-webkit-scrollbar-thumb {
   #skills fieldset .grid-container div {
     width: 17.037vw;
     height: 17.037vw;
-    border: 0.296vw solid white;
+    border: 0.296vw solid #F8F8FF;
     box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.444vw 0.889vw, rgba(0, 0, 0, 0.23) 0vw 0.444vw 0.889vw;
   }
   #skills fieldset .grid-container div:hover {
@@ -437,13 +432,12 @@ body::-webkit-scrollbar-thumb {
   }
   #skills fieldset p {
     margin: 2.963vw auto 1.037vw auto;
-    border: 0.741vw solid black;
+    border: 0.741vw solid #F8F8FF;
     border-radius: 1.481vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0.444vw 1.185vw;
   }
 }
 #experiences {
-  background-color: #419971;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
@@ -455,19 +449,16 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
 }
 #experiences p a {
-  color: #F05D23;
+  color: #E19464;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
-#experiences p a:hover {
-  color: #E84D10;
-}
 #experiences .job {
-  background-color: #4F9978;
+  background-color: #463020;
   margin: 40px 0 0 0;
   padding: 10px;
-  border: 0.1px solid white;
+  border: 0.1px solid #F8F8FF;
   border-radius: 10px;
   width: 520px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -476,13 +467,13 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 #experiences .job:hover {
-  background-color: #46886A;
+  background-color: #3E2A1D;
 }
 #experiences .job .dot {
   margin: 10px 10px 10px 0;
   height: 15px;
   width: 15px;
-  background-color: white;
+  background-color: #F8F8FF;
   border-radius: 50%;
   display: inline-block;
   transform: translateY(-2px);
@@ -497,8 +488,8 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5px;
 }
 #experiences .job .info p:nth-child(3) {
-  color: #D2D2D2;
-  font-weight: bold;
+  filter: brightness(80%);
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -516,7 +507,7 @@ body::-webkit-scrollbar-thumb {
   #experiences .job {
     margin: 6.154vw 0 0 0;
     padding: 1.538vw;
-    border: 0.015vw solid white;
+    border: 0.015vw solid #F8F8FF;
     border-radius: 1.538vw;
     width: 80vw;
     box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
@@ -541,8 +532,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #cv {
-  background-color: white;
-  color: black;
+  background-color: #F8F8FF;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,16 +541,15 @@ body::-webkit-scrollbar-thumb {
   cursor: auto;
 }
 #cv ::-moz-selection {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #F8F8FF;
 }
 #cv ::selection {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #F8F8FF;
 }
 
 #projects {
-  background-color: #419971;
   padding: 30px 0 10px 0;
   display: flex;
   flex-direction: column;
@@ -571,19 +561,16 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
 }
 #projects p a {
-  color: #F05D23;
+  color: #E19464;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
-}
-#projects p a:hover {
-  color: #E84D10;
 }
 #projects .projects-container {
   margin: 30px 0 10px 0;
   padding: 10px 20px 20px 20px;
   width: 1400px;
-  border: 2px solid white;
+  border: 2px solid #F8F8FF;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -601,9 +588,9 @@ body::-webkit-scrollbar-thumb {
   padding: 0 10px;
 }
 #projects .projects-container .project {
-  background-color: #4F9978;
+  background-color: #463020;
   padding: 10px;
-  border: 0.1px solid white;
+  border: 0.1px solid #F8F8FF;
   border-radius: 10px;
   position: relative;
   flex: 0 0 calc(33.33% - 20px);
@@ -622,11 +609,10 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #projects .projects-container .project:hover {
-  background-color: #46886A;
+  background-color: #3E2A1D;
   transform: translate(0px, -3px);
 }
 #projects .projects-container .project .name {
-  color: white;
   font-weight: 600;
   display: grid;
   grid-template-columns: 1fr 42px 40px;
@@ -641,7 +627,7 @@ body::-webkit-scrollbar-thumb {
   transition: fill 0.3s ease-in-out;
 }
 #projects .projects-container .project .name .github:hover path {
-  fill: #F05D23;
+  fill: #E19464;
 }
 #projects .projects-container .project .name .go {
   position: absolute;
@@ -649,16 +635,17 @@ body::-webkit-scrollbar-thumb {
   right: 6px;
 }
 #projects .projects-container .project .name .go path {
-  transition: stroke 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #projects .projects-container .project .name .go:hover path {
-  stroke: #F05D23;
+  stroke: #E19464;
 }
 #projects .projects-container .project .name .inactive {
   cursor: not-allowed;
 }
 #projects .projects-container .project .name .inactive:hover .go path {
-  stroke: #C0C0C0;
+  stroke: #F8F8FF;
+  filter: brightness(70%);
 }
 #projects .projects-container .project .description {
   font-size: 15px;
@@ -666,8 +653,8 @@ body::-webkit-scrollbar-thumb {
   flex: 10;
 }
 #projects .projects-container .project .technologies {
-  color: #D2D2D2;
-  font-weight: bold;
+  filter: brightness(80%);
+  font-weight: 600;
   font-size: 15px;
   margin-top: -15px;
 }
@@ -719,7 +706,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #contact {
-  background-color: #419971;
   padding: 100px 100px 0 100px;
   display: flex;
   flex-direction: column;
@@ -730,7 +716,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #2B4353;
   width: 1000px;
   height: 300px;
-  border: 5px solid white;
+  border: 5px solid #F8F8FF;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -740,7 +726,7 @@ body::-webkit-scrollbar-thumb {
   transition: border 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #contact fieldset:hover {
-  border: 5px solid #F05D23;
+  border: 5px solid #E19464;
   transform: translateY(-5px);
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -768,10 +754,10 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease-in-out;
 }
 #contact fieldset .contact-info a:first-child:hover path {
-  stroke: #F05D23;
+  stroke: #E19464;
 }
 #contact fieldset .contact-info a:not(:first-child):hover path {
-  fill: #F05D23;
+  fill: #E19464;
 }
 
 @media (max-width: 1100px) {
@@ -781,12 +767,12 @@ body::-webkit-scrollbar-thumb {
   #contact fieldset {
     width: 90.91vw;
     height: 27.27vw;
-    border: 0.45vw solid white;
+    border: 0.45vw solid #F8F8FF;
     border-radius: 1.36vw;
     box-shadow: 0px 0.45vw 0.91vw 0px rgba(0, 0, 0, 0.5);
   }
   #contact fieldset:hover {
-    border: 0.45vw solid #F05D23;
+    border: 0.45vw solid #E19464;
     transform: translateY(-0.45vw);
     box-shadow: 0px 0.91vw 1.82vw 0.18vw rgba(0, 0, 0, 0.25);
   }
@@ -803,7 +789,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 footer {
-  background-color: #2C5543;
+  background-color: #3A281B;
   padding: 0 0 20px 0;
   margin: -165px 0 0 0;
   height: 680px;
@@ -821,13 +807,11 @@ footer p {
 }
 footer p:first-child {
   margin-top: 290px;
-  filter: hue-rotate(30deg);
 }
 footer p:last-child {
-  color: #EEEEEE;
+  color: #F8F8FF;
   font-size: 16px;
   margin: auto 0 0 0;
-  cursor: text;
 }
 footer svg {
   margin-top: 15px;

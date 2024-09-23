@@ -1,9 +1,4 @@
 #skills {
-    background: $skillsBackground;
-    background: -moz-linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
-    background: -webkit-linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
-    background: linear-gradient(180deg, $skillsBackground 1%, $projectsAndContactBackground 75%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$skillsBackground, endColorstr=$projectsAndContactBackground, GradientType=1);
     padding: 20px 0 30px 0;
     display: flex;
     flex-direction: column;
@@ -25,7 +20,7 @@
     fieldset {
         margin: 25px 0;
         padding: 15px;
-        border: 2px solid $skillsBorder;
+        border: 2px solid $light;
 
         legend {
             font-size: 35px;
@@ -41,14 +36,14 @@
             div {
                 width: 115px;
                 height: 115px;
-                border: 2px solid $skillsBorder;
+                border: 2px solid $light;
                 display: inline-block;
                 text-align: center;
-                box-shadow: $skillsShadowFirst 0px 3px 6px, $skillsShadowSecond 0px 3px 6px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: $skillsDivHover;
+                    background-color: $secondary;
                     border-radius: 25px;
                 }
 
@@ -61,30 +56,37 @@
                     -webkit-filter: saturate(200%);
                     -moz-filter: saturate(200%);
 
-                    &.devicon-html5-plain,
-                    &.devicon-css3-plain {
+                    &.devicon-html5-plain {
                         filter: saturate(150%);
                     }
 
-                    &.devicon-electron-original {
+                    &.devicon-css3-plain {
                         filter: saturate(400%);
+                    }
+
+                    &.devicon-typescript-plain {
+                        filter: saturate(400%);
+                    }
+
+                    &.devicon-electron-original {
+                        filter: saturate(500%);
                     }
                 }
             }
         }
 
         p {
-            background-color: $skillsShowBackground;
-            color: $skillsShowColor;
+            background-color: $light;
+            color: $dark;
             font-family: "Mukta", sans-serif;
             font-weight: bold;
             text-align: center;
             margin: 20px auto 7px auto;
             padding: 0;
             width: 50%;
-            border: 5px solid $skillsShowBorder;
+            border: 4px solid $dark;
             border-radius: 10px;
-            box-shadow: $skillsShowShadow 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
 
@@ -118,7 +120,7 @@
         fieldset {
             margin: 3.704vw 0;
             padding: 2.222vw;
-            border: 0.296vw solid $skillsBorder;
+            border: 0.296vw solid $light;
 
             legend {
                 font-size: 5.185vw;
@@ -131,8 +133,8 @@
                 div {
                     width: 17.037vw;
                     height: 17.037vw;
-                    border: 0.296vw solid $skillsBorder;
-                    box-shadow: $skillsShadowFirst 0vw 0.444vw 0.889vw, $skillsShadowSecond 0vw 0.444vw 0.889vw;
+                    border: 0.296vw solid $light;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.444vw 0.889vw, rgba(0, 0, 0, 0.23) 0vw 0.444vw 0.889vw;
 
                     &:hover {
                         border-radius: 3.704vw;
@@ -146,9 +148,9 @@
 
             p {
                 margin: 2.963vw auto 1.037vw auto;
-                border: 0.741vw solid $skillsShowBorder;
+                border: 0.741vw solid $light;
                 border-radius: 1.481vw;
-                box-shadow: $skillsShowShadow 0px 0.444vw 1.185vw;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 0.444vw 1.185vw;
             }
         }
     }
