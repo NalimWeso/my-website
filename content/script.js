@@ -1,19 +1,5 @@
-const navLinks = document.querySelectorAll('.sidebar li a');
 const gridItem = document.querySelectorAll('.grid-container div');
 const skillBoard = document.querySelector('.skill');
-
-function handleSidebar(display) {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = display;
-}
-
-navLinks.forEach(link => {
-    link.addEventListener('click', event => {
-        setTimeout(() => {
-            handleSidebar('none');
-        }, 100);
-    });
-});
 
 gridItem.forEach(skill => {
     const skillIcon = skill.querySelector('i');
