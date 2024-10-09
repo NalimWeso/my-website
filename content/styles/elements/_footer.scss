@@ -47,12 +47,12 @@ footer {
     }
 }
 
-@media (max-width: 485px) {
+@media (max-width: 700px) {
     footer {
 
         p {
             &:last-child {
-                font-size: 3.299vw;
+                font-size: 2.286vw;
             }
         }
     }
