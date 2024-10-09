@@ -43,7 +43,7 @@
                 transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: $secondary;
+                    background-color: $base-muted;
                     border-radius: 25px;
                 }
 

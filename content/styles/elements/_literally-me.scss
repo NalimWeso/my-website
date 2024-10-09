@@ -3,7 +3,7 @@
     padding: 40px 0 30px 0;
 
     blockquote {
-        background-color: $brownest;
+        background-color: $base-accent;
         font-size: 40px;
         text-align: center;
         margin: 0 auto 40px auto;
@@ -43,11 +43,11 @@
             height: 508px;
             padding: 10px;
             border: 2px solid $light;
-            filter: grayscale(70%);
+            filter: grayscale(100%);
             -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
             -moz-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
             box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
-            transition: all 0.5s, padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+            transition: padding 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 
             &:hover {
                 padding: 0;
@@ -86,6 +86,7 @@
                     }
 
                     display: inline-block;
+                    filter: hue-rotate(250deg) saturate(200%) contrast(200%);
                     transition: filter 0.3s ease-in-out;
 
                     &:first-child {

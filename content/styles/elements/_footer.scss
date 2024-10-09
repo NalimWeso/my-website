@@ -1,5 +1,5 @@
 footer {
-    background-color: $brownest;
+    background-color: $base-accent;
     padding: 0 0 20px 0;
     margin: -165px 0 0 0;
     height: 680px;
@@ -17,6 +17,7 @@ footer {
 
         &:first-child {
             margin-top: 290px;
+            filter: hue-rotate(250deg) saturate(200%) contrast(200%);
         }
 
         &:last-child {

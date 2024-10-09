@@ -41,7 +41,7 @@
         }
 
         .project {
-            background-color: $brown;
+            background-color: $base-muted;
             padding: 10px;
             border: .1px solid $light;
             border-radius: 10px;
@@ -60,7 +60,7 @@
             }
 
             &:hover {
-                background-color: $browner;
+                background-color: $base-muted;
                 -webkit-transform: translate(0px, -3px);
                 -moz-transform: translate(0px, -3px);
                 -ms-transform: translate(0px, -3px);
