@@ -68,10 +68,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #07161E;
   color: #F8F8FF;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-size: 45px;
   border: 2px solid #F8F8FF;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   cursor: pointer;
   transition: border-radius 0.3s ease-in-out;
@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(0px, 5px);
 }
 #intro hr {
-  width: 60%;
+  width: 1000px;
   margin: 2rem auto 0 auto;
   border: 2px solid #F8F8FF;
   border-radius: 4px;
@@ -102,19 +102,21 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 0.18vw 0.64vw 0.45vw rgba(0, 0, 0, 0.3), 0vw -0.36vw 0.91vw rgba(255, 255, 255, 0.3);
   }
   #intro a {
-    padding: 0.91vw 1.82vw;
+    padding: 0.727vw 1.818vw;
     font-size: 4.09vw;
     border: 0.18vw solid #F8F8FF;
-    border-radius: 0.64vw;
+    border-radius: 0.364vw;
   }
   #intro a:hover {
-    border-radius: 2.25vw;
+    border-radius: 1.455vw;
+  }
+  #intro a:active {
     transform: translate(0px, 0.45vw);
   }
   #intro hr {
     width: 90%;
     margin: 2.91vw auto 0 auto;
-    border: 0.18 solid #F8F8FF;
+    border: 0.18vw solid #F8F8FF;
     border-radius: 0.36vw;
   }
 }
@@ -123,10 +125,12 @@ body::-webkit-scrollbar-thumb {
     padding: 1.365vw 2.73vw;
     font-size: 6.135vw;
     border: 0.27vw solid #F8F8FF;
-    border-radius: 0.96vw;
+    border-radius: 0.571vw;
   }
   #intro a:hover {
-    border-radius: 3.375vw;
+    border-radius: 2.286vw;
+  }
+  #intro a:active {
     transform: translate(0px, 0.675vw);
   }
 }
@@ -148,7 +152,7 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 10px;
   width: 1200px;
   border: 3px solid #F8F8FF;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.08) 0px -3px 5px;
   display: block;
 }
@@ -239,7 +243,7 @@ body::-webkit-scrollbar-thumb {
     padding: 2.198vw 1.099vw;
     width: 93.407vw;
     border: 0.33vw solid #F8F8FF;
-    border-radius: 2.198vw;
+    border-radius: 0.44vw;
     box-shadow: rgba(0, 0, 0, 0.25) 0vw 18.77vw 19.23vw, rgba(0, 0, 0, 0.12) 0vw -4.13vw 9.89vw, rgba(0, 0, 0, 0.12) 0vw 1.11vw 1.67vw, rgba(0, 0, 0, 0.17) 0vw 3.32vw 3.47vw, rgba(0, 0, 0, 0.08) 0vw -0.83vw 1.39vw;
   }
   #literally-me blockquote p:first-child {

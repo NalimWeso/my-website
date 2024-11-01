@@ -25,10 +25,10 @@
         background-color: $base-accent;
         color: $light;
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 8px 20px;
         font-size: 45px;
         border: 2px solid $light;
-        border-radius: 5px;
+        border-radius: 4px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         cursor: pointer;
         transition: border-radius 0.3s ease-in-out;
@@ -47,7 +47,7 @@
     }
 
     hr {
-        width: 60%;
+        width: 1000px;
         margin: 2rem auto 0 auto;
         border: 2px solid $light;
         border-radius: 4px;
@@ -70,13 +70,16 @@
         }
 
         a {
-            padding: 0.91vw 1.82vw;
+            padding: 0.727vw 1.818vw;
             font-size: 4.09vw;
             border: 0.18vw solid $light;
-            border-radius: 0.64vw;
+            border-radius: 0.364vw;
 
             &:hover {
-                border-radius: 2.25vw;
+                border-radius: 1.455vw;
+            }
+
+            &:active {
                 -webkit-transform: translate(0px, 0.45vw);
                 -moz-transform: translate(0px, 0.45vw);
                 -ms-transform: translate(0px, 0.45vw);
@@ -88,7 +91,7 @@
         hr {
             width: 90%;
             margin: 2.91vw auto 0 auto;
-            border: 0.18 solid $light;
+            border: 0.18vw solid $light;
             border-radius: 0.36vw;
         }
     }
@@ -100,10 +103,13 @@
             padding: 1.365vw 2.73vw;
             font-size: 6.135vw;
             border: 0.27vw solid $light;
-            border-radius: 0.96vw;
+            border-radius: 0.571vw;
 
             &:hover {
-                border-radius: 3.375vw;
+                border-radius: 2.286vw;
+            }
+
+            &:active {
                 -webkit-transform: translate(0px, 0.675vw);
                 -moz-transform: translate(0px, 0.675vw);
                 -ms-transform: translate(0px, 0.675vw);
