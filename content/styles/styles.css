@@ -452,7 +452,6 @@ body::-webkit-scrollbar-thumb {
   color: #FF82FF;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
 }
 #experiences .job {
   background-color: #07161E;
@@ -460,7 +459,7 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   border: 0.1px solid #F8F8FF;
   border-radius: 10px;
-  width: 470px;
+  width: 420px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
   align-items: first baseline;
@@ -483,15 +482,20 @@ body::-webkit-scrollbar-thumb {
 }
 #experiences .job .info p {
   font-size: 20px;
-}
-#experiences .job .info p:nth-child(2) {
-  font-size: 24px;
-  margin-top: 5px;
-}
-#experiences .job .info p:nth-child(3) {
-  filter: brightness(80%);
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 10px;
+  filter: brightness(80%);
+}
+#experiences .job .info a {
+  color: #F8F8FF;
+  font-size: 24px;
+  text-decoration: none;
+  margin-top: 5px;
+  display: block;
+  transition: color 0.2s ease-in-out;
+}
+#experiences .job .info a:hover {
+  color: #FF82FF;
 }
 
 @media (max-width: 650px) {
@@ -510,7 +514,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1.538vw;
     border: 0.015vw solid #F8F8FF;
     border-radius: 1.538vw;
-    width: 72.308vw;
+    width: 64.615vw;
     box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
   }
   #experiences .job .dot {
@@ -566,7 +570,6 @@ body::-webkit-scrollbar-thumb {
   color: #FF82FF;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
 }
 #projects .projects-container {
   margin: 30px 0 10px 0;
@@ -626,7 +629,7 @@ body::-webkit-scrollbar-thumb {
   right: 47px;
 }
 #projects .projects-container .project .name .github path {
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.2s ease-in-out;
 }
 #projects .projects-container .project .name .github:hover path {
   fill: #FF82FF;
@@ -637,7 +640,7 @@ body::-webkit-scrollbar-thumb {
   right: 6px;
 }
 #projects .projects-container .project .name .go path {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #projects .projects-container .project .name .go:hover path {
   stroke: #FF82FF;
@@ -753,7 +756,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 #contact fieldset .contact-info a path {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #contact fieldset .contact-info a:first-child:hover path {
   stroke: #FF82FF;

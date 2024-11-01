@@ -15,7 +15,6 @@
             color: $primary;
             font-weight: bold;
             text-decoration: none;
-            transition: color .3s ease-in-out;
         }
     }
 
@@ -25,7 +24,7 @@
         padding: 10px;
         border: .1px solid $light;
         border-radius: 10px;
-        width: 470px;
+        width: 420px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         display: flex;
         align-items: first baseline;
@@ -52,16 +51,21 @@
 
             p {
                 font-size: 20px;
+                font-weight: 600;
+                margin-top: 10px;
+                filter: brightness(80%);
+            }
 
-                &:nth-child(2) {
-                    font-size: 24px;
-                    margin-top: 5px;
-                }
+            a {
+                color: $light;
+                font-size: 24px;
+                text-decoration: none;
+                margin-top: 5px;
+                display: block;
+                transition: color .2s ease-in-out;
 
-                &:nth-child(3) {
-                    filter: brightness(80%);
-                    font-weight: 500;
-                    margin-top: 10px;
+                &:hover {
+                    color: $primary;
                 }
             }
         }
@@ -86,7 +90,7 @@
             padding: 1.538vw;
             border: 0.015vw solid $light;
             border-radius: 1.538vw;
-            width: 72.308vw;
+            width: 64.615vw;
             box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
 
             .dot {

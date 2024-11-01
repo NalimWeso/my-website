@@ -15,7 +15,6 @@
             color: $primary;
             font-weight: bold;
             text-decoration: none;
-            transition: color .3s ease-in-out;
         }
     }
 
@@ -80,7 +79,7 @@
                     right: 47px;
 
                     path {
-                        transition: fill .3s ease-in-out;
+                        transition: fill .2s ease-in-out;
                     }
 
                     &:hover {
@@ -96,7 +95,7 @@
                     right: 6px;
 
                     path {
-                        transition: all .3s ease-in-out;
+                        transition: all .2s ease-in-out;
                     }
 
                     &:hover {
