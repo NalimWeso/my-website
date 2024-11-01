@@ -1,4 +1,4 @@
-# [NalimWeso.com](https://nalimweso.com/)
+# [NalimWeso](https://nalimweso.com/)
 
 <kbd>
   <img src="content/images/Screenshot.png" alt="Screenshot">
