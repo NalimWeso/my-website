@@ -40,10 +40,9 @@
                 display: inline-block;
                 text-align: center;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-                transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+                transition: border-radius 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: $base-muted;
                     border-radius: 25px;
                 }
 

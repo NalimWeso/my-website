@@ -25,7 +25,7 @@
         padding: 10px;
         border: .1px solid $light;
         border-radius: 10px;
-        width: 520px;
+        width: 470px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         display: flex;
         align-items: first baseline;
@@ -47,13 +47,14 @@
 
         .info {
             h3 {
-                font-size: 30px;
+                font-size: 28px;
             }
 
             p {
                 font-size: 20px;
 
                 &:nth-child(2) {
+                    font-size: 24px;
                     margin-top: 5px;
                 }
 
@@ -85,7 +86,7 @@
             padding: 1.538vw;
             border: 0.015vw solid $light;
             border-radius: 1.538vw;
-            width: 80vw;
+            width: 72.308vw;
             box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
 
             .dot {
@@ -97,13 +98,14 @@
 
             .info {
                 h3 {
-                    font-size: 4.615vw;
+                    font-size: 4.308vw;
                 }
 
                 p {
                     font-size: 3.077vw;
 
                     &:nth-child(2) {
+                        font-size: 3.692vw;
                         margin-top: 0.769vw;
                     }
 

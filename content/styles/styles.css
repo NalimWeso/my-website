@@ -346,10 +346,9 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: border-radius 0.3s ease-in-out;
 }
 #skills fieldset .grid-container div:hover {
-  background-color: #081B26;
   border-radius: 25px;
 }
 #skills fieldset .grid-container div i {
@@ -457,7 +456,7 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   border: 0.1px solid #F8F8FF;
   border-radius: 10px;
-  width: 520px;
+  width: 470px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
   align-items: first baseline;
@@ -476,12 +475,13 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-2px);
 }
 #experiences .job .info h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 #experiences .job .info p {
   font-size: 20px;
 }
 #experiences .job .info p:nth-child(2) {
+  font-size: 24px;
   margin-top: 5px;
 }
 #experiences .job .info p:nth-child(3) {
@@ -506,7 +506,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1.538vw;
     border: 0.015vw solid #F8F8FF;
     border-radius: 1.538vw;
-    width: 80vw;
+    width: 72.308vw;
     box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
   }
   #experiences .job .dot {
@@ -516,12 +516,13 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-0.308vw);
   }
   #experiences .job .info h3 {
-    font-size: 4.615vw;
+    font-size: 4.308vw;
   }
   #experiences .job .info p {
     font-size: 3.077vw;
   }
   #experiences .job .info p:nth-child(2) {
+    font-size: 3.692vw;
     margin-top: 0.769vw;
   }
   #experiences .job .info p:nth-child(3) {
