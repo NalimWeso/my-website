@@ -537,24 +537,6 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0.615vw;
   }
 }
-#cv {
-  background-color: #F8F8FF;
-  color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  cursor: auto;
-}
-#cv ::-moz-selection {
-  background-color: #000000;
-  color: #F8F8FF;
-}
-#cv ::selection {
-  background-color: #000000;
-  color: #F8F8FF;
-}
-
 #projects {
   padding: 30px 0 10px 0;
   display: flex;
