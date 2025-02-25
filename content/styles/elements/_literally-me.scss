@@ -68,11 +68,22 @@
                 padding: 0 10px;
             }
 
-            p {
-                margin: 0 5px;
-                padding: 5px 10px;
+            ul {
+                margin: 5px 15px;
+                list-style-type: none;
 
-                span {
+                @media (hover) {
+                    &>* {
+                        transition: opacity .1s ease;
+                    }
+
+                    &:hover>*:not(:hover) {
+                        opacity: .4;
+                    }
+                }
+
+                li {
+
                     @keyframes rotating {
 
                         0%,
@@ -85,12 +96,14 @@
                         }
                     }
 
-                    display: inline-block;
-                    filter: hue-rotate(250deg) saturate(200%) contrast(200%);
-                    transition: filter 0.3s ease-in-out;
-
-                    &:first-child {
+                    &:first-child span {
                         animation: rotating 0.7s ease-in-out infinite;
+                    }
+
+                    span {
+                        display: inline-block;
+                        filter: hue-rotate(250deg) saturate(200%) contrast(200%);
+                        transition: filter 0.3s ease-in-out;
                     }
                 }
 
@@ -170,9 +183,8 @@
                     padding: 0 1.176vw;
                 }
 
-                p {
-                    margin: 0 0.588vw;
-                    padding: 0.588vw 1.176vw;
+                ul {
+                    margin: 0.588vw 1.765vw;
                 }
             }
         }
@@ -208,9 +220,8 @@
                     padding: 0 1.538vw;
                 }
 
-                p {
-                    margin: 0 1.846vw 1.846vw 1.846vw;
-                    padding: 0.769vw 1.538vw;
+                ul {
+                    margin: 0.769vw 3.385vw 3.385vw;
                 }
             }
         }

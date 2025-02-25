@@ -201,14 +201,17 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   padding: 0 10px;
 }
-#literally-me .flex-container fieldset p {
-  margin: 0 5px;
-  padding: 5px 10px;
+#literally-me .flex-container fieldset ul {
+  margin: 5px 15px;
+  list-style-type: none;
 }
-#literally-me .flex-container fieldset p span {
-  display: inline-block;
-  filter: hue-rotate(250deg) saturate(200%) contrast(200%);
-  transition: filter 0.3s ease-in-out;
+@media (hover) {
+  #literally-me .flex-container fieldset ul > * {
+    transition: opacity 0.1s ease;
+  }
+  #literally-me .flex-container fieldset ul:hover > *:not(:hover) {
+    opacity: 0.4;
+  }
 }
 @keyframes rotating {
   0%, 100% {
@@ -218,10 +221,15 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(-10deg);
   }
 }
-#literally-me .flex-container fieldset p span:first-child {
+#literally-me .flex-container fieldset ul li:first-child span {
   animation: rotating 0.7s ease-in-out infinite;
 }
-#literally-me .flex-container fieldset p strong {
+#literally-me .flex-container fieldset ul li span {
+  display: inline-block;
+  filter: hue-rotate(250deg) saturate(200%) contrast(200%);
+  transition: filter 0.3s ease-in-out;
+}
+#literally-me .flex-container fieldset ul strong {
   color: #FF82FF;
   transition: color 0.3s ease-in-out;
 }
@@ -278,9 +286,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 4.118vw;
     padding: 0 1.176vw;
   }
-  #literally-me .flex-container fieldset p {
-    margin: 0 0.588vw;
-    padding: 0.588vw 1.176vw;
+  #literally-me .flex-container fieldset ul {
+    margin: 0.588vw 1.765vw;
   }
 }
 @media (max-width: 650px) {
@@ -306,9 +313,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 5.385vw;
     padding: 0 1.538vw;
   }
-  #literally-me .flex-container fieldset p {
-    margin: 0 1.846vw 1.846vw 1.846vw;
-    padding: 0.769vw 1.538vw;
+  #literally-me .flex-container fieldset ul {
+    margin: 0.769vw 3.385vw 3.385vw;
   }
 }
 #skills {
