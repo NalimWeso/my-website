@@ -11,12 +11,12 @@ gridItem.forEach(skill => {
             "css3": "CSS",
             "postcss": "PostCSS",
             "sass": "Sass",
+            "less": "Less",
             "tailwind": "Tailwind",
             "javascript": "JavaScript",
             "typescript": "TypeScript",
             "react": "React",
-            "electron": "Electron",
-            "git": "Git"
+            "electron": "Electron"
         };
 
         for (const [skillKey, text] of Object.entries(skills)) {

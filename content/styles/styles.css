@@ -376,6 +376,9 @@ body::-webkit-scrollbar-thumb {
 #skills fieldset .grid-container div i.devicon-css3-plain {
   filter: saturate(400%);
 }
+#skills fieldset .grid-container div i.devicon-less-plain-wordmark {
+  filter: saturate(600%);
+}
 #skills fieldset .grid-container div i.devicon-typescript-plain {
   filter: saturate(400%);
 }
