@@ -477,15 +477,6 @@ body::-webkit-scrollbar-thumb {
 #experiences .job:hover {
   background-color: #081B26;
 }
-#experiences .job .dot {
-  margin: 10px 10px 10px 0;
-  height: 15px;
-  width: 15px;
-  background-color: #F8F8FF;
-  border-radius: 50%;
-  display: inline-block;
-  transform: translateY(-2px);
-}
 #experiences .job .info h3 {
   font-size: 28px;
 }
@@ -527,12 +518,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1.538vw;
     width: 64.615vw;
     box-shadow: rgba(0, 0, 0, 0.16) 0vw 0.462vw 0.923vw, rgba(0, 0, 0, 0.23) 0vw 0.462vw 0.923vw;
-  }
-  #experiences .job .dot {
-    margin: 1.538vw 1.538vw 1.538vw 0;
-    height: 2.308vw;
-    width: 2.308vw;
-    transform: translateY(-0.308vw);
   }
   #experiences .job .info h3 {
     font-size: 4.308vw;
